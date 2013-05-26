@@ -18,7 +18,7 @@ module.exports = {
     'bem-bl' : {
         type     : 'git',
         url      : 'git://github.com/bem/bem-bl.git',
-        branch  : '0.3'
+        branch   : '0.3'
     },
     'bem-json' : {
         type     : 'git',
@@ -31,12 +31,13 @@ module.exports = {
     },
     'bem-gen-doc' : {
         type      : 'git',
-        url       : 'git://github.com/bem/bem-gen-doc.git',
-        branch    : 'make'
+        url       : 'git://github.com/tadatuta/bem-gen-doc.git',
+        branch    : 'eng'
     },
     'bem-controls' : {
         type     : 'git',
-        url      : 'git://github.com/bem/bem-controls.git'
+        url      : 'git://github.com/bem/bem-controls.git',
+        branch   : 'dev'
     }
 
 };
