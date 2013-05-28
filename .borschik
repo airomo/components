@@ -1,0 +1,8 @@
+{
+    "paths" : {
+        "./": "/components/"
+    },
+    "freeze_paths" : {
+        "./": "i/"
+    }
+}
