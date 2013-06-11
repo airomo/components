@@ -192,7 +192,9 @@ MAKE.decl('ExampleNode', {
                 .getTech('blocks')
                 .getPath(this.getSourceNodePrefix()));
 
-        return levels.map(resolve);
+        return levels.map(function(level) {
+            return resolve(level);
+        });
     }
 
 });
