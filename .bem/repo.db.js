@@ -37,7 +37,7 @@ module.exports = {
     'bem-controls' : {
         type     : 'git',
         url      : 'git://github.com/bem/bem-controls.git',
-        branch   : 'dev'
+        branch   : 'v1'
     }
 
 };
