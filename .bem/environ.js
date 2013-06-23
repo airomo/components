@@ -94,7 +94,7 @@ var PATH = require('path'),
      * @returns {String}
      */
     getLibPath = exports.getLibPath = function() {
-        var args = [].splice.call(arguments, 0);
+        var args = [].slice.call(arguments, 0);
         return join.apply(null, [environ.LIB_ROOT].concat(args));
     },
 
@@ -129,12 +129,6 @@ if(__root !== __dirname) {
 }
 
 function getGlobalRoot() {
-    // var root = BEM.require('./env').getEnv('__root_level_dir');
     var root = process.env.__root_level_dir;
-    if(!root) {
-        require('bem/lib/logger').warn('[environ] variable "__root_level_dir" is not set properly');
-        root = __dirname;
-    }
-
-    return root;
+    return root || (root = __dirname);
 }

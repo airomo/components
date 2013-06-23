@@ -1,11 +1,1 @@
-exports.baseLevelPath = require.resolve('bem/lib/levels/simple');
-
-exports.getTechs = function() {
-
-    return {
-        'title.txt' : '',
-        'bemjson.js' : '',
-        'deps.js' : ''
-    };
-
-};
+exports.baseLevelPath = require.resolve('../../../../.bem/levels/examples');

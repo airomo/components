@@ -6,7 +6,8 @@ var PATH = require('path'),
     PRJ_ROOT = presolve('../../'),
 
     PRJ_TECHS = presolve('../techs/'),
-    BEMBL_TECHS = pjoin(PRJ_ROOT, 'bem-bl/blocks-common/i-bem/bem/techs');
+    BEMBL_TECHS = pjoin(PRJ_ROOT, 'bem-bl/blocks-common/i-bem/bem/techs'),
+    BEM_GEN_DOC_TECHS = pjoin(PRJ_ROOT, 'bem-gen-doc/.bem/techs');
 
 
 exports.getTechs = function() {
@@ -24,7 +25,8 @@ exports.getTechs = function() {
 
         'examples'      : '',
         'title.txt'     : pjoin(PRJ_TECHS, 'i18n.title.txt'),
-        'desc.wiki'     : pjoin(PRJ_TECHS, 'i18n.desc.wiki')
+        'desc.wiki'     : pjoin(PRJ_TECHS, 'i18n.desc.wiki'),
+        'desc.md'       : pjoin(BEM_GEN_DOC_TECHS, 'desc.md')
     };
 
 };

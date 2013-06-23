@@ -46,7 +46,7 @@ MAKE.decl('Arch', {
             id : 'site',
             root : this.root,
             arch : this.arch,
-            levels : ['common.blocks']
+            levels : ['bem-controls/common.blocks', 'common.blocks']
         })
         .alterArch(null, libs);
 
