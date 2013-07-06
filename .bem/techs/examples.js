@@ -1,6 +1,7 @@
-var PATH = require('path');
+var PATH = require('path'),
+    environ = require('../environ');
 
-exports.baseTechPath = require.resolve('../../bem-pr/bem/techs/examples.js');
+exports.baseTechPath = environ.getLibPath('bem-pr', 'bem/techs/examples.js');
 
 exports.getBaseLevel = function() {
     return PATH.resolve(__dirname, '../levels/bundles.js');

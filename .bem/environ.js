@@ -50,7 +50,7 @@ var PATH = require('path'),
      * @type String
      * @exports LIB_DIR
      */
-    LIB_DIR = exports.LIB_DIR = '.',
+    LIB_DIR = exports.LIB_DIR = 'libs',
 
     /**
      * Path to the libraries folder root

@@ -8,7 +8,7 @@ How to get the library
 git clone git://github.com/airomo/components.git
 cd components
 npm i
-./node_modules/bem/bin/bem make
+./node_modules/bem/bin/bem make libs
 ./node_modules/bem/bin/bem make sets
 ````
 

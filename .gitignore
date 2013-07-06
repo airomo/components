@@ -1,18 +1,4 @@
-bem-bl
-bem-page
-bem-core
-bem-controls
-bem-media
-bem-popups
-bem-search
-bem-services
-bem-user
-
-bem-pr
-bem-gen-doc
-bem-json
-
-vendor
+libs
 node_modules
 
 .DS_Store
@@ -24,8 +10,9 @@ node_modules
 .bem/cache
 .bem/snapshots
 
-*.bundles
 desktop.sets/*.examples/
+
+desktop.bundles
 !*.bundles/*/*.bemjson.js
 !*.bundles/*/blocks/*
 !*.bundles/.bem/*

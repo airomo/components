@@ -8,11 +8,12 @@ require('./nodes/arch');
 
 var BEM = require('bem'),
     LOGGER = BEM.require('./logger'),
-    PATH = require('path');
+    PATH = require('path'),
+    environ = require('./environ');
 
 try {
-    var setsNodes = require('../bem-pr/bem/nodes/sets'),
-        siteNodes = require('../bem-gen-doc/.bem/nodes/site');
+    var setsNodes = require(environ.getLibPath('bem-pr', 'bem/nodes/sets')),
+        siteNodes = require(environ.getLibPath('bem-gen-doc', '.bem/nodes/site'));
 } catch (e) {
     if (e.code !== 'MODULE_NOT_FOUND')
         throw e;
@@ -46,7 +47,7 @@ MAKE.decl('Arch', {
             id : 'site',
             root : this.root,
             arch : this.arch,
-            levels : ['bem-controls/common.blocks', 'common.blocks']
+            levels : [environ.getLibPath('bem-controls', 'common.blocks'), 'common.blocks', environ.getLibPath('bem-controls', 'desktop.blocks'), 'desktop.blocks']
         })
         .alterArch(null, libs);
 
@@ -137,10 +138,14 @@ MAKE.decl('ExampleNode', {
             'bem-bl/blocks-common',
             'bem-bl/blocks-desktop',
             'bem-controls/common.blocks',
-            'bem-controls/desktop.blocks',
+            'bem-controls/desktop.blocks'
+        ]
+        .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
+        .concat([
             'common.blocks',
             'desktop.blocks'
-        ];
+        ]
+        .map(function(path) { return PATH.resolve(environ.PRJ_ROOT, path); }));
     },
 
     'touch-pad-levels' : function() {
@@ -150,11 +155,15 @@ MAKE.decl('ExampleNode', {
             'bem-bl/blocks-touch-pad',
             'bem-controls/common.blocks',
             'bem-controls/touch.blocks',
-            'bem-controls/touch-pad.blocks',
+            'bem-controls/touch-pad.blocks'
+        ]
+        .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
+        .concat([
             'common.blocks',
             'touch.blocks',
             'touch-pad.blocks'
-        ];
+        ]
+        .map(function(path) { return PATH.resolve(environ.PRJ_ROOT, path); }));
     },
 
     'touch-phone-levels' : function() {
@@ -164,11 +173,15 @@ MAKE.decl('ExampleNode', {
             'bem-bl/blocks-touch-phone',
             'bem-controls/common.blocks',
             'bem-controls/touch.blocks',
-            'bem-controls/touch-phone.blocks',
+            'bem-controls/touch-phone.blocks'
+        ]
+        .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
+        .concat([
             'common.blocks',
             'touch.blocks',
             'touch-phone.blocks'
-        ];
+        ]
+        .map(function(path) { return PATH.resolve(environ.PRJ_ROOT, path); }));
     },
 
     /**

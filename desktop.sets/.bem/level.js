@@ -1,4 +1,6 @@
-exports.baseLevelPath = require.resolve('../../bem-pr/bem/levels/sets.js');
+var environ = require('../../.bem/environ');
+
+exports.baseLevelPath = environ.getLibPath('bem-pr', 'bem/levels/sets.js');
 
 exports.getTechs = function() {
 
