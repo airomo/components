@@ -47,7 +47,8 @@ MAKE.decl('Arch', {
             id : 'site',
             root : this.root,
             arch : this.arch,
-            levels : [environ.getLibPath('bem-controls', 'common.blocks'), 'common.blocks', environ.getLibPath('bem-controls', 'desktop.blocks'), 'desktop.blocks']
+            levels : [environ.getLibPath('bem-controls', 'common.blocks'), 'common.blocks', environ.getLibPath('bem-controls', 'desktop.blocks'), 'desktop.blocks'],
+            output: 'release'
         })
         .alterArch(null, libs);
 
