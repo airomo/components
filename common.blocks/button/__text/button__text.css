@@ -1,0 +1,6 @@
+.button__text
+{
+    position: static;
+    display: inline-block;
+    padding: 0;
+}

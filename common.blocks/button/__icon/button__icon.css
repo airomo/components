@@ -1,0 +1,23 @@
+.button__icon
+{
+    top: 0;
+    display: inline-block;
+    margin: 0 .25em;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.button__icon_visibility_hidden
+{
+    display: none;
+}
+
+.button__icon:first-child
+{
+    margin-left: 0;
+}
+
+.button__icon:last-child
+{
+    margin-right: 0;
+}

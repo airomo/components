@@ -1,0 +1,11 @@
+.button__icon_type_info
+{
+    background-image: url(button__icon_type_info.png);
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.button_pressed_yes .button__icon_type_info
+{
+    background-position: 100% 50%;
+}

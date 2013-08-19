@@ -1,0 +1,35 @@
+.button_theme_green
+{
+    background: #35d14b;
+    background: -webkit-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_theme_green.button_hovered_yes
+{
+    background: #5dda6f;
+    background: -webkit-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+}
+
+.button_theme_green.button_pressed_yes
+{
+    background: #32c647;
+    background: -webkit-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.button_theme_green .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
