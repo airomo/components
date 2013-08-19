@@ -1,6 +1,16 @@
 ({
     shouldDeps: [
         {
+            block: 'radio-button',
+            mods: {
+                theme: ['transparent'],
+                size: ['s']
+            },
+            elems: [
+                {elem: 'radio', mods: {side: ['left', 'right']}}
+            ]
+        },
+        {
             block: 'button',
             mods: {
                 focused: ['yes'],
