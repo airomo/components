@@ -1,0 +1,38 @@
+.input.input_size_l
+{
+    height: 42px;
+    font-size: 15px;
+    line-height: 42px;
+}
+
+.input.input_size_l .input__box,
+.input.input_size_l .input__hint
+{
+    padding-right: 28px;
+    padding-left: 14px;
+    border-radius: 4px;
+}
+
+.input_size_l.input_type_textarea .input__box,
+.input_size_l.input_type_textarea .input__hint
+{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.input_size_l.input_clear_no .input__box,
+.input_size_l.input_clear_no .input__hint,
+.input_size_l.input_type_textarea .input__box
+{
+    padding-right: 14px;
+}
+
+.input.input_size_l .input__clear
+{
+    width: 28px;
+}
+
+.input_size_l.input_type_textarea .input__control
+{
+    min-height: 100px;
+}

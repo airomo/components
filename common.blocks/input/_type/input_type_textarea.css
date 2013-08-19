@@ -1,0 +1,16 @@
+.input.input_type_textarea,
+.input.input_type_textarea .input__box
+{
+    height: auto !important;
+}
+
+.input.input_type_textarea .input__control
+{
+    padding: 0;
+}
+
+.input.input_type_textarea .input__control,
+.input.input_type_textarea .input__hint
+{
+    line-height: normal;
+}
