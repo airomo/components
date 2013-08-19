@@ -1,0 +1,14 @@
+.button_size_l
+{
+    min-width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 42px;
+}
+
+.button_size_l .button__text
+{
+    padding-right: 14px;
+    padding-left: 14px;
+}

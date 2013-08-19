@@ -1,0 +1,14 @@
+.button
+{
+    cursor: pointer;
+}
+
+a.button
+{
+    cursor: pointer;
+}
+
+.button_visibility_hidden
+{
+    display: none !important;
+}

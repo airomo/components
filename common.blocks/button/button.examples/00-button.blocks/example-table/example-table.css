@@ -1,0 +1,39 @@
+.example-table__table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: 14px/1.4 Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+.example-table__col,
+.example-table__row:first-child + .example-table__row .example-table__col
+{
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.example-table__col[rowspan] ~ .example-table__col
+{
+    padding-top: 30px;
+}
+
+.example-table__row:first-child .example-table__col,
+.example-table__col:first-child[rowspan]
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.example-table__col:first-child[rowspan] + .example-table__col,
+.example-table__col:first-child
+{
+    font-style: italic;
+}
+
+.example-table__row:first-child .example-table__col:first-child
+{
+    background: #fff6a8;
+    font-weight: normal;
+    font-style: italic;
+}

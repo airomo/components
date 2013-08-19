@@ -1,0 +1,14 @@
+.button_size_m
+{
+    min-width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.button_size_m .button__text
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
