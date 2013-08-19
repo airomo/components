@@ -1,0 +1,11 @@
+.button__icon_type_refresh
+{
+    background-image: url(button__icon_type_refresh.png);
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.button_pressed_yes .button__icon_type_refresh
+{
+    background-position: 100% 50%;
+}

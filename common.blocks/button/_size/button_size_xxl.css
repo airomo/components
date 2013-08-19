@@ -1,0 +1,14 @@
+.button_size_xxl
+{
+    min-width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.button_size_xxl .button__text
+{
+    padding-right: 23px;
+    padding-left: 23px;
+}

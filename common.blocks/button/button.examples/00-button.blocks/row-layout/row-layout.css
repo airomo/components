@@ -1,0 +1,56 @@
+.row-layout
+{
+    display: table;
+
+    width: 100%;
+}
+
+.row-layout__col
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.row-layout__col_visibility_hidden
+{
+    visibility: hidden;
+}
+
+.row-layout__col_gap_20
+{
+    width: 20px;
+}
+
+.row-layout__col_gap_40
+{
+    width: 40px;
+}
+
+.row-layout__col_width_min
+{
+    width: 0.01%;
+}
+
+.row-layout__col_align_left
+{
+    text-align: left;
+}
+
+.row-layout__col_align_center
+{
+    text-align: center;
+}
+
+.row-layout__col_align_right
+{
+    text-align: right;
+}
+
+.row-layout__col-inner
+{
+    display: inline-block;
+
+    text-align: left;
+    vertical-align: top;
+}
