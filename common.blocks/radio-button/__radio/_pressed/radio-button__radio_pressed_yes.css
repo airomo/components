@@ -1,0 +1,10 @@
+.radio-button__radio_pressed_yes:before,
+.radio-button__radio_pressed_yes + .radio-button__radio:before
+{
+    display: none;
+}
+
+.radio-button__radio_pressed_yes .radio-button__text
+{
+    top: 0;
+}
