@@ -1,0 +1,20 @@
+.radio-button_size_m,
+.radio-button_size_m .radio-button__radio_side_left,
+.radio-button_size_m .radio-button__radio_side_right
+{
+    border-radius: 4px;
+}
+
+.radio-button_size_m .radio-button__radio
+{
+    min-width: 32px;
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.radio-button_size_m .radio-button__text
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}

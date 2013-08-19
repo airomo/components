@@ -6,9 +6,12 @@
 a.button
 {
     cursor: pointer;
+<<<<<<< Updated upstream
 }
 
 .button_visibility_hidden
 {
     display: none !important;
+=======
+>>>>>>> Stashed changes
 }

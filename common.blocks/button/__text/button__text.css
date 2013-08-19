@@ -1,6 +1,9 @@
 .button__text
 {
     position: static;
+<<<<<<< Updated upstream
     display: inline-block;
+=======
+>>>>>>> Stashed changes
     padding: 0;
 }
