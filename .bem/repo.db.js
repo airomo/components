@@ -31,8 +31,8 @@ module.exports = {
     },
     'bem-gen-doc' : {
         type      : 'git',
-        url       : 'git://github.com/bem/bem-gen-doc.git',
-        branch    : '0.7.3'
+        url       : 'git://github.com/tadatuta/bem-gen-doc.git',
+        branch    : 'eng'
     },
     'bem-components' : {
         type     : 'git',
