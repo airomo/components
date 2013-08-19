@@ -1,0 +1,95 @@
+block example-table {
+    js: true
+
+	content: {
+        var themes = this.ctx.themes,
+            sizes = this.ctx.sizes,
+            states = this.ctx.states,
+            content = applyNext();
+
+        return themes && themes.length && sizes && sizes.length && states && states.length ? {
+            elem: 'table',
+            content: [
+                {
+                    elem: 'row',
+                    content: [
+                        {
+                            elem: 'col',
+                            content: 'theme/size'
+                        },
+                        {
+                            elem: 'col'
+                        },
+                        sizes.map(function(size) {
+                            return {
+                                elem: 'col',
+                                content: size
+                            }
+                        })
+                    ]
+                },
+                themes.map(function(theme) {
+                    return states.map(function(state) {
+                        return {
+                            elem: 'row',
+                            content: [
+                                (states[0] === state ? ({
+                                    elem: 'col',
+                                    attrs: {
+                                        rowspan: states.length
+                                    },
+                                    content: theme
+                                }) : ''),
+                                {
+                                    elem: 'col',
+                                    content: typeof state === 'object' ? state.join(' + ') : state
+                                },
+                                sizes.map(function(size) {
+                                    var cont = {
+                                        block: 'input',
+                                        mods: {
+                                            theme: theme,
+                                            size: size,
+                                            clear: 'no'
+                                        },
+                                        content: [
+                                            {
+                                                elem: 'box',
+                                                content: [
+                                                    {
+                                                    	elem: 'hint',
+                                                    	content: 'Placeholder'
+                                                    },
+                                                	{
+                                                	    elem: 'control'
+                                                	}
+                                                ]
+                                            }
+                                        ]
+                                    };
+
+                                    if ( typeof state === 'object' ) {
+                                        for (var i = 0; i < state.length; i += 1) {
+                                            cont.mods[state[i]] = 'yes';
+                                        }
+                                    } else {
+                                        cont.mods[state] = 'yes';
+                                    }
+
+                                    return {
+                                        elem: 'col',
+                                        content: cont
+                                    }
+                                })
+                            ]
+                        }
+                    })
+                })
+            ]
+        } : ''
+    }
+
+	elem table, tag: 'table'
+    elem row, tag: 'tr'
+    elem col, tag: 'td'
+}
