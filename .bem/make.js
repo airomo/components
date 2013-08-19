@@ -1,6 +1,7 @@
-/*global MAKE:true */
+/* jshint node:true */
+/* global MAKE */
 
-"use strict";
+'use strict';
 
 require('./nodes/arch');
 
@@ -9,14 +10,17 @@ require('./nodes/arch');
 var BEM = require('bem'),
     LOGGER = BEM.require('./logger'),
     PATH = require('path'),
-    environ = require('./environ');
+    environ = require('bem-environ')(__dirname);
+
+environ.extendMake(MAKE);
 
 try {
     var setsNodes = require(environ.getLibPath('bem-pr', 'bem/nodes/sets')),
         siteNodes = require(environ.getLibPath('bem-gen-doc', '.bem/nodes/site'));
-} catch (e) {
-    if (e.code !== 'MODULE_NOT_FOUND')
+} catch(e) {
+    if(e.code !== 'MODULE_NOT_FOUND') {
         throw e;
+    }
     setsNodes = false;
     siteNodes = false;
 }
@@ -29,14 +33,13 @@ MAKE.decl('Arch', {
 
     libraries: [
         'bem-json',
-        'bem-pr',
-        'bem-gen-doc',
+        'bem-pr @ 0.2.3',
+        'bem-gen-doc @ 0.7.2',
         'bem-bl',
-        'bem-controls'
+        'bem-components'
     ],
 
-    createCustomNodes: function(common, libs, blocks) {
-
+    createCustomNodes : function(common, libs, blocks) {
         if(setsNodes === false || siteNodes === false) {
             LOGGER.warn('"bem-pr" or "bem-gen-doc" is not installed');
             return;
@@ -44,19 +47,18 @@ MAKE.decl('Arch', {
 
         // Site build
         new siteNodes.SiteNode({
-            id : 'site',
-            root : this.root,
-            arch : this.arch,
-            levels : [environ.getLibPath('bem-controls', 'common.blocks'), 'common.blocks', environ.getLibPath('bem-controls', 'desktop.blocks'), 'desktop.blocks'],
-            output: 'release'
-        })
-        .alterArch(null, libs);
+                id : 'site',
+                root : this.root,
+                arch : this.arch,
+                levels : [environ.getLibPath('bem-components', 'common.blocks'), 'common.blocks', environ.getLibPath('bem-components', 'desktop.blocks'), 'desktop.blocks'],
+                output : environ.getConf().siteOutputFolder
+            })
+            .alterArch(null, libs);
 
-        // Exmaples build
+        // Examples build
         return setsNodes.SetsNode
             .create({ root : this.root, arch : this.arch })
             .alterArch(null, libs);
-
     }
 
 });
@@ -107,6 +109,15 @@ MAKE.decl('SetsNode', {
             // 'touch-phone' : ['common.blocks', 'touch-phone.blocks']
         };
 
+    }
+
+});
+
+
+MAKE.decl('SetsLevelNode', {
+
+    getSourceItemTechs : function() {
+        return ['examples'];
     }
 
 });

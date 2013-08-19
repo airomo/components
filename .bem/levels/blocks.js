@@ -1,6 +1,6 @@
 var PATH = require('path'),
     join = PATH.join,
-    environ = require('../environ'),
+    environ = require('bem-environ'),
 
     PRJ_ROOT = environ.PRJ_ROOT,
     PRJ_TECHS = join(PRJ_ROOT, '.bem/techs'),
@@ -24,7 +24,8 @@ exports.getTechs = function() {
         'examples'      : '',
         'title.txt'     : join(PRJ_TECHS, 'i18n.title.txt'),
         'desc.wiki'     : join(PRJ_TECHS, 'i18n.desc.wiki'),
-        'desc.md'       : join(BEM_GEN_DOC_TECHS, 'desc.md')
+        'desc.md'       : join(BEM_GEN_DOC_TECHS, 'desc.md'),
+        'thumb.png'     : ''
     };
 
 };

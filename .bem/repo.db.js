@@ -26,17 +26,17 @@ module.exports = {
     },
     'bem-pr' : {
         type     : 'git',
-        url      : 'git://github.com/narqo/bem-pr.git',
-        treeish  : '0.0.5'
+        url      : 'git://github.com/bem/bem-pr.git',
+        treeish  : 'dev'
     },
     'bem-gen-doc' : {
         type      : 'git',
-        url       : 'git://github.com/tadatuta/bem-gen-doc.git',
-        branch    : 'eng'
+        url       : 'git://github.com/bem/bem-gen-doc.git',
+        branch    : '0.7.3'
     },
-    'bem-controls' : {
+    'bem-components' : {
         type     : 'git',
-        url      : 'git://github.com/bem/bem-controls.git',
+        url      : 'git://github.com/bem/bem-components.git',
         branch   : 'v1'
     }
 

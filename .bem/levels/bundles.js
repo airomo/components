@@ -1,6 +1,6 @@
 var PATH = require('path'),
     join = PATH.join,
-    environ = require('../environ'),
+    environ = require('bem-environ'),
 
     PRJ_ROOT = environ.PRJ_ROOT,
     PRJ_TECHS = join(PRJ_ROOT, '.bem/techs'),
