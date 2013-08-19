@@ -1,0 +1,9 @@
+.input__box
+{
+    height: 100%;
+}
+
+.input__box:after
+{
+    display: none;
+}

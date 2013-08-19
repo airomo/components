@@ -1,0 +1,24 @@
+.input_size_s
+{
+    height: 28px;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.input_size_s .input__box
+{
+    padding-right: 28px;
+    border-radius: 4px;
+}
+
+.input_size_s .input__control,
+.input_size_s .input__hint
+{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.input_size_s .input__clear
+{
+    width: 28px;
+}

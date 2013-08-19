@@ -1,0 +1,5 @@
+.input_side_left .input__box
+{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
