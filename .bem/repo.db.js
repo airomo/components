@@ -20,14 +20,14 @@ module.exports = {
         url      : 'git://github.com/bem/bem-bl.git',
         branch   : '0.3'
     },
-    'bem-json' : {
+    'bem-json'   : {
         type     : 'git',
         url      : 'git://github.com/delfrrr/bem-json.git'
     },
     'bem-pr' : {
         type     : 'git',
         url      : 'git://github.com/bem/bem-pr.git',
-        treeish  : 'dev'
+        treeish  : '0.2.3'
     },
     'bem-gen-doc' : {
         type      : 'git',

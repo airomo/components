@@ -33,8 +33,8 @@ MAKE.decl('Arch', {
 
     libraries: [
         'bem-json',
-        'bem-pr @ 0.2.3',
-        'bem-gen-doc @ 0.7.2',
+        'bem-pr',
+        'bem-gen-doc',
         'bem-bl',
         'bem-components'
     ],
