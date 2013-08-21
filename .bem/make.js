@@ -149,8 +149,8 @@ MAKE.decl('ExampleNode', {
         return [
             'bem-bl/blocks-common',
             'bem-bl/blocks-desktop',
-            'bem-controls/common.blocks',
-            'bem-controls/desktop.blocks'
+            'bem-components/common.blocks',
+            'bem-components/desktop.blocks'
         ]
         .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
         .concat([
@@ -165,9 +165,9 @@ MAKE.decl('ExampleNode', {
             'bem-bl/blocks-common',
             'bem-bl/blocks-touch',
             'bem-bl/blocks-touch-pad',
-            'bem-controls/common.blocks',
-            'bem-controls/touch.blocks',
-            'bem-controls/touch-pad.blocks'
+            'bem-components/common.blocks',
+            'bem-components/touch.blocks',
+            'bem-components/touch-pad.blocks'
         ]
         .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
         .concat([
@@ -183,9 +183,9 @@ MAKE.decl('ExampleNode', {
             'bem-bl/blocks-common',
             'bem-bl/blocks-touch',
             'bem-bl/blocks-touch-phone',
-            'bem-controls/common.blocks',
-            'bem-controls/touch.blocks',
-            'bem-controls/touch-phone.blocks'
+            'bem-components/common.blocks',
+            'bem-components/touch.blocks',
+            'bem-components/touch-phone.blocks'
         ]
         .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
         .concat([
