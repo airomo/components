@@ -19,3 +19,4 @@ desktop.bundles
 !*.bundles/.bem/*
 
 release
+/i
