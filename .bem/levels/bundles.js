@@ -23,10 +23,10 @@ exports.getTechs = function() {
         'i18n'            : join(BEMBL_TECHS, 'v2/i18n.js'),
         'i18n.js'         : join(BEMBL_TECHS, 'v2/i18n.js.js'),
         'i18n.js+bemhtml' : join(BEMBL_TECHS, 'v2/i18n.js+bemhtml.js'),
-        'i18n.html'       : join(BEMBL_TECHS, 'i18n.html.js'),
+        'i18n.html'       : join(BEMBL_TECHS, 'v2/i18n.html.js'),
 
         'bemhtml'         : join(BEMBL_TECHS, 'v2/bemhtml.js'),
-        'html'            : join(BEMBL_TECHS, 'html.js')
+        'html'            : join(BEMBL_TECHS, 'v2/html.js')
     };
 
 };

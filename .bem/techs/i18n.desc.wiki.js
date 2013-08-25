@@ -1,3 +1,5 @@
+exports.API_VER = 2;
+
 exports.techMixin = {
 
     getSuffixes : function() {

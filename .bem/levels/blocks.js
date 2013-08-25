@@ -11,21 +11,21 @@ var PATH = require('path'),
 exports.getTechs = function() {
 
     return {
-        'js'            : join(BEMBL_TECHS, 'js.js'),
-        'css'           : 'css',
-        'ie.css'        : 'ie.css',
-        'ie6.css'       : 'ie6.css',
-        'ie7.css'       : 'ie7.css',
-        'ie8.css'       : 'ie8.css',
-        'ie9.css'       : 'ie9.css',
+        'js'            : join(BEMBL_TECHS, 'v2/js.js'),
+        'css'           : 'v2/css',
+        'ie.css'        : 'v2/ie.css',
+        'ie6.css'       : 'v2/ie6.css',
+        'ie7.css'       : 'v2/ie7.css',
+        'ie8.css'       : 'v2/ie8.css',
+        'ie9.css'       : 'v2/ie9.css',
 
-        'bemhtml'       : join(BEMBL_TECHS, 'bemhtml.js'),
+        'bemhtml'       : join(BEMBL_TECHS, 'v2/bemhtml.js'),
 
-        'examples'      : '',
+        'examples'      : 'bem/lib/tech/v2',
         'title.txt'     : join(PRJ_TECHS, 'i18n.title.txt'),
         'desc.wiki'     : join(PRJ_TECHS, 'i18n.desc.wiki'),
         'desc.md'       : join(BEM_GEN_DOC_TECHS, 'desc.md'),
-        'thumb.png'     : ''
+        'thumb.png'     : 'bem/lib/tech/v2'
     };
 
 };

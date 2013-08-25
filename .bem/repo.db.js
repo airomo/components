@@ -18,7 +18,7 @@ module.exports = {
     'bem-bl' : {
         type     : 'git',
         url      : 'git://github.com/bem/bem-bl.git',
-        branch   : '0.3'
+        branch   : 'addToolsTechs2'
     },
     'bem-json'   : {
         type     : 'git',
@@ -26,18 +26,18 @@ module.exports = {
     },
     'bem-pr' : {
         type     : 'git',
-        url      : 'git://github.com/bem/bem-pr.git',
-        treeish  : '0.2.3'
+        url      : 'git://github.com/narqo/bem-pr.git',
+        treeish  : 'v0.3'
     },
     'bem-gen-doc' : {
         type      : 'git',
-        url       : 'git://github.com/tadatuta/bem-gen-doc.git',
-        branch    : 'eng'
+        url       : 'git://github.com/bem/bem-gen-doc.git',
+        branch    : 'v2techs'
     },
     'bem-components' : {
         type     : 'git',
         url      : 'git://github.com/bem/bem-components.git',
-        branch   : 'v1'
+        branch   : 'v2techs'
     }
 
 };
