@@ -33,10 +33,10 @@ MAKE.decl('Arch', {
 
     libraries: [
         'bem-json',
-        'bem-pr',
-        'bem-gen-doc',
-        'bem-bl',
-        'bem-components'
+        'bem-pr @ v0.3',
+        'bem-gen-doc @ make',
+        'bem-bl @ 0.3',
+        'bem-components @ v2techs'
     ],
 
     createCustomNodes : function(common, libs, blocks) {
