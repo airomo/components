@@ -2,12 +2,12 @@ block example-table {
     js: true
 
 	content: {
-        var themes = this.ctx.themes,
+        var colors = this.ctx.colors,
             sizes = this.ctx.sizes,
             states = this.ctx.states,
             content = applyNext();
 
-        return themes && themes.length && sizes && sizes.length && states && states.length ? {
+        return colors && colors.length && sizes && sizes.length && states && states.length ? {
             elem: 'table',
             content: [
                 {
@@ -15,7 +15,7 @@ block example-table {
                     content: [
                         {
                             elem: 'col',
-                            content: 'theme/size'
+                            content: 'color/size'
                         },
                         {
                             elem: 'col'
@@ -28,7 +28,7 @@ block example-table {
                         })
                     ]
                 },
-                themes.map(function(theme) {
+                colors.map(function(color) {
                     return states.map(function(state) {
                         return {
                             elem: 'row',
@@ -38,7 +38,7 @@ block example-table {
                                     attrs: {
                                         rowspan: states.length
                                     },
-                                    content: theme
+                                    content: color
                                 }) : ''),
                                 {
                                     elem: 'col',
@@ -48,14 +48,14 @@ block example-table {
                                     var cont = {
                                         block: 'button',
                                         mods: {
-                                            theme: theme,
+                                            color: color,
                                             size: size
                                         },
                                         content: [
                                             {
                                                 elem: 'icon',
                                                 mods: {
-                                                    theme: theme,
+                                                    color: color,
                                                     size: size
                                                 }
                                             },
