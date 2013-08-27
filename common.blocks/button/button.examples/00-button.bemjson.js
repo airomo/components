@@ -28,8 +28,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 size: 'xl',
                                                 type: 'thin-arrow-left'
                                             }
@@ -65,8 +68,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 size: 'xl',
                                                 type: 'thin-arrow-right'
                                             }
@@ -119,8 +125,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'info',
                                                 size: 'xl'
                                             }
@@ -156,8 +165,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'refresh',
                                                 size: 'xxl'
                                             }
@@ -192,8 +204,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'info',
                                                 size: 'xl'
                                             }
@@ -228,8 +243,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'refresh',
                                                 size: 'xxl'
                                             }
@@ -265,8 +283,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'info',
                                                 size: 'xl'
                                             }
@@ -302,8 +323,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'refresh',
                                                 size: 'xxl'
                                             }
@@ -339,8 +363,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'info',
                                                 size: 'xl'
                                             }
@@ -376,8 +403,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'refresh',
                                                 size: 'xxl'
                                             }
@@ -414,8 +444,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'info',
                                                 size: 'xl'
                                             }
@@ -452,8 +485,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'refresh',
                                                 size: 'xxl'
                                             }
@@ -512,8 +548,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'dashboard',
                                                 size: 'xl'
                                             }
@@ -549,8 +588,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'timeline',
                                                 size: 'xl'
                                             }
@@ -586,8 +628,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'description',
                                                 size: 'xl'
                                             }
@@ -623,8 +668,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'arrow-up',
                                                 size: 'xl'
                                             }
@@ -659,8 +707,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'dashboard',
                                                 size: 'xl'
                                             }
@@ -695,8 +746,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'timeline',
                                                 size: 'xl'
                                             }
@@ -731,8 +785,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'description',
                                                 size: 'xl'
                                             }
@@ -767,8 +824,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'arrow-up',
                                                 size: 'xl'
                                             }
@@ -804,8 +864,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'dashboard',
                                                 size: 'xl'
                                             }
@@ -841,8 +904,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'timeline',
                                                 size: 'xl'
                                             }
@@ -878,8 +944,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'description',
                                                 size: 'xl'
                                             }
@@ -915,8 +984,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'arrow-up',
                                                 size: 'xl'
                                             }
@@ -952,8 +1024,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'dashboard',
                                                 size: 'xl'
                                             }
@@ -989,8 +1064,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'timeline',
                                                 size: 'xl'
                                             }
@@ -1026,8 +1104,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'description',
                                                 size: 'xl'
                                             }
@@ -1063,8 +1144,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'arrow-up',
                                                 size: 'xl'
                                             }
@@ -1101,8 +1185,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'dashboard',
                                                 size: 'xl'
                                             }
@@ -1139,8 +1226,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'timeline',
                                                 size: 'xl'
                                             }
@@ -1177,8 +1267,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'description',
                                                 size: 'xl'
                                             }
@@ -1215,8 +1308,11 @@
                                     },
                                     content: [
                                         {
-                                            elem: 'icon',
-                                            elemMods: {
+                                            block: 'icon',
+                                            mix: [
+                                                {block: 'button', elem: 'icon'}
+                                            ],
+                                            mods: {
                                                 type: 'arrow-up',
                                                 size: 'xl'
                                             }
@@ -1278,11 +1374,11 @@
                     controlAttrs: { value: 'icon_counter' },
                     content: 'icon + counter'
                 },
-//                {
-//                    elem: 'radio',
-//                    controlAttrs: { value: 'counter' },
-//                    content: 'counter'
-//                },
+                //                {
+                //                    elem: 'radio',
+                //                    controlAttrs: { value: 'counter' },
+                //                    content: 'counter'
+                //                },
                 {
                     elem: 'radio',
                     controlAttrs: { value: 'text_counter' },
@@ -1372,7 +1468,8 @@
             sizes: ['s', 'm', 'l', 'xl', 'xxl'],
             states: ['default', 'hovered', 'pressed', 'disabled', ['disabled', 'pressed']]
         },
-        { block: 'i-jquery', mods: { version: '1.8.3' } },
+        { block: 'i-jquery',
+            mods: { version: '1.8.3' } },
         { elem: 'js', url: '_00-button.js' }
     ]
 })
