@@ -53,11 +53,11 @@ block example-table {
                                         },
                                         content: [
                                             {
-                                                elem: 'icon',
+                                                block: 'icon',
                                                 mods: {
-                                                    color: color,
                                                     size: size
-                                                }
+                                                },
+                                                mix: [{block: 'button', elem: 'icon', elemMods: {size: size}}]
                                             },
                                             {
                                             	elem: 'text-content',

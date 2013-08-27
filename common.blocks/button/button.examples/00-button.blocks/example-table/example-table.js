@@ -23,7 +23,7 @@ BEM.DOM.decl('example-table', {
                         (function(key) {
                             if ( buf[key] !== storage[key] ) {
                                 for ( var i = buttons.length - 1; i >= 0; i -= 1 ) {
-                                    buttons[i].setMod(buttons[i].elem('icon'), 'type', storage[key]);
+                                    buttons[i].findBlockInside('icon').setMod('type', storage[key]);
                                 }
 
                                 buf[key] = storage[key];
