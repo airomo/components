@@ -3,7 +3,7 @@
         {
             block: 'radio-button',
             mods: {
-                theme: ['transparent'],
+                color: ['transparent'],
                 size: ['s']
             },
             elems: [
@@ -18,7 +18,7 @@
                 pressed: ['yes'],
                 disabled: ['yes'],
                 size: ['s', 'm', 'l', 'xl', 'xxl'],
-                theme: ['blue', 'light-grey', 'grey', 'green', 'transparent'],
+                color: ['blue', 'light-grey', 'grey', 'green', 'transparent'],
                 'only-icon': ['yes'],
                 side: ['left', 'right']
             },
