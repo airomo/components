@@ -21,7 +21,7 @@
                                 {
                                     block: 'button',
                                     mods: {
-                                        theme: 'grey',
+                                        color: 'grey',
                                         size: 'xxl',
                                         side: 'right',
                                         'only-icon': 'yes'
@@ -58,7 +58,7 @@
                                 {
                                     block: 'button',
                                     mods: {
-                                        theme: 'grey',
+                                        color: 'grey',
                                         size: 'xxl',
                                         side: 'left',
                                         'only-icon': 'yes'
@@ -114,7 +114,7 @@
                                     mods: {
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -151,7 +151,7 @@
                                     mods: {
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -187,7 +187,7 @@
                                     block: 'button',
                                     mods: {
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -223,7 +223,7 @@
                                     block: 'button',
                                     mods: {
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -260,7 +260,7 @@
                                     mods: {
                                         hovered: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -297,7 +297,7 @@
                                     mods: {
                                         hovered: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -334,7 +334,7 @@
                                     mods: {
                                         pressed: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -371,7 +371,7 @@
                                     mods: {
                                         pressed: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -409,7 +409,7 @@
                                         pressed: 'yes',
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -447,7 +447,7 @@
                                         pressed: 'yes',
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -507,7 +507,7 @@
                                     mods: {
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -544,7 +544,7 @@
                                     mods: {
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -581,7 +581,7 @@
                                     mods: {
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -618,7 +618,7 @@
                                     mods: {
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -654,7 +654,7 @@
                                     block: 'button',
                                     mods: {
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -690,7 +690,7 @@
                                     block: 'button',
                                     mods: {
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -726,7 +726,7 @@
                                     block: 'button',
                                     mods: {
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -762,7 +762,7 @@
                                     block: 'button',
                                     mods: {
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -799,7 +799,7 @@
                                     mods: {
                                         hovered: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -836,7 +836,7 @@
                                     mods: {
                                         hovered: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -873,7 +873,7 @@
                                     mods: {
                                         hovered: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -910,7 +910,7 @@
                                     mods: {
                                         hovered: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -947,7 +947,7 @@
                                     mods: {
                                         pressed: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -984,7 +984,7 @@
                                     mods: {
                                         pressed: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1021,7 +1021,7 @@
                                     mods: {
                                         pressed: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1058,7 +1058,7 @@
                                     mods: {
                                         pressed: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1096,7 +1096,7 @@
                                         pressed: 'yes',
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1134,7 +1134,7 @@
                                         pressed: 'yes',
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1172,7 +1172,7 @@
                                         pressed: 'yes',
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1210,7 +1210,7 @@
                                         pressed: 'yes',
                                         disabled: 'yes',
                                         'only-icon': 'yes',
-                                        theme: 'transparent',
+                                        color: 'transparent',
                                         size: 'l'
                                     },
                                     content: [
@@ -1246,7 +1246,7 @@
         {
             block: 'radio-button',
             mods: {
-                theme: 'transparent',
+                color: 'transparent',
                 size: 's',
                 type: 'button-content'
             },
@@ -1295,7 +1295,7 @@
         {
             block: 'radio-button',
             mods: {
-                theme: 'transparent',
+                color: 'transparent',
                 size: 's',
                 type: 'button-icon-type'
             },
@@ -1368,7 +1368,7 @@
         {
             block: 'example-table',
             js: true,
-            themes: ['transparent', 'light-grey', 'grey', 'green', 'blue'],
+            colors: ['transparent', 'light-grey', 'grey', 'green', 'blue'],
             sizes: ['s', 'm', 'l', 'xl', 'xxl'],
             states: ['default', 'hovered', 'pressed', 'disabled', ['disabled', 'pressed']]
         },
