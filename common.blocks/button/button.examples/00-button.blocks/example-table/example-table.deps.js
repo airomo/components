@@ -26,7 +26,6 @@
                 {
                     elem: 'icon',
                     mods: {
-                        type: ['apps-info', 'arrow-up', 'dashboard', 'description', 'dislike', 'info', 'like', 'monkey', 'refresh', 'timeline', 'thin-arrow-left', 'thin-arrow-right'],
                         size: ['s', 'm', 'l', 'xl', 'xxl']
                     }
                 },
@@ -34,6 +33,13 @@
                     elem: 'counter'
                 }
             ]
+        },
+        {
+            block: 'icon',
+            mods: {
+                type: ['apps-info', 'arrow-up', 'dashboard', 'description', 'dislike', 'info', 'like', 'monkey', 'refresh', 'timeline', 'thin-arrow-left', 'thin-arrow-right'],
+                size: ['s', 'm', 'l', 'xl', 'xxl']
+            }
         }
     ]
 })
