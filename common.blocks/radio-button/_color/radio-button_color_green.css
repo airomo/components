@@ -1,4 +1,4 @@
-.radio-button_theme_green
+.radio-button_color_green
 {
     background: #35d14b;
     background: -webkit-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
@@ -8,7 +8,7 @@
     box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
 }
 
-.radio-button_theme_green .radio-button__radio:before
+.radio-button_color_green .radio-button__radio:before
 {
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@
     background:         linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 100%);
 }
 
-.radio-button_theme_green .radio-button__radio_hovered_yes
+.radio-button_color_green .radio-button__radio_hovered_yes
 {
     background: #5dda6f;
     background: -webkit-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
@@ -29,7 +29,7 @@
     background:         linear-gradient(to bottom, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
 }
 
-.radio-button_theme_green .radio-button__radio_pressed_yes
+.radio-button_color_green .radio-button__radio_pressed_yes
 {
     background: #32c647;
     background: -webkit-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
@@ -39,7 +39,7 @@
     box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
 }
 
-.radio-button_theme_green .radio-button__text
+.radio-button_color_green .radio-button__text
 {
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);

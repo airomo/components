@@ -9,7 +9,7 @@
         {
             block: 'radio-button',
             mods: {
-                theme: 'transparent',
+                color: 'transparent',
                 size: 'xl'
             },
             name: 'show_to',
