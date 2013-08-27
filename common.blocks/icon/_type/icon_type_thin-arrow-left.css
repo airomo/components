@@ -1,0 +1,12 @@
+.icon_type_thin-arrow-left
+{
+    background-image: url(icon_type_thin-arrow-left.png);
+    background-position: 50% 0;
+    background-size: auto 200%;
+}
+
+.icon_pressed_yes.icon_type_thin-arrow-left,
+.button_pressed_yes .icon_type_thin-arrow-left
+{
+    background-position: 50% 100%;
+}

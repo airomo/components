@@ -1,0 +1,10 @@
+.icon
+{
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon_visibility_hidden
+{
+    display: none;
+}

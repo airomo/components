@@ -1,0 +1,12 @@
+.icon_type_dislike
+{
+    background-image: url(icon_type_dislike.png);
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_dislike,
+.button_pressed_yes .icon_type_dislike
+{
+    background-position: 100% 50%;
+}
