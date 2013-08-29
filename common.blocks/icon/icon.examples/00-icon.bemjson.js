@@ -27,7 +27,7 @@
         '<br><br>',
         {
             block: 'example-table',
-            types: ['info', 'refresh', 'dashboard', 'timeline', 'description', 'arrow-up', 'apps-info', 'like', 'dislike', 'monkey', 'thin-arrow-left', 'thin-arrow-right'],
+            types: ['shout', 'info', 'refresh', 'dashboard', 'timeline', 'description', 'arrow-down', 'arrow-up', 'apps-info', 'like', 'dislike', 'monkey', 'thin-arrow-left', 'thin-arrow-right'],
             sizes: ['s', 'm', 'l', 'xl', 'xxl'],
             states: ['default', 'pressed']
         },
