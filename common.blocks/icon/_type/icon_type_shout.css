@@ -1,0 +1,14 @@
+.icon_type_shout
+{
+    background-image: url(icon_type_shout.png);
+    background-position: 50% 0;
+    background-size: auto 100%;
+}
+
+/*
+.icon_pressed_yes.icon_type_shout,
+.button_pressed_yes .icon_type_shout
+{
+    background-position: 50% 100%;
+}
+*/
