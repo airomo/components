@@ -1,4 +1,4 @@
-.input_theme_transparent .input__box
+.input_color_transparent .input__box
 {
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
     background:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
@@ -7,8 +7,8 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.input_theme_transparent .input__control,
-.input_theme_transparent .input__hint
+.input_color_transparent .input__control,
+.input_color_transparent .input__hint
 {
     color: rgba(0, 0, 0, .75);
     text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
