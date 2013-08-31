@@ -7,7 +7,7 @@
                 hovered: ['yes'],
                 disabled: ['yes'],
                 size: ['s', 'm', 'l', 'xl', 'xxl'],
-                theme: ['blue', 'light-grey', 'grey', 'green', 'transparent'],
+                color: ['blue', 'light-grey', 'grey', 'dark-grey', 'green', 'transparent'],
                 clear: ['no'],
                 side: ['left', 'right', 'both']
             },
