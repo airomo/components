@@ -5,7 +5,7 @@
 
 require('./nodes/arch');
 
-//process.env.YENV = 'production';
+process.env.YENV = 'production';
 
 var BEM = require('bem'),
     LOGGER = BEM.require('./logger'),
