@@ -8,9 +8,12 @@
     content: [
         {
             block: 'example-table',
-            themes: ['transparent', 'light-grey', 'grey', 'green', 'blue'],
-            sizes: ['s', 'm', 'l', 'xl', 'xxl'],
-            states: ['default'/*, 'hovered', 'focused'*/, 'disabled']
+            mainColumnName: 'color',
+            mainColumn: ['transparent', 'light-grey', 'grey', 'dark-grey', 'green', 'blue'],
+            mainRowName: 'size',
+            mainRow: ['s', 'm', 'l', 'xl', 'xxl'],
+            additionalColumnName: 'state',
+            additionalColumn: ['default'/*, 'hovered', 'focused'*/, 'disabled']
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
         { elem: 'js', url: '_00-input.js' }
