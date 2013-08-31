@@ -2,12 +2,15 @@ block example-table {
     js: true
 
 	content: {
-        var themes = this.ctx.themes,
-            sizes = this.ctx.sizes,
-            states = this.ctx.states,
+        var mainColumnName = this.ctx.mainColumnName,
+            mainColumn = this.ctx.mainColumn,
+            mainRowName = this.ctx.mainRowName,
+            mainRow = this.ctx.mainRow,
+            additionalColumnName = this.ctx.additionalColumnName,
+            additionalColumn = this.ctx.additionalColumn,
             content = applyNext();
 
-        return themes && themes.length && sizes && sizes.length && states && states.length ? {
+        return mainColumn && mainColumn.length && mainRow && mainRow.length && additionalColumn && additionalColumn.length ? {
             elem: 'table',
             content: [
                 {
@@ -15,12 +18,12 @@ block example-table {
                     content: [
                         {
                             elem: 'col',
-                            content: 'theme/size'
+                            content: mainColumnName + '/' + mainRowName
                         },
                         {
                             elem: 'col'
                         },
-                        sizes.map(function(size) {
+                        mainRow.map(function(size) {
                             return {
                                 elem: 'col',
                                 content: size
@@ -28,52 +31,47 @@ block example-table {
                         })
                     ]
                 },
-                themes.map(function(theme) {
-                    return states.map(function(state) {
+                mainColumn.map(function(mainColumnItem) {
+                    return additionalColumn.map(function(additionalColumnItem) {
                         return {
                             elem: 'row',
                             content: [
-                                (states[0] === state ? ({
+                                (additionalColumn[0] === additionalColumnItem ? ({
                                     elem: 'col',
                                     attrs: {
-                                        rowspan: states.length
+                                        rowspan: additionalColumn.length
                                     },
-                                    content: theme
+                                    content: mainColumnItem
                                 }) : ''),
                                 {
                                     elem: 'col',
-                                    content: typeof state === 'object' ? state.join(' + ') : state
+                                    content: typeof additionalColumnItem === 'object' ? additionalColumnItem.join(' + ') : additionalColumnItem
                                 },
-                                sizes.map(function(size) {
+                                mainRow.map(function(mainRowItem) {
                                     var cont = {
                                         block: 'input',
-                                        mods: {
-                                            theme: theme,
-                                            size: size,
-                                            clear: 'no'
-                                        },
                                         content: [
                                             {
-                                                elem: 'box',
-                                                content: [
-                                                    {
-                                                    	elem: 'hint',
-                                                    	content: 'Placeholder'
-                                                    },
-                                                	{
-                                                	    elem: 'control'
-                                                	}
-                                                ]
+                                                elem: 'hint',
+                                                content: 'Placeholder'
+                                            },
+                                            {
+                                                elem: 'control'
                                             }
                                         ]
                                     };
 
-                                    if ( typeof state === 'object' ) {
-                                        for (var i = 0; i < state.length; i += 1) {
-                                            cont.mods[state[i]] = 'yes';
+                                    cont.mods = {};
+                                    cont.mods[mainColumnName] = mainColumnItem;
+                                    cont.mods[mainRowName] = mainRowItem;
+                                    cont.mods[additionalColumnName] = additionalColumnItem;
+
+                                    if ( typeof additionalColumnItem === 'object' ) {
+                                        for (var i = 0; i < additionalColumnItem.length; i += 1) {
+                                            cont.mods[additionalColumnItem[i]] = 'yes';
                                         }
                                     } else {
-                                        cont.mods[state] = 'yes';
+                                        cont.mods[additionalColumnItem] = 'yes';
                                     }
 
                                     return {
