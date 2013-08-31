@@ -1,4 +1,4 @@
-.input_theme_dark-grey .input__box
+.input_color_dark-grey .input__box
 {
     background: #646668;
     background: -webkit-linear-gradient(top, rgba(112,113,115,1) 0%,rgba(86,88,90,1) 100%);
@@ -8,8 +8,8 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, .2), inset 0 1px 3px rgba(0, 0, 0, .2);
 }
 
-.input_theme_dark-grey .input__control,
-.input_theme_dark-grey .input__hint
+.input_color_dark-grey .input__control,
+.input_color_dark-grey .input__hint
 {
     color: #d9dbdd;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
