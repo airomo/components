@@ -29,3 +29,36 @@
 {
     margin-left: -7px;
 }
+
+
+.dropdown_direction_left.dropdown_align_center .dropdown__content-wrapper,
+.dropdown_direction_right.dropdown_align_center .dropdown__content-wrapper
+{
+    top: 50%;
+}
+
+.dropdown_direction_left.dropdown_align_center .dropdown__content,
+.dropdown_direction_right.dropdown_align_center .dropdown__content
+{
+    top: -50%;
+}
+
+.dropdown_direction_left.dropdown_align_center .dropdown__content:before,
+.dropdown_direction_left.dropdown_align_center .dropdown__content:after,
+.dropdown_direction_right.dropdown_align_center .dropdown__content:before,
+.dropdown_direction_right.dropdown_align_center .dropdown__content:after
+{
+    top: 50%;
+}
+
+.dropdown_direction_left.dropdown_align_center .dropdown__content:before,
+.dropdown_direction_right.dropdown_align_center .dropdown__content:before
+{
+    margin-top: -8px;
+}
+
+.dropdown_direction_left.dropdown_align_center .dropdown__content:after,
+.dropdown_direction_right.dropdown_align_center .dropdown__content:after
+{
+    margin-top: -7px;
+}
