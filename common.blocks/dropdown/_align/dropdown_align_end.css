@@ -1,13 +1,9 @@
 .dropdown_direction_top.dropdown_align_end .dropdown__content-wrapper,
-.dropdown_direction_bottom.dropdown_align_end .dropdown__content-wrapper
-{
-    right: 50%;
-}
-
+.dropdown_direction_bottom.dropdown_align_end .dropdown__content-wrapper,
 .dropdown_direction_top.dropdown_align_end .dropdown__content,
 .dropdown_direction_bottom.dropdown_align_end .dropdown__content
 {
-    right: -26px;
+    right: 0;
 }
 
 .dropdown_direction_top.dropdown_align_end .dropdown__content:before,
@@ -32,15 +28,11 @@
 
 
 .dropdown_direction_right.dropdown_align_end .dropdown__content-wrapper,
-.dropdown_direction_left.dropdown_align_end .dropdown__content-wrapper
-{
-    bottom: 50%;
-}
-
+.dropdown_direction_left.dropdown_align_end .dropdown__content-wrapper,
 .dropdown_direction_right.dropdown_align_end .dropdown__content,
 .dropdown_direction_left.dropdown_align_end .dropdown__content
 {
-    bottom: -26px;
+    bottom: 0;
 }
 
 .dropdown_direction_right.dropdown_align_end .dropdown__content:before,
