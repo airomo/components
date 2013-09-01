@@ -1,0 +1,10 @@
+block dropdown, elem content, default: applyCtx({
+    elem: 'content-wrapper',
+    elemMods: {
+    	visibility: 'hidden'
+    },
+    content: {
+        elem: 'content',
+        content: this.ctx.content
+    }
+})

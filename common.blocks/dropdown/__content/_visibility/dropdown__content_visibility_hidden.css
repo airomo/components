@@ -1,0 +1,6 @@
+.dropdown__content-wrapper_visibility_hidden
+{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+}
