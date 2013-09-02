@@ -4,7 +4,7 @@
     margin: 12px 0 0;
 }
 
-.dropdown_direction_bottom.dropdown_visibility_hidden .dropdown__content-wrapper
+.dropdown_direction_bottom .dropdown__content-wrapper_visibility_hidden
 {
     margin-top: 27px;
 }
