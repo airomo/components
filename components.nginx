@@ -1,5 +1,5 @@
 # /page => /pages-desktop/page/page.html
-rewrite ^/([\d-]+)(\w+)(?:\.html)?(?:/)?(\?.*)?$ /desktop.sets/$2.examples/$1$2/$1$2.html;
+rewrite ^/(\d+-)([\w-]+)(?:\.html)?(?:/)?(\?.*)?$ /desktop.sets/$2.examples/$1$2/$1$2.html;
 
 # /components/i/ => /i/
 rewrite ^/components/i/(.+?)$ /i/$1;
