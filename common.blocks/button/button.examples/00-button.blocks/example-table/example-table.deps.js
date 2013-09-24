@@ -18,7 +18,7 @@
                 pressed: ['yes'],
                 disabled: ['yes'],
                 size: ['s', 'm', 'l', 'xl', 'xxl'],
-                color: ['blue', 'light-grey', 'grey', 'green', 'transparent'],
+                color: ['blue', 'light-grey', 'grey', 'green', 'transparent', 'red'],
                 'only-icon': ['yes'],
                 side: ['left', 'right']
             },
