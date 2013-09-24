@@ -27,9 +27,12 @@
         '<br><br>',
         {
             block: 'example-table',
-            types: ['shout', 'info', 'refresh', 'dashboard', 'timeline', 'description', 'arrow-down', 'arrow-up', 'apps-info', 'like', 'dislike', 'monkey', 'thin-arrow-left', 'thin-arrow-right'],
-            sizes: ['s', 'm', 'l', 'xl', 'xxl'],
-            states: ['default', 'pressed']
+            mainColumnName: 'type',
+            mainColumn: ['shout', 'info', 'refresh', 'dashboard', 'timeline', 'description', 'arrow-down', 'arrow-up', 'apps-info', 'like', 'dislike', 'monkey', 'thin-arrow-left', 'thin-arrow-right'],
+            mainRowName: 'size',
+            mainRow: ['s', 'm', 'l', 'xl', 'xxl'],
+            additionalColumnName: 'state',
+            additionalColumn: ['default', 'pressed']
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
         { elem: 'js', url: '_00-icon.js' }
