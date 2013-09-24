@@ -1463,10 +1463,12 @@
         '<br><br>',
         {
             block: 'example-table',
-            js: true,
-            colors: ['transparent', 'light-grey', 'grey', 'green', 'blue'],
-            sizes: ['s', 'm', 'l', 'xl', 'xxl'],
-            states: ['default', 'hovered', 'pressed', 'disabled', ['disabled', 'pressed']]
+            mainColumnName: 'color',
+            mainColumn: ['transparent', 'light-grey', 'grey', 'dark-grey', 'green', 'blue', 'red'],
+            mainRowName: 'size',
+            mainRow: ['s', 'm', 'l', 'xl', 'xxl'],
+            additionalColumnName: 'state',
+            additionalColumn: ['default', 'hovered', 'pressed', 'disabled', ['disabled', 'pressed']]
         },
         { block: 'i-jquery',
             mods: { version: '1.8.3' } },
