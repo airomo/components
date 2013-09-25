@@ -1,0 +1,9 @@
+.i-ua_js_yes .checkbox_theme_grey-l .checkbox__bg
+{
+    background: url(checkbox_theme_grey-l.png);
+}
+
+.i-ua_js_yes .checkbox_theme_grey-l .checkbox__tick
+{
+    background-image: url(checkbox_theme_grey-tick.gif);
+}
