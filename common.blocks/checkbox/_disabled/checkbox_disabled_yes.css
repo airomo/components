@@ -1,0 +1,15 @@
+.i-ua_js_yes body .checkbox_disabled_yes .checkbox__inner
+{
+    opacity: 0.3;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.i-ua_js_yes body .checkbox_disabled_yes .checkbox__bg
+{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
