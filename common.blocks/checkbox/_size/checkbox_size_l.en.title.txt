@@ -1,1 +1,1 @@
-size l
+font-size: 15px, height: 42px
