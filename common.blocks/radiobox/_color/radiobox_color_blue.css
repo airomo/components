@@ -1,0 +1,116 @@
+.radiobox_color_blue
+{
+    color: #333;
+
+    font-family: Arial, sans-serif;
+}
+
+@media all and (min-width:0px) {
+    /* :before — рисует градиент */
+    .radiobox_color_blue .radiobox__box:before
+    {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        left: 1px;
+        top: 1px;
+
+        content: '';
+
+        margin: 0;
+        padding: 0;
+
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+
+        background: white;
+    }
+
+    /* :after - рисует маркер */
+    .radiobox_color_blue .radiobox__box:after
+    {
+        background: #333;
+    }
+
+    /* box — бордер */
+    .radiobox_color_blue .radiobox__box
+    {
+        background: rgba(0,0,0,0.4);
+        background: -webkit-linear-gradient(top, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+        background: -moz-linear-gradient(top, rgba(0,0,0,.2) 0, rgba(0,0,0,.4) 100%);
+        background: -o-linear-gradient(top, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+
+        -moz-box-shadow: 0 1px 0 rgba(0,0,0,.07);
+        box-shadow: 0 1px 0 rgba(0,0,0,.07);
+    }
+
+    .radiobox_color_blue .radiobox__box:before
+    {
+        background: #fff;
+        background: -webkit-linear-gradient(top, #fff 0,#eee 100%);
+        background: -moz-linear-gradient(top, #fff 0, #eee 100%);
+        background: -o-linear-gradient(top, #fff 0,#eee 100%);
+        background: linear-gradient(to bottom, #fff 0,#eee 100%);
+    }
+
+    /* _focused */
+    .radiobox_color_blue .radiobox__radio_focused_yes .radiobox__box
+    {
+        -moz-box-shadow: 0 1px 0 rgba(0,0,0,.07), 0 0 6px 2px rgba(255,204,0,.7);
+        box-shadow: 0 1px 0 rgba(0,0,0,.07), 0 0 6px 2px rgba(255,204,0,.7);
+    }
+
+    .radiobox_color_blue .radiobox__radio_focused_yes .radiobox__box:before
+    {
+        -moz-box-shadow: 0 0 0 1px rgba(193,154,0,.2);
+        box-shadow: 0 0 0 1px rgba(193,154,0,.2);
+    }
+
+    .radiobox_color_blue .radiobox__radio_focused_yes.radiobox__radio_checked_yes .radiobox__box
+    {
+        -moz-box-shadow: inset 0 1px 5px rgba(30,23,0,.8), 0 0 6px 2px rgba(255,204,0,.7), 0 2px 0 -1px rgba(255,255,255,.2);
+        box-shadow: inset 0 1px 5px rgba(30,23,0,.8), 0 0 6px 2px rgba(255,204,0,.7), 0 2px 0 -1px rgba(255,255,255,.2);
+    }
+
+    .radiobox_color_blue .radiobox__radio_focused_yes.radiobox__radio_checked_yes .radiobox__box:before
+    {
+        -moz-box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.45), 0 0 0 1px rgba(193,154,0,.2);
+        box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.45), 0 0 0 1px rgba(193,154,0,.2);
+    }
+
+    /* _checked */
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box
+    {
+        background: #ffeca6;
+        background: -webkit-linear-gradient(top, rgba(255,236,166,0.4) 0,rgba(255,246,213,0.4) 100%);
+        background: -moz-linear-gradient(top, rgba(255,236,166,0.4) 0, rgba(255,246,213,0.4) 100%);
+        background: -o-linear-gradient(top, rgba(255,236,166,0.4) 0,rgba(255,246,213,0.4) 100%);
+        background: linear-gradient(to bottom, rgba(255,236,166,0.4) 0,rgba(255,246,213,0.4) 100%);
+
+        -moz-box-shadow: inset 0 1px 5px rgba(30,23,0,.7), 0 1px 1px 0 rgba(255,255,255,.6);
+        box-shadow: inset 0 1px 5px rgba(30,23,0,.7), 0 1px 1px 0 rgba(255,255,255,.6);
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box:before
+    {
+        background: #ffeca6;
+        background: -webkit-linear-gradient(top, #ffeca6 0,#fff6d5 100%);
+        background: -moz-linear-gradient(top, #ffeca6 0, #fff6d5 100%);
+        background: -o-linear-gradient(top, #ffeca6 0,#fff6d5 100%);
+        background: linear-gradient(to bottom, #ffeca6 0,#fff6d5 100%);
+
+        -moz-box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.5);
+        box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.5);
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box:after
+    {
+        background: #333;
+    }
+
+    .i-ua_js_no .radiobox__box:before
+    {
+        display: none;
+    }
+}
