@@ -1,1 +1,1 @@
-Checkbox color
+Color scheme

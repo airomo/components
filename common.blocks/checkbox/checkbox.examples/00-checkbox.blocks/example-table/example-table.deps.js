@@ -3,9 +3,10 @@
         {
             block: 'checkbox',
             mods: {
-                color: ['light-grey'],
+                color: ['blue'],
                 size: ['l']
-            }
+            },
+            elems: ['label']
         }
     ]
 })
