@@ -1,4 +1,5 @@
 npm i
+rm -rf release
 ./node_modules/bem/bin/bem make libs
 ./node_modules/bem/bin/bem make site
 mv release temp
