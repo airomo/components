@@ -9,11 +9,11 @@
         {
             block: 'example-table',
             mainColumnName: 'color',
-            mainColumn: ['light-grey'],
+            mainColumn: ['blue'],
             mainRowName: 'size',
             mainRow: ['l'],
             additionalColumnName: 'state',
-            additionalColumn: ['default', 'focused', 'hovered', 'checked', 'disabled', ['disabled', 'checked']]
+            additionalColumn: ['default', 'focused', 'checked', ['focused', 'checked'], 'disabled', ['disabled', 'checked']]
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
         { elem: 'js', url: '_00-checkbox.js' }

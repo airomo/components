@@ -49,7 +49,11 @@ block example-table {
                                 },
                                 mainRow.map(function(mainRowItem) {
                                     var cont = {
-                                        block: 'checkbox'
+                                        block: 'checkbox',
+                                        content: {
+                                        	elem: 'label',
+                                        	content: 'text'
+                                        }
                                     };
 
                                     cont.mods = {};
