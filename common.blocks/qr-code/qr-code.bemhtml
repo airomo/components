@@ -1,0 +1,9 @@
+block qr-code {
+    tag: 'img'
+    js: true
+    attrs: {
+        src: 'http://www.esponce.com/api/v3/generate?format=svg&em=alphanumeric&content=' + this.ctx.url,
+        alt: this.ctx.alt,
+        title: this.ctx.title
+    }
+}
