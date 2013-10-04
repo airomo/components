@@ -21,7 +21,7 @@ BEM.DOM.decl('modal-window', {
 /*
     *Shows modal window with params
     *@param content: {String|BEMHTML} modal window title
-    *@param type: {String} error|succes|submit|info type of modal window
+    *@param type: {String} error|success|submit|info type of modal window
     *@param buttons: [String] [submit|cancel|close] buttons, which displayed in modal window
     *@param onSubmit {Function} submit action callback
     *@param onClose {Function} close action callback
