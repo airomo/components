@@ -1,0 +1,29 @@
+.modal-window__icon
+{
+   height: 32px;
+    left: 20px;
+    position: relative;
+    top: 13px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
+
+.modal-window__icon_type_info
+{
+    background-image: url(modal-window__icon_type_info.png);
+}
+
+.modal-window__icon_type_error
+{
+    background-image: url(modal-window__icon_type_error.png);
+}
+
+.modal-window__icon_type_warning
+{
+    background-image: url(modal-window__icon_type_warning.png);
+}
+
+.modal-window__icon_type_success
+{
+    background-image: url(modal-window__icon_type_success.png);
+}
