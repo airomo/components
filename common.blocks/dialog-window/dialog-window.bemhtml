@@ -1,0 +1,59 @@
+block dialog-window {
+
+    default: applyCtx({
+        block: 'dialog-window',
+		js: this.ctx.js,
+        mods: {
+            visibility: 'hidden'
+        },
+		mix: this.ctx.mix,
+        content: [
+            {
+                elem: 'body',
+                content: [
+                    {
+                        elem: 'header',
+                        elemMods: {
+                            type: 'info'
+                        },
+                        content: [
+                            {
+                                elem: 'close',
+                                content: '&#10006;'
+                            },
+
+                            {
+                                elem: 'icon',
+                                elemMods: {
+                                    type: 'info'
+                                }
+                            },
+
+                            {
+                                elem: 'title',
+                                content: this.ctx.title
+                            }
+                        ]
+                    },
+
+                    {
+                        elem: 'content',
+                        content: this.ctx.content
+                    }
+                ]
+            },
+
+            {
+                block: 'paranja',
+                js: true,
+                mods: {
+                    visibility: 'hidden'
+                },
+                mix: [
+                    { block: 'dialog-window', elem: 'paranja' }
+                ]
+            }
+        ]
+    })
+
+}

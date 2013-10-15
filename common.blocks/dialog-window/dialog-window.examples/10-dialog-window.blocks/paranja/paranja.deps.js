@@ -1,0 +1,9 @@
+({
+    shouldDeps: [
+        {
+            mods: {
+                visibility: 'hidden'
+            }
+        }
+    ]
+})

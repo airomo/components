@@ -1,0 +1,9 @@
+.input.input_message-error_yes .input__box
+{
+    -webkit-box-shadow: 0 0 7px red;
+    box-shadow: 0 0 7px red;
+    -webkit-transition: all .3s 0 linear;
+    -moz-transition: all .3s 0 linear;
+    -o-transition: all .3s 0 linear;
+    transition: all .3s 0 linear;
+}

@@ -1,0 +1,24 @@
+.dialog-window__top-bar
+{
+    height: 60px;
+}
+
+.dialog-window__top-bar_type_info
+{
+    background-color: #00afd1;
+}
+
+.dialog-window__top-bar_type_error
+{
+    background-color: #fa565a;
+}
+
+.dialog-window__top-bar_type_warning
+{
+    background-color: #fa9c62;
+}
+
+.dialog-window__top-bar_type_success
+{
+    background-color: #73ba5d;
+}
