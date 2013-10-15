@@ -1,0 +1,14 @@
+.dialog-window__close
+{
+    display: inline-block;
+    float: right;
+    margin: 15px 0 15px 20px;
+    position: relative;
+    width: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
