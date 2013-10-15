@@ -1,0 +1,12 @@
+.dialog-window__header
+{
+    position: relative;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.dialog-window__header_type_info
+{
+    background: #00afd1;
+}

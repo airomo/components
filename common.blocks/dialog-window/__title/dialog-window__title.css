@@ -1,0 +1,14 @@
+.dialog-window__title
+{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    left: 60px;
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+}

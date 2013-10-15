@@ -1,0 +1,31 @@
+.dialog-window__icon
+{
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.dialog-window__icon_type_info
+{
+    background-image: url(dialog-window__icon_type_info.png);
+}
+
+.dialog-window__icon_type_error
+{
+    background-image: url(dialog-window__icon_type_error.png);
+}
+
+.dialog-window__icon_type_warning
+{
+    background-image: url(dialog-window__icon_type_warning.png);
+}
+
+.dialog-window__icon_type_success
+{
+    background-image: url(dialog-window__icon_type_success.png);
+}
