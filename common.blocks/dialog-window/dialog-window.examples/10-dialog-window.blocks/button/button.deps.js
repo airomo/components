@@ -1,7 +1,0 @@
-({
-    shouldDeps: [
-        {
-            block: 'dialog-window'
-        }
-    ]
-})

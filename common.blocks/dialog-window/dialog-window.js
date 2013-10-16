@@ -4,59 +4,126 @@ BEM.DOM.decl('dialog-window', {
         'js': {
             'inited': function() {
 
-                var _this = this,
-                    id = this.params.id || this.__self.generateId(this.__self._windowsList);
+                var _this = this;
 
 
-                this.__self._windowsList[id] = this;
-
-
-                this.bindTo(this.elem('close'), 'click', function() {
-                    _this.__self.close(_this);
+                this.bindTo(this.elem('control', 'type', 'close'), 'click', function() {
+                    _this.close(_this);
                 });
 
                 this.bindTo(this.elem('control', 'type', 'resolve'), 'click', function() {
-                    _this.__self.resolve(_this);
+                    _this.resolve(_this);
                 });
 
                 this.bindTo(this.elem('control', 'type', 'reject'), 'click', function() {
-                    _this.__self.reject(_this);
+                    _this.reject(_this);
                 });
             }
         },
 
 
         'visibility': function(modName, modVal) {
-            var _this = this,
-                paranjaBlock = this.findBlockOn(this.elem('paranja'), 'paranja');
+            var paranjaBlock = this.findBlockOn(this.elem('paranja'), 'paranja');
+            console.log(paranjaBlock);
 
             paranjaBlock && paranjaBlock.setMod(modName, modVal);
         }
     },
 
 
-    toggle: function(block) {
-        this.__self.toggle(this);
+    toggle: function() {
+        this[this.hasMod('visibility') ? 'open' : 'close'](block);
     },
 
 
     open: function() {
-        this.__self.open(this);
+        var _this = this,
+            isError = false;
+
+        if ( this._onOpenArray ) {
+            this._onOpenArray.forEach(function(func) {
+                var functionResult = func();
+
+                if ( functionResult === false ) {
+                    isError = true;
+                }
+            });
+        }
+
+        if ( !isError ) {
+            if ( this.elem('close').length ) {
+                this.bindToWin('keyup', function(e) {
+                    if ( e.keyCode === 27 ) {
+                        _this.close();
+                    }
+                });
+            }
+
+            this.setMod('visibility', '');
+        }
+
+        return this;
     },
 
 
     close: function() {
-        this.__self.close(this);
+        var isError = false;
+
+        if ( this._onCloseArray ) {
+            this._onCloseArray.forEach(function(func) {
+                var functionResult = func();
+
+                if ( functionResult === false ) {
+                    isError = true;
+                }
+            });
+        }
+
+        if ( !isError ) {
+            this.unbindFromWin('keyup');
+
+            this.setMod('visibility', 'hidden');
+        }
+
+        return this;
     },
 
 
     resolve: function() {
-        this.__self.resolve(this);
+        var isError = false;
+
+        if ( this._onResolveArray ) {
+            this._onResolveArray.forEach(function(func) {
+                var functionResult = func();
+
+                if ( functionResult === false ) {
+                    isError = true;
+                }
+            });
+        }
+
+        !isError && this.close(this);
+
+        return this;
     },
 
 
     reject: function() {
-        this.__self.resolve(this);
+        var isError = false;
+
+        if ( this._onRejectArray ) {
+            this._onRejectArray.forEach(function(func) {
+                var functionResult = func();
+
+                if ( functionResult === false ) {
+                    isError = true;
+                }
+            });
+        }
+
+        !isError && this.close(this);
+
+        return this;
     },
 
 
@@ -65,6 +132,8 @@ BEM.DOM.decl('dialog-window', {
             this._onOpenArray = this._onOpenArray || [];
             this._onOpenArray.push(func);
         }
+
+        return this;
     },
 
 
@@ -73,6 +142,8 @@ BEM.DOM.decl('dialog-window', {
             this._onCloseArray = this._onCloseArray || [];
             this._onCloseArray.push(func);
         }
+
+        return this;
     },
 
 
@@ -81,6 +152,8 @@ BEM.DOM.decl('dialog-window', {
             this._onResolveArray = this._onResolveArray || [];
             this._onResolveArray.push(func);
         }
+
+        return this;
     },
 
 
@@ -89,6 +162,8 @@ BEM.DOM.decl('dialog-window', {
             this._onRejectArray = this._onRejectArray || [];
             this._onRejectArray.push(func);
         }
+
+        return this;
     }
 
 }, {
@@ -107,90 +182,58 @@ BEM.DOM.decl('dialog-window', {
     },
 
 
-    toggle: function(block) {
-        this[block.hasMod('visibility') ? 'open' : 'close'](block);
-    },
+    open: function(id, bemJson) {
+        if ( typeof id != 'object' ) {
+            //if id is id
 
+            if ( !bemJson ) {
+                //if in arguments only id
 
-    open: function(block) {
-        var isError = false;
+                return this.get(id) && this.get(id).open();
 
-        if ( block._onOpenArray ) {
-            block._onOpenArray.forEach(function(func) {
-                var functionResult = func();
+            } else {
+                //if in arguments id and bemJson
 
-                if ( functionResult === false ) {
-                    isError = true;
-                }
-            });
-        }
+                return (this.get(id) && this.get(id).open()) || this.create(id, bemJson).open();
 
-        if ( !isError ) {
-            if ( block.elem('close').length ) {
-                block.bindToWin('keyup', function(e) {
-                    if ( e.keyCode === 27 ) {
-                        block.close();
-                    }
-                });
             }
 
-            block.setMod('visibility', '');
+        } else {
+            //if id is bemjson
+
+            if ( !id ) return null;
+
+            return this.create(bemJson).open();
+
         }
     },
 
 
-    close: function(block) {
-        var isError = false;
-
-        if ( block._onCloseArray ) {
-            block._onCloseArray.forEach(function(func) {
-                var functionResult = func();
-
-                if ( functionResult === false ) {
-                    isError = true;
-                }
-            });
-        }
-
-        if ( !isError ) {
-            block.unbindFromWin('keyup');
-
-            block.setMod('visibility', 'hidden');
-        }
+    get: function(id) {
+        return this._windowsList[id] || null;
     },
 
 
-    resolve: function(block) {
-        var isError = false;
+    create: function(id, bemJson) {
+        if ( id ) {
+            if ( !bemJson ) {
+                bemJson = id;
 
-        if ( block._onResolveArray ) {
-            block._onResolveArray.forEach(function(func) {
-                var functionResult = func();
+                id = this.generateId(this._windowsList);
+            }
 
-                if ( functionResult === false ) {
-                    isError = true;
-                }
-            });
+            bemJson.js = bemJson.js || {};
+
+            bemJson.js.id = id;
+
+            var dialogWindow = $(BEMHTML.apply(bemJson)).bem('dialog-window');
+
+            BEM.DOM.append($(document.body), dialogWindow.domElem);
+
+            this._windowsList[id] = dialogWindow;
+
+            return dialogWindow;
         }
-
-        !isError && this.close(block);
-    },
-
-
-    reject: function(block) {
-        var isError = false;
-
-        if ( block._onRejectArray ) {
-            block._onRejectArray.forEach(function(func) {
-                var functionResult = func();
-
-                if ( functionResult === false ) {
-                    isError = true;
-                }
-            });
-        }
-
-        !isError && this.close(block);
     }
 
 });
