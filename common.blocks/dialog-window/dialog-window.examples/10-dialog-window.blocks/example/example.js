@@ -10,7 +10,7 @@ BEM.DOM.decl('example', {
                 this.bindTo(this.elem('button'), 'click', function() {
                     if ( !dialogWindow ) {
 
-                        dialogWindow = BEM.blocks['dialog-window'].create({
+                        dialogWindow = BEM.blocks['dialog-window'].createNew({
                             block: 'dialog-window',
                             mods: {
                                 type: 'info'
@@ -90,12 +90,22 @@ BEM.DOM.decl('example', {
                             ]
                         });
 
+
+                        var form = dialogWindow.findBlockOn('example-form'),
+                            formSubmit = form.submit;
+
+
+                        form.submit = function() {
+                            dialogWindow.resolve();
+                        };
+
+
                         dialogWindow
                             .onOpen(function() {
                                 dialogWindow.findBlockOn('example-form').elem('form-input').focus();
                             })
                             .onResolve(function() {
-                                return dialogWindow.findBlockOn('example-form').submit() != false ? BEM.blocks['dialog-window'].open('success', {
+                                return formSubmit.apply(form) != false ? BEM.blocks['dialog-window'].open('success', {
                                     block: 'dialog-window',
                                     mods: {
                                         type: 'success'
