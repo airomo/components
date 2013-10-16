@@ -4,10 +4,11 @@ BEM.DOM.decl('dialog-window', {
         'js': {
             'inited': function() {
 
-                var _this = this;
+                var _this = this,
+                    id = this.params.id || this.__self.generateId(this.__self._windowsList);
 
 
-                this.__self._windowsList[this.params.id].resolve(this);
+                this.__self._windowsList[id] = this;
 
 
                 this.bindTo(this.elem('close'), 'click', function() {
@@ -95,39 +96,14 @@ BEM.DOM.decl('dialog-window', {
     _windowsList: {},
 
 
-    createDialog: function(bemJson, onSuccess) {
-        var _this = this,
-            generateId = function(idsList) {
-                var id = (Math.random() * Math.pow(10, 10)).toFixed(0);
+    generateId: function(idsList) {
+        var id = (Math.random() * Math.pow(10, 10)).toFixed(0);
 
-                if ( !idsList[id] ) {
-                    return id;
-                } else {
-                    generateId(idsList);
-                }
-            },
-            id = generateId(this._windowsList);
-
-
-        if ( onSuccess ) {
-            this._windowsList[id] = $.Deferred();
-
-            this._windowsList[id]
-                .done(function(block) {
-                    _this._windowsList[id] = block;
-
-                    onSuccess(block);
-                });
+        if ( !idsList[id] ) {
+            return id;
+        } else {
+            generateId(idsList);
         }
-
-
-        bemJson.js = { id: id };
-
-
-        BEM.DOM.append($('body'), BEMHTML.apply(bemJson));
-
-
-        return id;
     },
 
 

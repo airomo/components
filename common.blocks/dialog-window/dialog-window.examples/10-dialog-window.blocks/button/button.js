@@ -11,7 +11,7 @@ BEM.DOM.decl({block: 'button', modName: 'action', modVal: 'dialog'}, {
                 this.bindTo('click', function() {
                     if ( !dialogWindow ) {
 
-                        BEM.blocks['dialog-window'].createDialog({
+                        dialogWindow = $(BEMHTML.apply({
                             block: 'dialog-window',
                             mix: [
                                 {
@@ -87,15 +87,16 @@ BEM.DOM.decl({block: 'button', modName: 'action', modVal: 'dialog'}, {
                                     ]
                                 }
                             ]
-                        }, function(block) {
-                            dialogWindow = block;
+                        })).bem('dialog-window');
 
-                            dialogWindow.onOpen(function() {
-                                console && console.log('open');
-                            });
+                        BEM.DOM.append($(document.body), dialogWindow.domElem);
 
-                            dialogWindow.open();
+
+                        dialogWindow.onOpen(function() {
+                            console && console.log('open');
                         });
+
+                        dialogWindow.open();
 
                     } else {
 

@@ -6,17 +6,5 @@
     bottom: 0;
     left: 0;
     z-index: 10000;
-    overflow: auto;
-    text-align: center;
-    white-space: nowrap;
     font-family: Helvetica, Tahoma, sans-serif;
-}
-
-.dialog-window:before
-{
-    display: inline-block;
-    width: 0;
-    height: 100%;
-    content: '';
-    vertical-align: middle;
 }
