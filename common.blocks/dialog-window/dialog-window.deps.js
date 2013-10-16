@@ -1,7 +1,7 @@
 ({
     shouldDeps: [
         {
-            elems: ['inner', 'body', 'header', 'close', 'icon', 'title', 'content', 'controls', 'paranja'],
+            elems: ['inner', 'body', 'close', 'icon', 'title', 'content', 'controls', 'paranja'],
             mods: {
                 visibility: 'hidden'
             }

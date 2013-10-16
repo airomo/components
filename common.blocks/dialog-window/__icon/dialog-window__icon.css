@@ -9,23 +9,3 @@
     background-repeat: no-repeat;
     vertical-align: middle;
 }
-
-.dialog-window__icon_type_info
-{
-    background-image: url(dialog-window__icon_type_info.png);
-}
-
-.dialog-window__icon_type_error
-{
-    background-image: url(dialog-window__icon_type_error.png);
-}
-
-.dialog-window__icon_type_warning
-{
-    background-image: url(dialog-window__icon_type_warning.png);
-}
-
-.dialog-window__icon_type_success
-{
-    background-image: url(dialog-window__icon_type_success.png);
-}

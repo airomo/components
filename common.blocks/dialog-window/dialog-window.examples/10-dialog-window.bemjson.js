@@ -7,13 +7,21 @@
     ],
     content: [
         {
-            block: 'button',
-            mods: {
-                color: 'light-grey',
-                size: 's',
-                action: 'dialog'
-            },
-            content: 'Info'
+            block: 'example',
+            js: true,
+            content: [
+                {
+                    block: 'button',
+                    mods: {
+                        color: 'light-grey',
+                        size: 's'
+                    },
+                    mix: [
+                        { block: 'example', elem: 'button' }
+                    ],
+                    content: 'Info'
+                }
+            ]
         },
 
         { block: 'i-jquery', mods: { version: '1.8.3' } },
