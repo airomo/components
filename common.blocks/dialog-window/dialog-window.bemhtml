@@ -9,39 +9,44 @@ block dialog-window {
 		mix: this.ctx.mix,
         content: [
             {
-                elem: 'body',
-                content: [
-                    {
-                        elem: 'header',
-                        elemMods: {
-                            type: 'info'
-                        },
-                        content: [
-                            {
-                                elem: 'close',
-                                content: '&#10006;'
-                            },
+				elem: 'inner',
+				content: [
+					{
+						elem: 'body',
+						content: [
+							{
+								elem: 'header',
+								elemMods: {
+									type: 'info'
+								},
+								content: [
+									{
+										elem: 'close',
+										content: '&#10006;'
+									},
 
-                            {
-                                elem: 'icon',
-                                elemMods: {
-                                    type: 'info'
-                                }
-                            },
+									{
+										elem: 'icon',
+										elemMods: {
+											type: 'info'
+										}
+									},
 
-                            {
-                                elem: 'title',
-                                content: this.ctx.title
-                            }
-                        ]
-                    },
+									{
+										elem: 'title',
+										content: this.ctx.title
+									}
+								]
+							},
 
-                    {
-                        elem: 'content',
-                        content: this.ctx.content
-                    }
-                ]
-            },
+							{
+								elem: 'content',
+								content: this.ctx.content
+							}
+						]
+					}
+				]
+			},
 
             {
                 block: 'paranja',
