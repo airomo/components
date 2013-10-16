@@ -3,7 +3,7 @@
         {
             block: 'dialog-window',
             mods: {
-                type: 'info'
+                type: ['info', 'success']
             }
         },
 

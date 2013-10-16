@@ -194,7 +194,7 @@ BEM.DOM.decl('dialog-window', {
             } else {
                 //if in arguments id and bemJson
 
-                return (this.get(id) && this.get(id).open()) || this.create(id, bemJson).open();
+                return (this.get(id) && this.get(id).open()) || this.createNew(id, bemJson).open();
 
             }
 
@@ -203,7 +203,7 @@ BEM.DOM.decl('dialog-window', {
 
             if ( !id ) return null;
 
-            return this.create(bemJson).open();
+            return this.createNew(bemJson).open();
 
         }
     },
@@ -214,7 +214,7 @@ BEM.DOM.decl('dialog-window', {
     },
 
 
-    create: function(id, bemJson) {
+    createNew: function(id, bemJson) {
         if ( id ) {
             if ( !bemJson ) {
                 bemJson = id;
