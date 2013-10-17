@@ -4,7 +4,7 @@
             block: 'checkbox',
             mods: {
                 color: ['blue'],
-                size: ['l']
+                size: ['l', 'm', 's']
             },
             elems: ['label']
         }

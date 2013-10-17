@@ -11,7 +11,7 @@
             mainColumnName: 'color',
             mainColumn: ['blue'],
             mainRowName: 'size',
-            mainRow: ['l'],
+            mainRow: ['l', 'm', 's'],
             additionalColumnName: 'state',
             additionalColumn: ['default', 'focused', 'checked', ['focused', 'checked'], 'disabled', ['disabled', 'checked']]
         },

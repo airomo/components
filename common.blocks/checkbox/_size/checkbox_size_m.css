@@ -1,0 +1,24 @@
+.checkbox_size_m
+{
+    font-size: 13px;
+}
+
+.checkbox_size_m .checkbox__tick
+{
+    font-size: 25px;
+    width: 32px;
+    height: 32px;
+    top: 3px;
+    left: -9px;
+    margin: 0 0 3px 12px;
+    vertical-align: middle;
+    background: none;
+}
+
+.checkbox_size_m .checkbox__box:after,
+.checkbox_size_m .checkbox__box:before
+{
+    margin-top: 1px;
+    width: 32px;
+    height: 32px;
+}

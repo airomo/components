@@ -2,11 +2,27 @@
 {
     font-size: 15px;
 }
+.checkbox__box
+{
+    display: inline-block;
+}
+
+.checkbox_size_l .checkbox__tick
+{
+    font-size: 35px;
+    width: 46px;
+    height: 46px;
+    top: 2px;
+    left: -9px;
+    margin: 0 0 3px 12px;
+    vertical-align: middle;
+    background: none;
+}
 
 .checkbox_size_l .checkbox__box:after,
 .checkbox_size_l .checkbox__box:before
 {
-    width: 14px;
-    height: 14px;
     margin-top: 1px;
+    width: 46px;
+    height: 46px;
 }
