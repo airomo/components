@@ -6,12 +6,8 @@
 .checkbox_size_m .checkbox__tick
 {
     font-size: 25px;
-    width: 32px;
-    height: 32px;
-    top: 3px;
-    left: -9px;
-    margin: 0 0 3px 12px;
-    vertical-align: middle;
+    width: 30px;
+    margin-top: 9px;
     background: none;
 }
 
@@ -19,6 +15,13 @@
 .checkbox_size_m .checkbox__box:before
 {
     margin-top: 1px;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+}
+.checkbox__box
+{
+    vertical-align: middle;
+    width: 30px;
+    line-height: 30px;
+    border-width: 2px;
 }

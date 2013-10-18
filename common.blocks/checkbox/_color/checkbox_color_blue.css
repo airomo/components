@@ -5,8 +5,6 @@
 }
 .checkbox_color_blue .checkbox__tick:before
 {
-    content: '✖';
-    font-style: normal;
     color: #27A8C9;
 }
 
@@ -31,7 +29,6 @@
         padding: 0;
         border-radius: 2px;
     }
-
     /* _focused */
     /* :after т аГбаАаДаИаЕаНб */
     .checkbox_focused_yes .checkbox__box:before
@@ -53,7 +50,6 @@
     {
         border: 2px solid #C0C1C2;
     }
-
     .checkbox_color_blue .checkbox__box_checked_yes:before
     {
         border: 2px solid #27A8C9;

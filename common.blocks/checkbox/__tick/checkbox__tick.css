@@ -1,0 +1,11 @@
+.checkbox__tick:before
+{
+    content: '✖';
+    font-style: normal;
+    margin: 0;
+    top:0;
+    left:0;
+    vertical-align: top;
+    text-align: center;
+    opacity: 1
+}
