@@ -36,7 +36,7 @@ MAKE.decl('Arch', {
         'bem-pr @ v0.3',
         'bem-gen-doc @ make',
         'bem-bl @ 0.3',
-        'bem-components @ v2techs'
+        'bem-components @ v1'
     ],
 
     createCustomNodes : function(common, libs, blocks) {
