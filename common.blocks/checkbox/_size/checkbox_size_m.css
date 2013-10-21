@@ -1,24 +1,25 @@
-.checkbox_size_m
+.checkbox_size_m .checkbox__box
 {
-    font-size: 13px;
-}
-
-.checkbox_size_m .checkbox__tick
-{
-    font-size: 25px;
-    width: 30px;
-    top: 5px;
+    width: 28px;
+    height: 28px;
+    border-width: 2px;
 }
 
 .checkbox_size_m .checkbox__box:after,
 .checkbox_size_m .checkbox__box:before
 {
-    width: 30px;
-    height: 30px;
-}
-.checkbox__box
-{
-    width: 30px;
-    line-height: 30px;
+    top: -2px;
+    left: -2px;
     border-width: 2px;
+}
+
+.checkbox_size_m .checkbox__tick
+{
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.checkbox_size_m .checkbox__label
+{
+    font-size: 13px;
 }

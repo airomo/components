@@ -1,16 +1,18 @@
 .checkbox__tick
 {
-    text-align: center;
-    left: 2px;
+    top:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+    height: auto;
     background: none;
+    vertical-align: top;
+    text-align: center;
+    font-style: normal;
+    opacity: 1;
 }
+
 .checkbox__tick:before
 {
     content: '✖';
-    font-style: normal;
-    margin: 0;
-    top:0;
-    left:0;
-    vertical-align: top;
-    opacity: 1
 }
