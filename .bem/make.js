@@ -3,8 +3,6 @@
 
 'use strict';
 
-require('./nodes/arch');
-
 process.env.YENV = 'production';
 
 var BEM = require('bem'),
