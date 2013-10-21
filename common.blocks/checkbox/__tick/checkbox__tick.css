@@ -1,3 +1,9 @@
+.checkbox__tick
+{
+    text-align: center;
+    left: 2px;
+    background: none;
+}
 .checkbox__tick:before
 {
     content: '✖';
@@ -6,6 +12,5 @@
     top:0;
     left:0;
     vertical-align: top;
-    text-align: center;
     opacity: 1
 }

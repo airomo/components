@@ -1,9 +1,4 @@
-.checkbox_color_blue
-{
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-.checkbox_color_blue .checkbox__tick:before
+.checkbox_color_blue .checkbox__tick
 {
     color: #27A8C9;
 }
@@ -14,20 +9,7 @@
     .checkbox_color_blue .checkbox__box:after
     {
         position: absolute;
-        left: 0;
-        top: 0;
         content: '';
-        padding: 1px;
-        border-radius: 3px;
-    }
-
-    /* :after т a background input */
-    .checkbox_color_blue .checkbox__box:after
-    {
-        left: 1px;
-        top: 1px;
-        padding: 0;
-        border-radius: 2px;
     }
     /* _focused */
     /* :after т аГбаАаДаИаЕаНб */

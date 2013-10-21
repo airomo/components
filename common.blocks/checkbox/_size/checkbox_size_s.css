@@ -7,20 +7,17 @@
 {
     font-size: 22px;
     width: 26px;
-    margin-top: 8px;
-    background: none;
+    top: 3px;
 }
 
 .checkbox_size_s .checkbox__box:after,
 .checkbox_size_s .checkbox__box:before
 {
-    margin-top: 1px;
     width: 26px;
     height: 26px;
 }
 .checkbox__box
 {
-    vertical-align: middle;
     width: 26px;
     line-height: 26px;
     border-width: 2px;
