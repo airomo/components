@@ -1,0 +1,13 @@
+.checkbox__box
+{
+    display: inline-block;
+    border-color: transparent;
+    vertical-align: middle;
+}
+
+.checkbox__box:before,
+.checkbox__box:after
+{
+    width: 100% !important;
+    height: 100% !important;
+}
