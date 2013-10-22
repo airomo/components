@@ -4,7 +4,7 @@
             block: 'radiobox',
             mods: {
                 color: ['blue'],
-                size: ['l']
+                size: ['s','m','l']
             }
         }
     ]

@@ -1,14 +1,21 @@
 .radiobox_size_l
 {
-    line-height: 28px;
 
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 28px;
 }
 
 @media all and (min-width:0px) {
     .radiobox_size_l .radiobox__box
     {
-        width: 14px;
-        height: 14px;
+        width: 42px;
+        height: 42px;
     }
+}
+.radiobox_size_l .radiobox__box:after
+{
+    top: 15px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
 }
