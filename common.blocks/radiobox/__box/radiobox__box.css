@@ -1,4 +1,28 @@
 .radiobox__box
 {
+    top: 0;
     vertical-align: middle;
+}
+
+.radiobox__box:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-radius: 100%;
+    content: '';
+}
+
+.radiobox .radiobox__box:after
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
 }

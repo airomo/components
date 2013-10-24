@@ -2,8 +2,8 @@
     block: 'b-page',
     title: 'Radiobox',
     head: [
-        { elem: 'css', url: '_20-radiobox.css', ie: false },
-        { elem: 'css', url: '_20-radiobox', ie: true }
+        { elem: 'css', url: '_10-radiobox.css', ie: false },
+        { elem: 'css', url: '_10-radiobox', ie: true }
     ],
     content: [
         {
@@ -23,26 +23,34 @@
                     elemMods: {
                         disabled: 'yes'
                     },
-                    content: 'Виден всем'
+                    content: 'disabled'
                 },
+
+                '<br><br>',
+
                 {
                     elem: 'radio',
                     controlAttrs: {
-                        value: '1'
+                        value: '1',
+                        accesskey: 'k'
                     },
-                    content: 'Только мне'
+                    content: 'press ALT + K'
                 },
+
+                '<br><br>',
+
                 {
                     elem: 'radio',
                     controlAttrs: {
-                        value: '2'
+                        value: '2',
+                        accesskey: 'l'
                     },
-                    content: 'Только друзьям'
+                    content: 'press ALT + L'
                 }
 
             ]
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
-        { elem: 'js', url: '_20-radiobox.js' }
+        { elem: 'js', url: '_10-radiobox.js' }
     ]
 })

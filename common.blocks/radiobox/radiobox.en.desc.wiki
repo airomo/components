@@ -1,0 +1,27 @@
+Styled form control
+
+Example's ##BEMJSON##
+
+%%hl js
+{
+    block: 'radiobox',
+    name: '',
+    value: '',
+    mods: {
+        color: '',
+        size: ''
+    },
+    content:[
+        {
+            elem: 'radio',
+            controlAttrs: {
+                value: ''
+            },
+            elemMods: {
+                disabled: ''
+            },
+            content: ''
+        }
+    ]
+}
+%%

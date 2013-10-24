@@ -12,10 +12,3 @@
         height: 42px;
     }
 }
-.radiobox_size_l .radiobox__box:after
-{
-    top: 15px;
-    left: 15px;
-    width: 18px;
-    height: 18px;
-}
