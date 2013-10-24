@@ -1,22 +1,13 @@
 .checkbox_size_l .checkbox__box
 {
-    width: 38px;
-    height: 38px;
-    border-width: 2px;
-}
-
-.checkbox_size_l .checkbox__box:after,
-.checkbox_size_l .checkbox__box:before
-{
-    top: -2px;
-    left: -2px;
-    border-width: 2px;
+    width: 42px;
+    height: 42px;
 }
 
 .checkbox_size_l .checkbox__tick
 {
     font-size: 35px;
-    line-height: 38px;
+    line-height: 42px;
 }
 
 .checkbox_size_l .checkbox__label
