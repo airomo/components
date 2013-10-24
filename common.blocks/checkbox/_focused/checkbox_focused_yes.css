@@ -1,5 +1,0 @@
-.checkbox_focused_yes .checkbox__box:before
-{
-    -webkit-box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
-    box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
-}

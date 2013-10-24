@@ -1,6 +1,7 @@
 .checkbox__box
 {
     display: inline-block;
+    border-style: solid;
     border-color: transparent;
     vertical-align: middle;
 }

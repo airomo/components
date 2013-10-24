@@ -1,6 +1,6 @@
-Styled form control
+Стилизированный чекбокс
 
-Example's ##BEMJSON##
+Пример ##BEMJSON##
 
 %%hl js
 {
