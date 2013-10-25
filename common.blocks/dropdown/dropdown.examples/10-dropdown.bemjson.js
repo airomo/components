@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'dropdown',
+    title: 'Dropdown',
     head: [
         { elem: 'css', url: '_10-dropdown.css', ie: false },
         { elem: 'css', url: '_10-dropdown', ie: true }
@@ -8,14 +8,10 @@
     content: [
         {
             block: 'dropdown',
-            mods: {
-                direction: 'left',
-                align: 'center'
-            },
             content: [
                 {
                     elem: 'switcher',
-                    content: 'press me'
+                    content: 'press & drag'
                 },
                 {
                     elem: 'content',
