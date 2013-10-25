@@ -1,12 +1,59 @@
 BEM.DOM.decl('dropdown', {
+
     onSetMod: {
         'js': {
             'inited': function() {
-                var _this = this, isClicked;
+
+                var _this = this,
+                    isClicked,
+                    dropdown = this.domElem,
+                    switcher = this.elem('switcher'),
+                    isMouseDown,
+                    isDrag,
+                    dx,
+                    dy;
+
+
+                dropdown.css({position: 'absolute', overflow: 'hidden'});
+
+
+                this.bindTo('switcher', 'mousedown', function(e) {
+                    isDrag = false;
+                    isMouseDown = true;
+
+                    dx = switcher.offset().left - e.pageX;
+                    dy = switcher.offset().top - e.pageY;
+                });
+
+
+                this.bindToWin('mouseup', function(e) {
+                    isMouseDown = false;
+                });
+
+
+                this.bindToWin('mousemove', function(e) {
+                    if ( !isMouseDown ) return false;
+
+                    isDrag = true;
+
+                    dropdown.css({
+                        left: e.pageX + dx + 'px',
+                        top: e.pageY + dy + 'px'
+                    });
+
+                    this.updatePosition();
+                });
+
+
+
+
+
 
                 //toggle __content visibility when elem 'switcher' was clicked
                 this.bindTo(this.elem('switcher'), 'click', function(e) {
                     isClicked = true;
+
+                    if ( isDrag ) return false;
 
                     _this.toggleMod(_this.elem('content-wrapper'), 'visibility', 'hidden', '');
                 });
@@ -39,12 +86,15 @@ BEM.DOM.decl('dropdown', {
         }
     },
 
+
     onElemSetMod: {
         'content-wrapper': {
-            'visibility': {
-                '': function() {
+            'visibility': function(elem, modName, modVal) {
+                if ( !modVal ) {
                     this.updatePosition();
                 }
+
+                this.domElem.css({overflow: !modVal ? 'visible' : 'hidden'});
             }
         }
     },
@@ -134,4 +184,5 @@ BEM.DOM.decl('dropdown', {
         this.setMod('direction', direction);
         this.setMod('align', getAlign(direction));
     }
+
 });
