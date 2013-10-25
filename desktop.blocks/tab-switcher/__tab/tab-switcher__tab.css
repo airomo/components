@@ -1,0 +1,11 @@
+.tab-switcher__tab_type_devices
+{
+    margin: auto;
+    width: 815px;
+    background: #fefefe;
+}
+
+.tab-switcher__tab_visibility_hidden
+{
+    display: none;
+}

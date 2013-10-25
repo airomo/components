@@ -1,0 +1,14 @@
+.frozen-block__inner
+{
+    position: relative;
+    top: 0;
+    -webkit-transition: top .3s 0 ease-out;
+    -moz-transition: top .3s 0 ease-out;
+    -o-transition: top .3s 0 ease-out;
+    transition: top .3s 0 ease-out;
+}
+
+.frozen-block_frozen_yes .tab-switcher__inner
+{
+    background: rgba(240, 195, 109, .7);
+}
