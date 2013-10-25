@@ -3,9 +3,7 @@
 
 'use strict';
 
-
 process.env.YENV = 'production';
-
 
 var BEM = require('bem'),
     LOGGER = BEM.require('./logger'),
@@ -36,7 +34,7 @@ MAKE.decl('Arch', {
         'bem-pr @ v0.3',
         'bem-gen-doc @ make',
         'bem-bl @ 0.3',
-        'bem-components @ v1'
+        'bem-components @ v1',
         'bem-history @ v1'
     ],
 
