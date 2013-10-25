@@ -3,7 +3,9 @@
 
 'use strict';
 
+
 process.env.YENV = 'production';
+
 
 var BEM = require('bem'),
     LOGGER = BEM.require('./logger'),
@@ -35,6 +37,7 @@ MAKE.decl('Arch', {
         'bem-gen-doc @ make',
         'bem-bl @ 0.3',
         'bem-components @ v1'
+        'bem-history @ v1'
     ],
 
     createCustomNodes : function(common, libs, blocks) {
