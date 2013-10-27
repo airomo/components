@@ -1,0 +1,25 @@
+.dropdown-new__content-wrapper
+{
+    position: absolute;
+    z-index: 10;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown-new__content
+{
+    position: relative;
+    padding: 11px 0;
+    border-radius: 6px;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .2), inset 0 0 0 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2), inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.dropdown-new__content:before,
+.dropdown-new__content:after
+{
+    position: absolute;
+    content: '';
+}

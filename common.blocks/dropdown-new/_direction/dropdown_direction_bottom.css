@@ -1,0 +1,26 @@
+.dropdown-new_direction_bottom .dropdown-new__content-wrapper
+{
+    top: 100%;
+    margin: 12px 0 0;
+}
+
+.dropdown-new_direction_bottom .dropdown-new__content-wrapper_visibility_hidden
+{
+    margin-top: 27px;
+}
+
+.dropdown-new_direction_bottom .dropdown-new__content:before
+{
+    top: -9px;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, .2);
+    border-left: 8px solid transparent;
+}
+
+.dropdown-new_direction_bottom .dropdown-new__content:after
+{
+    top: -8px;
+    border-right: 7px solid transparent;
+    border-bottom: 9px solid #fff;
+    border-left: 7px solid transparent;
+}
