@@ -1,6 +1,7 @@
 .icon
 {
     display: inline-block;
+    border: none;
     background-repeat: no-repeat;
 }
 
