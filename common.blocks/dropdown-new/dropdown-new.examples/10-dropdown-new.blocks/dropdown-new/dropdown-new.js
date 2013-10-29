@@ -6,7 +6,7 @@ BEM.DOM.decl('dropdown-new', {
 
                 var _this = this,
                     isClicked,
-                    dropdown-new = this.domElem,
+                    dropdown = this.domElem,
                     switcher = this.elem('switcher'),
                     isMouseDown,
                     isDrag,
@@ -14,7 +14,7 @@ BEM.DOM.decl('dropdown-new', {
                     dy;
 
 
-                dropdown-new.css({position: 'absolute', overflow: 'hidden'});
+                dropdown.css({position: 'absolute', overflow: 'hidden'});
 
 
                 this.bindTo('switcher', 'mousedown', function(e) {
@@ -36,7 +36,7 @@ BEM.DOM.decl('dropdown-new', {
 
                     isDrag = true;
 
-                    dropdown-new.css({
+                    dropdown.css({
                         left: e.pageX + dx + 'px',
                         top: e.pageY + dy + 'px'
                     });
