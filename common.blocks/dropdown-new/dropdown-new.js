@@ -4,11 +4,14 @@ BEM.DOM.decl('dropdown-new', {
         'js': {
             'inited': function() {
 
-                var _this = this;
+                var _this = this,
+                    isClicked;
 
 
                 //toggle __content visibility when elem 'switcher' was clicked
                 this.bindTo(this.elem('switcher'), 'click', function(e) {
+                    isClicked = true;
+
                     _this.toggleMod(_this.elem('content-wrapper'), 'visibility', 'hidden', '');
                 });
 
@@ -20,12 +23,13 @@ BEM.DOM.decl('dropdown-new', {
                 //prevent click bubling on dropdown-new content
                 this.bindTo(this.elem('content-wrapper'), 'click', function(e) {
                     e.preventDefault();
+
                     return false;
                 });
 
                 //hide dropdown if clicking out of content
                 this.bindToDoc('click', function(e) {
-                    !isClicked && _this.setMod('visibility', 'hidden');
+                    !isClicked && _this.setMod(_this.elem('content-wrapper'), 'visibility', 'hidden');
 
                     isClicked = false;
                 });
