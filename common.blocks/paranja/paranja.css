@@ -8,21 +8,3 @@
     z-index: 9999;
     background: rgba(0, 0, 0, .3);
 }
-
-.paranja__blur
-{
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.paranja__blur > *
-{
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
-}
-
-.paranja__blur .dialog-window
-{
-    -webkit-filter: none;
-}
