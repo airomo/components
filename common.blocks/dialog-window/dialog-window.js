@@ -24,7 +24,7 @@ BEM.DOM.decl('dialog-window', {
 
         'visibility': function(modName, modVal) {
             var paranjaBlock = this.findBlockOn(this.elem('paranja'), 'paranja');
-            console.log(paranjaBlock);
+
 
             paranjaBlock && paranjaBlock.setMod(modName, modVal);
         }
