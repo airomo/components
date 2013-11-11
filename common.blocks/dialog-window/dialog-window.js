@@ -177,7 +177,7 @@ BEM.DOM.decl('dialog-window', {
         if ( !idsList[id] ) {
             return id;
         } else {
-            generateId(idsList);
+            this.generateId(idsList);
         }
     },
 
