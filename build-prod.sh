@@ -61,7 +61,14 @@ if [ `echo $GIT_BRANCH | sed 's/origin\///'` != 'gh-pages' ]; then
     git commit -m "update site, build #$BUILD_NUMBER"
     git push origin +gh-pages
 
+<<<<<<< HEAD
     #back on start branch
     git checkout $GIT_BRANCH
 
 fi
+=======
+    #back on checkouted branch
+    git checkout $GIT_BRANCH
+
+fi
+>>>>>>> build script update
