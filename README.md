@@ -29,4 +29,4 @@ git commit -am "update site"
 git push origin gh-pages
 ````
 
-Documentation url is [http://airomo.github.io/components/release/index/index.html](http://airomo.github.io/components/release/index/index.html)
+Documentation url is [http://airomo.github.io/components/branch/master/release/index/index.html](http://airomo.github.io/components/branch/master/release/index/index.html)
