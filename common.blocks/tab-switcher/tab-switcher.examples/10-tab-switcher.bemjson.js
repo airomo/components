@@ -9,9 +9,59 @@
         {
             block: 'tab-switcher',
             js: {
-                name: 'wall',
+                name: 'example',
                 tabs: ['one', 'two', 'three'],
                 activeTab: 'one'
+            },
+            content: [
+                {
+                    elem: 'item',
+                    elemMods: {
+                        type: 'one'
+                    },
+                    content: [
+                        'tab one'
+                    ]
+                },
+                {
+                    elem: 'item',
+                    elemMods: {
+                        type: 'two'
+                    },
+                    content: [
+                        'tab two'
+                    ]
+                },
+                {
+                    elem: 'item',
+                    elemMods: {
+                        type: 'three'
+                    },
+                    content: [
+                        'tab three'
+                    ]
+                },
+                {
+                    elem: 'item',
+                    elemMods: {
+                        type: 'prev'
+                    },
+                    content: 'previous'
+                },
+                {
+                    elem: 'item',
+                    elemMods: {
+                        type: 'next'
+                    },
+                    content: 'next'
+                }
+            ]
+        },
+
+        {
+            block: 'tab-switcher',
+            js: {
+                name: 'example'
             },
             content: [
                 {
@@ -20,68 +70,29 @@
                         type: 'one',
                         visibility: 'hidden'
                     },
-                    content: [
-                        {
-                            block: 'wall',
-                            mods: {
-                                type: 'one'
-                            }
-                        },
-                        'tab one'
-                    ]
+                    content: 'one'
                 },
+
                 {
                     elem: 'tab',
                     elemMods: {
                         type: 'two',
                         visibility: 'hidden'
                     },
-                    content: [
-                        {
-                            block: 'wall',
-                            mods: {
-                                type: 'two'
-                            }
-                        },
-                        'tab two'
-                    ]
+                    content: 'two'
                 },
+
                 {
                     elem: 'tab',
                     elemMods: {
                         type: 'three',
                         visibility: 'hidden'
                     },
-                    content: [
-                        {
-                            block: 'wall',
-                            mods: {
-                                type: 'three'
-                            }
-                        },
-                        'tab three'
-                    ]
-                },
-                {
-                    block: 'tab-switcher',
-                    js: true,
-                    elem: 'item',
-                    elemMods: {
-                        type: 'prev'
-                    },
-                    content: 'previous'
-                },
-                {
-                    block: 'tab-switcher',
-                    js: true,
-                    elem: 'item',
-                    elemMods: {
-                        type: 'next'
-                    },
-                    content: 'next',
+                    content: 'three'
                 }
             ]
         },
+
         { block: 'i-jquery', mods: { version: '1.8.3' } },
         { elem: 'js', url: '_10-tab-switcher.js' }
     ]

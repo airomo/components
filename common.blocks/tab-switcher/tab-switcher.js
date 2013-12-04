@@ -13,35 +13,31 @@
                     tabParams = BEM.blocks['tab-switcher'].getTabsFromUrl() || {},
                     name = this.params.name,
                     activeTab = tabParams[name] && tabParams[name].activeTab || this.params.activeTab,
-                    tabs = this.params.tabs,
+                    tabs = this.params,
                     activeTabIndex = (this.params.activeTab && $.inArray(this.params.activeTab, tabs)) || 0;
 
-                if ( tabs.length ) {
 
-                    _this.__self.changeTab(name, tabs[activeTabIndex]);
-                    _this.changeTab(tabs[activeTabIndex]);
+                if ( tabs && tabs.tabs ) {
+                    console.log(tabs);
+//                    _this.__self.changeTab(name, tabs[activeTabIndex]);
+//                    _this.changeTab(tabs[activeTabIndex]);
 
                     this.bindTo(this.elem('item'), 'click', function(e) {
-                        var typeVal = this.getMod(e.data.domElem, 'type');
-
-                        activeTabIndex = typeVal === 'next' ? activeTabIndex + 1 : activeTabIndex - 1;
-
-                        if ( activeTabIndex > tabs.length - 1 ) {
-                            activeTabIndex = 0;
-                        } else if ( activeTabIndex < 0 ) {
-                            activeTabIndex = tabs.length - 1;
-                        }
-
-                        _this.__self.changeTab(name, tabs[activeTabIndex]);
+                        console.log(tabs);
+//                        var typeVal = this.getMod(e.data.domElem, 'type');
+//
+//                        activeTabIndex = typeVal === 'next' ? activeTabIndex + 1 : activeTabIndex - 1;
+//
+//                        if ( activeTabIndex > tabs.length - 1 ) {
+//                            activeTabIndex = 0;
+//                        } else if ( activeTabIndex < 0 ) {
+//                            activeTabIndex = tabs.length - 1;
+//                        }
+//
+//                        _this.__self.changeTab(name, tabs[activeTabIndex]);
                     });
 
                 }
-
-                BEM.channel('airomo').on('changeTab', function(e, data) {
-                    var newTabIndex = $.inArray(data.tab, tabs);
-                    activeTabIndex = newTabIndex > -1 ? newTabIndex : activeTabIndex;
-                    (data.name == name) && _this.changeTab(data.tab);
-                });
 
             }
         },
@@ -54,8 +50,6 @@
             this.setTabsToUrl([{name: name, active: tabName}]);
 
             activeTabs[name] = tabName;
-
-            BEM.channel('airomo').trigger('changeTab', { name: name, tab: tabName });
         },
 
         getTabsFromUrl: function() {
