@@ -1,4 +1,9 @@
-.tab-switcher__tab_visibility_hidden
+.tab-switcher__tab
 {
     display: none;
+}
+
+.tab-switcher__tab_active_yes
+{
+    display: block;
 }

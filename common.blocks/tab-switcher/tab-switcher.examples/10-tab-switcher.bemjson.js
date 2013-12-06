@@ -9,37 +9,20 @@
         {
             block: 'tab-switcher',
             js: {
-                name: 'example',
-                tabs: ['one', 'two', 'three'],
-                activeTab: 'one'
+                name: 'example'
             },
             content: [
                 {
                     elem: 'item',
-                    elemMods: {
-                        type: 'one'
-                    },
-                    content: [
-                        'tab one'
-                    ]
+                    content: 'item 1'
                 },
                 {
                     elem: 'item',
-                    elemMods: {
-                        type: 'two'
-                    },
-                    content: [
-                        'tab two'
-                    ]
+                    content: 'item 2'
                 },
                 {
                     elem: 'item',
-                    elemMods: {
-                        type: 'three'
-                    },
-                    content: [
-                        'tab three'
-                    ]
+                    content: 'item 3'
                 },
                 {
                     elem: 'item',
@@ -66,29 +49,76 @@
             content: [
                 {
                     elem: 'tab',
-                    elemMods: {
-                        type: 'one',
-                        visibility: 'hidden'
-                    },
                     content: 'one'
                 },
 
                 {
                     elem: 'tab',
-                    elemMods: {
-                        type: 'two',
-                        visibility: 'hidden'
-                    },
                     content: 'two'
                 },
 
                 {
                     elem: 'tab',
-                    elemMods: {
-                        type: 'three',
-                        visibility: 'hidden'
-                    },
-                    content: 'three'
+                    content: [
+                        'three',
+                        {
+                            block: 'tab-switcher',
+                            js: {
+                                name: 'example2'
+                            },
+                            content: [
+                                {
+                                    elem: 'item',
+                                    content: 'item 1'
+                                },
+                                {
+                                    elem: 'item',
+                                    content: 'item 2'
+                                },
+                                {
+                                    elem: 'item',
+                                    content: 'item 3'
+                                },
+                                {
+                                    elem: 'item',
+                                    elemMods: {
+                                        type: 'prev'
+                                    },
+                                    content: 'previous'
+                                },
+                                {
+                                    elem: 'item',
+                                    elemMods: {
+                                        type: 'next'
+                                    },
+                                    content: 'next'
+                                }
+                            ]
+                        },
+
+                        {
+                            block: 'tab-switcher',
+                            js: {
+                                name: 'example2'
+                            },
+                            content: [
+                                {
+                                    elem: 'tab',
+                                    content: 'one'
+                                },
+
+                                {
+                                    elem: 'tab',
+                                    content: 'two'
+                                },
+
+                                {
+                                    elem: 'tab',
+                                    content: 'three'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
