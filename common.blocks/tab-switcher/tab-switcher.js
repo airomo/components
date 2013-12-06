@@ -8,12 +8,11 @@ BEM.DOM.decl('tab-switcher', {
 
             var _this = this,
                 name = this.params.name,
-                tabs = this.elem('tab'),
+                items = this.child('item'),
+                tabs = this.child('tab'),
                 activeTabIndex;
 
             if ( tabs.length ) {
-                console.log(tabs);
-
                 activeTabIndex = (this.__self.getParams()['tabs'] && this.__self.getParams()['tabs'][name]) || (this.elem('tab', 'active', 'yes').length && tabs.index(this.elem('tab', 'active', 'yes').get(0)) || 0);
                 activeTabIndex = activeTabIndex > -1 ? activeTabIndex : 0;
 
@@ -38,10 +37,10 @@ BEM.DOM.decl('tab-switcher', {
                 });
             }
 
-            this.bindTo(this.elem('item'), 'click', function(e) {
+            this.bindTo(items, 'click', function(e) {
                 BEM.blocks['tab-switcher'].trigger('change', {
                     name: name,
-                    tab: this.getMod(e.data.domElem, 'type') || _this.elem('item').index(e.target)
+                    tab: this.getMod(e.data.domElem, 'type') || items.index(e.target)
                 });
             });
 
@@ -49,11 +48,32 @@ BEM.DOM.decl('tab-switcher', {
     },
 
     changeTab: function(switcher, tab) {
-        this.delMod(this.elem('tab', 'active', 'yes'), 'active');
-        this.setMod(this.elem('tab').eq(tab), 'active', 'yes');
+        this.delMod(this.child('tab', 'active', 'yes'), 'active');
+        this.setMod(this.child('tab').eq(tab), 'active', 'yes');
 
         this.__self.changeTab(switcher, tab);
+    },
+
+    child: (function() {
+        var _cache;
+
+        return function(elemName, modName, modVal) {
+            var _this = this,
+                collection = $();
+
+            this.elem(elemName, modName, modVal).each(function() {
+                if ( $(this).closest(_this.buildSelector())[0] == _this.domElem.get(0) ) {
+                    collection = collection.add(this);
+                }
+            });
+
+            return collection;
+        };
+    }()),
+
+    dropChildCache: function() {
     }
+
 }, {
 
     getParams: function() {
