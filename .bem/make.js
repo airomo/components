@@ -3,7 +3,8 @@
 
 'use strict';
 
-process.env.YENV = 'production';
+//process.env.YENV = 'production';
+process.env.BEM_I18N_LANGS = 'en ru';
 
 var BEM = require('bem'),
     LOGGER = BEM.require('./logger'),
@@ -35,6 +36,7 @@ MAKE.decl('Arch', {
         'bem-gen-doc @ make',
         'bem-bl @ 0.3',
         'bem-components @ v1'
+//        , 'bem-history @ v1'
     ],
 
     createCustomNodes : function(common, libs, blocks) {
@@ -60,8 +62,6 @@ MAKE.decl('Arch', {
     }
 
 });
-
-process.env.BEM_I18N_LANGS = 'en ru';
 
 MAKE.decl('BundleNode', {
 

@@ -1,0 +1,9 @@
+.tab-switcher_role_navigation
+{
+    display: inline-block;
+}
+
+.tab-switcher_role_navigation + .tab-switcher_role_navigation
+{
+    margin-left: -1px;
+}

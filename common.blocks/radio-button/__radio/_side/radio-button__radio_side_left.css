@@ -3,8 +3,3 @@
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
-
-.radio-button__radio_side_left:before
-{
-    display: none !important;
-}

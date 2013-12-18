@@ -4,7 +4,7 @@ var PATH = require('path'),
 
     PRJ_ROOT = environ.PRJ_ROOT,
     PRJ_TECHS = join(PRJ_ROOT, '.bem/techs'),
-    BEMBL_TECHS = environ.getLibPath('bem-bl', 'blocks-common/i-bem/bem/techs');
+    BEMBL_TECHS = environ.getLibPath('bem-bl', 'blocks-common/i-bem/bem/techs/v2');
 
 exports.getTechs = function() {
 
@@ -20,13 +20,13 @@ exports.getTechs = function() {
         'ie8.css'         : 'v2/ie8.css',
         'ie9.css'         : 'v2/ie9.css',
 
-        'i18n'            : join(BEMBL_TECHS, 'v2/i18n.js'),
-        'i18n.js'         : join(BEMBL_TECHS, 'v2/i18n.js.js'),
-        'i18n.js+bemhtml' : join(BEMBL_TECHS, 'v2/i18n.js+bemhtml.js'),
-        'i18n.html'       : join(BEMBL_TECHS, 'v2/i18n.html.js'),
+        'i18n'            : join(BEMBL_TECHS, 'i18n.js'),
+        'i18n.js'         : join(BEMBL_TECHS, 'i18n.js.js'),
+        'i18n.js+bemhtml' : join(BEMBL_TECHS, 'i18n.js+bemhtml.js'),
+        'i18n.html'       : join(BEMBL_TECHS, 'i18n.html.js'),
 
-        'bemhtml'         : join(BEMBL_TECHS, 'v2/bemhtml.js'),
-        'html'            : join(BEMBL_TECHS, 'v2/html.js')
+        'bemhtml'         : join(BEMBL_TECHS, 'bemhtml.js'),
+        'html'            : join(BEMBL_TECHS, 'html.js')
     };
 
 };
@@ -34,4 +34,3 @@ exports.getTechs = function() {
 
 // Create bundles in bemjson.js tech
 exports.defaultTechs = ['bemjson.js'];
-

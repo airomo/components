@@ -1,4 +1,4 @@
-.radio-button__radio_side_both:before
+.radio-button__radio_side_both
 {
-    display: none !important;
+    border-radius: 0 !important;
 }

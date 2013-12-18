@@ -1,0 +1,30 @@
+.tab-switcher__item
+{
+    display: inline;
+    margin: 0 0 5px;
+    padding: 5px 5px 0;
+    border-bottom: 1px dashed #000;
+    cursor: pointer;
+}
+
+.tab-switcher__item + .tab-switcher__item
+{
+    margin-left: 20px;
+}
+
+.tab-switcher__item_active_yes
+{
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom-color: transparent;
+    background: rgba(0, 0, 0, .1);
+    font-weight: bold;
+    cursor: default;
+}
+
+.tab-switcher__item_disabled_yes
+{
+    border-bottom-color: #ddd;
+    color: #ddd;
+    cursor: default;
+}
