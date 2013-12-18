@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Tab-switcher',
+    title: 'Simplest tab-switcher',
     head: [
         { elem: 'css', url: '_10-tab-switcher.css', ie: false },
         { elem: 'css', url: '_10-tab-switcher', ie: true }
@@ -9,116 +9,36 @@
         {
             block: 'tab-switcher',
             js: {
-                name: 'example'
+                name: 'tabs_1'
             },
             content: [
                 {
                     elem: 'item',
-                    content: 'item 1'
+                    elemMods: { disabled: 'yes'},
+                    content: 'disabled tab'
                 },
                 {
                     elem: 'item',
-                    content: 'item 2'
+                    content: 'tab 2'
                 },
                 {
                     elem: 'item',
-                    content: 'item 3'
-                },
-                {
-                    elem: 'item',
-                    elemMods: {
-                        type: 'prev'
-                    },
-                    content: 'previous'
-                },
-                {
-                    elem: 'item',
-                    elemMods: {
-                        type: 'next'
-                    },
-                    content: 'next'
-                }
-            ]
-        },
-
-        {
-            block: 'tab-switcher',
-            js: {
-                name: 'example'
-            },
-            content: [
-                {
-                    elem: 'tab',
-                    content: 'one'
+                    content: 'tab 3'
                 },
 
                 {
                     elem: 'tab',
-                    content: 'two'
+                    content: 'tab one'
                 },
 
                 {
                     elem: 'tab',
-                    content: [
-                        'three',
-                        {
-                            block: 'tab-switcher',
-                            js: {
-                                name: 'example2'
-                            },
-                            content: [
-                                {
-                                    elem: 'item',
-                                    content: 'item 1'
-                                },
-                                {
-                                    elem: 'item',
-                                    content: 'item 2'
-                                },
-                                {
-                                    elem: 'item',
-                                    content: 'item 3'
-                                },
-                                {
-                                    elem: 'item',
-                                    elemMods: {
-                                        type: 'prev'
-                                    },
-                                    content: 'previous'
-                                },
-                                {
-                                    elem: 'item',
-                                    elemMods: {
-                                        type: 'next'
-                                    },
-                                    content: 'next'
-                                }
-                            ]
-                        },
+                    content: 'tab two'
+                },
 
-                        {
-                            block: 'tab-switcher',
-                            js: {
-                                name: 'example2'
-                            },
-                            content: [
-                                {
-                                    elem: 'tab',
-                                    content: 'one'
-                                },
-
-                                {
-                                    elem: 'tab',
-                                    content: 'two'
-                                },
-
-                                {
-                                    elem: 'tab',
-                                    content: 'three'
-                                }
-                            ]
-                        }
-                    ]
+                {
+                    elem: 'tab',
+                    content: 'tab three'
                 }
             ]
         },
