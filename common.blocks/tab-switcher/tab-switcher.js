@@ -189,11 +189,17 @@
                 })
                 .forEach(function(item) {
                     if ( item != '' ) {
+                        var arr;
+
                         try {
                             //use 'try', because url can be incorrect
 
-                            paramsList[decodeURIComponent(item.shift())] = JSON.parse(decodeURIComponent(item));
-                        } catch (e) {}
+                            arr = item.slice();
+                            paramsList[decodeURIComponent(arr.shift())] = JSON.parse(decodeURIComponent(arr));
+                        } catch (e) {
+                            arr = item.slice();
+                            paramsList[decodeURIComponent(arr.shift())] = decodeURIComponent(arr);
+                        }
                     }
                 });
 
@@ -214,7 +220,7 @@
             paramsList['tabs'] = paramsList['tabs'] || {};
             paramsList['tabs'][switcherName] = tabIndex;
 
-            this.setParam('tabs', JSON.stringify(paramsList['tabs']));
+//            this.setParam('tabs', JSON.stringify(paramsList['tabs']));
         }
     });
 }());
