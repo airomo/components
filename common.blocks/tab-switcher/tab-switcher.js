@@ -221,6 +221,10 @@
             paramsList['tabs'][switcherName] = tabIndex;
 
             this.setParam('tabs', JSON.stringify(paramsList['tabs']));
+        },
+
+        getActive: function(name) {
+            return storage[name];
         }
     });
 }());
