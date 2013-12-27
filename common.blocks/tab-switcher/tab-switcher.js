@@ -220,7 +220,7 @@
             paramsList['tabs'] = paramsList['tabs'] || {};
             paramsList['tabs'][switcherName] = tabIndex;
 
-//            this.setParam('tabs', JSON.stringify(paramsList['tabs']));
+            this.setParam('tabs', JSON.stringify(paramsList['tabs']));
         }
     });
 }());
