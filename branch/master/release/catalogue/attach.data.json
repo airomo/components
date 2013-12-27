@@ -1,0 +1,441 @@
+{
+  "name": "attach",
+  "elems": [
+    {
+      "name": "button",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Кнопка, как элемент блока"
+        }
+      ]
+    },
+    {
+      "name": "control",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Нативный контрол прикрепить файл"
+        }
+      ]
+    },
+    {
+      "name": "holder",
+      "mods": [
+        {
+          "name": "state",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "hidden",
+              "techs": [
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "i18n.title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+                  "content": "Картинки скрыты"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Состояние"
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Элемент для отображения имени файла"
+        }
+      ]
+    },
+    {
+      "name": "icon-file",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Иконки файлов"
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "mods": [
+        {
+          "name": "visibility",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "visible",
+              "techs": [
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "i18n.title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+                  "content": "Включена"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Видимость"
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Отмена выбранного файла (крестик удаления файла)"
+        }
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "disabled",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено неактивное состояние"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Неактивное состояние"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "m",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта в кнопке 15px"
+            }
+          ]
+        },
+        {
+          "name": "s",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта в кнопке 13px"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Размер"
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "deps.js"
+    },
+    {
+      "name": "js"
+    },
+    {
+      "name": "i18n.desc.wiki"
+    },
+    {
+      "name": "i18n.title.txt"
+    },
+    {
+      "name": "ie.css"
+    }
+  ],
+  "levels": [
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks"
+    },
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks"
+    }
+  ],
+  "title": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": "Прикрепить файл"
+    }
+  ],
+  "description": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Для того, чтобы Яндекс выглядел аккуратнее и развивался в одном стиле, были разработаны декоративные (нестандартные для операционной системы) элементы форм."
+            ]
+          },
+          "<p style=\"font-size: 120%; color: #AD2626; background:#FAF3EE; margin: 0.8em 0 0.8em -10px; padding: 8px 10px;\">Контролы реализованы на CSS3, в MSIE8 и ниже контролы деградируют до нативных. Только bemhtml реализация.</p>",
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "Texnicheskiepodrobnosti"
+            },
+            "content": [
+              "Технические подробности"
+            ]
+          },
+          {
+            "elem": "ol",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  "Блок реализован с использованием ",
+                  {
+                    "block": "b-link",
+                    "url": "/blocks-desktop/button/button.wiki",
+                    "content": [
+                      "button"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  "В кнопке используется нативный контрол — прикрепить файл."
+                ]
+              }
+            ]
+          },
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "APIkontrola"
+            },
+            "content": [
+              "API контрола"
+            ]
+          },
+          {
+            "elem": "ul",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "http://wiki.yandex-team.ru/Lego/controls/api-forms/#form-attach",
+                    "content": [
+                      "Общее API контролов"
+                    ]
+                  },
+                  ".\n",
+                  {
+                    "tag": "br"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

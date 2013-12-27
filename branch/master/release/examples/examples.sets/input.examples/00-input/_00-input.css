@@ -1,0 +1,657 @@
+/* ../../../../../common.blocks/input/input.examples/00-input.blocks/b-page/b-page.css begin */
+.b-page
+{
+    font: 18px/1.4 Georgia, "Century Schoolbook L", Serif;
+}
+/* ../../../../../common.blocks/input/input.examples/00-input.blocks/b-page/b-page.css end */
+/* ../../../../../common.blocks/input/input.examples/00-input.blocks/example-table/example-table.css begin */
+.example-table__table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: 14px/1.4 Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+.example-table__col,
+.example-table__row:first-child + .example-table__row .example-table__col
+{
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.example-table__col[rowspan] ~ .example-table__col
+{
+    padding-top: 30px;
+}
+
+.example-table__row:first-child .example-table__col,
+.example-table__col:first-child[rowspan]
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.example-table__col:first-child[rowspan] + .example-table__col,
+.example-table__col:first-child
+{
+    font-style: italic;
+}
+
+.example-table__row:first-child .example-table__col:first-child
+{
+    background: #fff6a8;
+    font-weight: normal;
+    font-style: italic;
+}
+/* ../../../../../common.blocks/input/input.examples/00-input.blocks/example-table/example-table.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/input.css begin */
+.input
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 100%;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/input.css end */
+/* ../../../../../common.blocks/input/input.css begin */
+.input_visibility_hidden
+{
+	display: none !important;
+}
+/* ../../../../../common.blocks/input/input.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_disabled/input_disabled_yes.css begin */
+.input_disabled_yes
+{
+    opacity: .6;
+}
+
+.input_disabled_yes .input__control
+{
+    resize: none;
+}
+
+.input_disabled_yes .input__clear
+{
+    display: none;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/_disabled/input_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/_disabled/input_disabled_yes.css begin */
+.input_disabled_yes .input__box,
+.input_disabled_yes .input__control
+{
+    cursor: default;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/input/_disabled/input_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_focused/input_focused_yes.css begin */
+/* ::after = fade */
+.input_focused_yes .input__box::after
+{
+    /* Здесь раньше был display: none, но
+      с ним для FF не пробрасывается click после установки фокуса (LEGO-9448)
+      visibility: hidden решает эту проблему и не  и не влияет на визуальное представление компонента
+    */
+    visibility: hidden;
+}
+/* ../../../../../libs/bem-components/common.blocks/input/_focused/input_focused_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__box/input__box.css begin */
+/* elem box — a border input */
+.input__box
+{
+    position: relative;
+
+    display: block;
+}
+
+@media all and (min-width:0px) {
+    .input__box
+    {
+        /* padding-right for elem clear */
+        padding-right: 29px;
+
+        -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+        cursor: text;
+    }
+}
+
+/* ::after = fade */
+.input__box::after
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 1px;
+    right: 1px;
+    top: 2px;
+
+    content: '';
+
+    width: 36px;
+
+    background: -webkit-gradient(linear, left top, right top, color-stop(0,rgba(255,255,255,0)), color-stop(20%, #fff));
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0, #fff 20%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0, #fff 20%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0, #fff 20%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0, #fff 20%);
+}
+/* ../../../../../libs/bem-components/common.blocks/input/__box/input__box.css end */
+/* ../../../../../common.blocks/input/__box/input__box.css begin */
+.input__box
+{
+    height: 100%;
+}
+
+.input__box:after
+{
+    display: none;
+}
+/* ../../../../../common.blocks/input/__box/input__box.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__control/input__control.css begin */
+.input__control
+{
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    margin: 0;
+
+    color: #000;
+
+    font-size: 100%;
+}
+
+@media all and (min-width:0px) {
+    .input__control
+    {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+
+        outline: 0;
+
+        border: 0;
+        background: none;
+
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+/* Сбрасываем желтый бг у интутов при автозаполнении */
+.input__control:-webkit-autofill
+{
+    top: 1px;
+    left: 1px;
+
+    height: 1.9em;
+
+    -webkit-box-shadow: inset 0 0 0 50px #fff;
+    -webkit-text-fill-color: #000;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__control/input__control.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/__control/input__control.css begin */
+/* Hide native cross in IE10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .input__control::-ms-clear
+    {
+        display: none;
+    }
+
+}
+
+
+/* ../../../../../libs/bem-components/desktop.blocks/input/__control/input__control.css end */
+/* ../../../../../common.blocks/input/__control/input__control.css begin */
+.input__control
+{
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 100%;
+}
+/* ../../../../../common.blocks/input/__control/input__control.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/input__clear.css begin */
+.input__clear
+{
+    position: absolute;
+    z-index: 5;
+    right: 1px;
+    bottom: 0;
+    top: 0;
+
+    visibility: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6TTExLjk5IDEwLjU2NGwtMS40MjYgMS40MjYtMi41NjQtMi41NjQtMi41NjQgMi41NjQtMS40MjYtMS40MjYgMi41NjQtMi41NjQtMi41NjQtMi41NjQgMS40MjYtMS40MjYgMi41NjQgMi41NjQgMi41NjQtMi41NjQgMS40MjYgMS40MjYtMi41NjQgMi41NjQgMi41NjQgMi41NjR6Ii8+PC9zdmc+) 50% 50% no-repeat;
+    /*background: url(input__clear.svg) 50% 50% no-repeat;*/
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/input__clear.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/_visibility/input__clear_visibility_visible.css begin */
+.input__clear_visibility_visible
+{
+	visibility: visible;
+
+	opacity: 0.2;
+
+	cursor: pointer;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/_visibility/input__clear_visibility_visible.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/__clear/_visibility/input__clear_visibility_visible.css begin */
+.input__clear_visibility_visible:hover
+{
+	opacity: 0.8;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/input/__clear/_visibility/input__clear_visibility_visible.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/input__hint.css begin */
+.input__hint
+{
+    position: absolute;
+    z-index: 5;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    max-width: 100%;
+    height: 2em;
+    padding: 0 1em 0 8px;
+
+    cursor: text;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+    color: #ccc;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.i-ua_js_no .input__hint
+{
+    position: static;
+
+    visibility: visible;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/input__hint.css end */
+/* ../../../../../common.blocks/input/__hint/input__hint.css begin */
+.input__hint
+{
+    left: 0;
+    height: auto;
+    opacity: .5;
+}
+/* ../../../../../common.blocks/input/__hint/input__hint.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/_visibility/input__hint_visibility_visible.css begin */
+.input__hint_visibility_visible
+{
+    visibility: visible;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/_visibility/input__hint_visibility_visible.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_size/input_size_s.css begin */
+.input_size_s
+{
+    line-height: 28px;
+
+    font-size: 13px;
+}
+
+.input_size_s .input__clear
+{
+    width: 27px;
+}
+
+.input_size_s .input__control
+{
+    padding-left: 7px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/_size/input_size_s.css end */
+/* ../../../../../common.blocks/input/_size/input_size_s.css begin */
+.input_size_s
+{
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.input_size_s .input__box
+{
+    padding-right: 28px;
+    border-radius: 4px;
+}
+
+.input_size_s .input__control,
+.input_size_s .input__hint
+{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.input_size_s .input__clear
+{
+    width: 28px;
+}
+/* ../../../../../common.blocks/input/_size/input_size_s.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_size/input_size_m.css begin */
+.input_size_m
+{
+    line-height: 32px;
+
+    font-size: 15px;
+}
+
+.input_size_m .input__clear
+{
+    width: 31px;
+}
+
+.input_size_m .input__control
+{
+    padding-left: 10px;
+}
+
+.input_size_m .input__hint
+{
+    padding-left: 11px;
+}
+/* ../../../../../libs/bem-components/common.blocks/input/_size/input_size_m.css end */
+/* ../../../../../common.blocks/input/_size/input_size_m.css begin */
+.input_size_m
+{
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.input_size_m .input__box
+{
+    padding-right: 28px;
+    border-radius: 4px;
+}
+
+.input_size_m .input__control,
+.input_size_m .input__hint
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.input_size_m .input__clear
+{
+    width: 28px;
+}
+/* ../../../../../common.blocks/input/_size/input_size_m.css end */
+/* ../../../../../common.blocks/input/_size/input_size_l.css begin */
+.input.input_size_l
+{
+    font-size: 15px;
+    line-height: 42px;
+}
+
+.input.input_size_l .input__box,
+.input.input_size_l .input__hint
+{
+    padding-right: 28px;
+    padding-left: 14px;
+    border-radius: 4px;
+}
+
+.input_size_l.input_type_textarea .input__box,
+.input_size_l.input_type_textarea .input__hint
+{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.input_size_l.input_clear_no .input__box,
+.input_size_l.input_clear_no .input__hint,
+.input_size_l.input_type_textarea .input__box
+{
+    padding-right: 14px;
+}
+
+.input.input_size_l .input__clear
+{
+    width: 28px;
+}
+
+.input_size_l.input_type_textarea .input__control
+{
+    min-height: 100px;
+}
+/* ../../../../../common.blocks/input/_size/input_size_l.css end */
+/* ../../../../../common.blocks/input/_size/input_size_xl.css begin */
+.input.input_size_xl
+{
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.input.input_size_xl .input__box,
+.input.input_size_xl .input__hint
+{
+    padding-right: 28px;
+    padding-left: 17px;
+    border-radius: 8px;
+}
+
+.input_size_xl.input_type_textarea .input__box,
+.input_size_xl.input_type_textarea .input__hint
+{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.input_size_xl.input_clear_no .input__box,
+.input_size_xl.input_clear_no .input__hint,
+.input_size_xl.input_type_textarea .input__box
+{
+    padding-right: 17px;
+}
+
+.input.input_size_xl .input__clear
+{
+    width: 28px;
+}
+
+.input_size_xl.input_type_textarea .input__control
+{
+    min-height: 118px;
+}
+/* ../../../../../common.blocks/input/_size/input_size_xl.css end */
+/* ../../../../../common.blocks/input/_size/input_size_xxl.css begin */
+.input_size_xxl
+{
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.input_size_xxl .input__box
+{
+    padding-right: 28px;
+    border-radius: 8px;
+}
+
+.input_size_xxl .input__control,
+.input_size_xxl .input__hint
+{
+    padding-right: 23px;
+    padding-left: 23px;
+}
+
+.input_size_xxl .input__clear
+{
+    width: 28px;
+}
+/* ../../../../../common.blocks/input/_size/input_size_xxl.css end */
+/* ../../../../../common.blocks/input/_color/input_color_blue.css begin */
+.input_color_blue .input__box
+{
+    background: #27b2d0;
+    background: -webkit-linear-gradient(top, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.input_color_blue .input__control,
+.input_color_blue .input__hint
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_blue.css end */
+/* ../../../../../common.blocks/input/_color/input_color_light-grey.css begin */
+.input_color_light-grey .input__box
+{
+    background: #f5f5f5;
+    background: -webkit-linear-gradient(top, rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%);
+    background:    -moz-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background:         linear-gradient(to bottom, rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .25), inset 0 1px 3px rgba(0, 0, 0, .1), inset 0 0 0 1px #bec6cb;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .25), inset 0 1px 3px rgba(0, 0, 0, .1), inset 0 0 0 1px #bec6cb;
+}
+
+.input_color_light-grey .input__control,
+.input_color_light-grey .input__hint
+{
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_light-grey.css end */
+/* ../../../../../common.blocks/input/_color/input_color_grey.css begin */
+.input_color_grey .input__box
+{
+    background: #A3A6A9;
+    background: -webkit-linear-gradient(top, rgba(163, 166, 169, 1) 0%, rgba(130, 134, 139, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(163, 166, 169, 1) 0%, rgba(130, 134, 139, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(163, 166, 169, 1) 0%, rgba(130, 134, 139, 1) 100%);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .2), 0 0 1px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .2), 0 0 1px rgba(0, 0, 0, .4);
+}
+
+.input_color_grey .input__control,
+.input_color_grey .input__hint
+{
+    color: #48494b;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_grey.css end */
+/* ../../../../../common.blocks/input/_color/input_color_dark-grey.css begin */
+.input_color_dark-grey .input__box
+{
+    background: #646668;
+    background: -webkit-linear-gradient(top, rgba(112,113,115,1) 0%,rgba(86,88,90,1) 100%);
+    background:    -moz-linear-gradient(top, rgba(112,113,115,1) 0%, rgba(86,88,90,1) 100%);
+    background:         linear-gradient(to bottom, rgba(112,113,115,1) 0%,rgba(86,88,90,1) 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .2), inset 0 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .2), inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.input_color_dark-grey .input__control,
+.input_color_dark-grey .input__hint
+{
+    color: #d9dbdd;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_dark-grey.css end */
+/* ../../../../../common.blocks/input/_color/input_color_green.css begin */
+.input_color_green .input__box
+{
+    background: #35d14b;
+    background: -webkit-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.input_color_green .input__control,
+.input_color_green .input__hint
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_green.css end */
+/* ../../../../../common.blocks/input/_color/input_color_transparent.css begin */
+.input_color_transparent .input__box
+{
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background:         linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.input_color_transparent .input__control,
+.input_color_transparent .input__hint
+{
+    color: rgba(0, 0, 0, .75);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_transparent.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_clear/input_clear_no.css begin */
+@media all and (min-width:0px) {
+    .input_clear_no .input__box
+    {
+        padding-right: 7px;
+    }
+
+    .input_clear_no .input__box::after
+    {
+        width: 14px;
+
+        background: -webkit-gradient(linear, left top, right top, color-stop(0,rgba(255,255,255,0)), color-stop(50%, #fff));
+        background:    -moz-linear-gradient(left, rgba(255,255,255,0) 0, #fff 50%);
+        background:     -ms-linear-gradient(left, rgba(255,255,255,0) 0, #fff 50%);
+        background:      -o-linear-gradient(left, rgba(255,255,255,0) 0, #fff 50%);
+        background:         linear-gradient(to right, rgba(255,255,255,0) 0, #fff 50%);
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/_clear/input_clear_no.css end */
+/* ../../../../../common.blocks/input/_clear/input_clear_no.css begin */
+.input_clear_no .input__box
+{
+    padding-right: 0 !important;
+}
+/* ../../../../../common.blocks/input/_clear/input_clear_no.css end */
+/* ../../../../../common.blocks/input/_side/input_side_left.css begin */
+.input_side_left .input__box
+{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+/* ../../../../../common.blocks/input/_side/input_side_left.css end */
+/* ../../../../../common.blocks/input/_side/input_side_right.css begin */
+.input_side_right .input__box
+{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+/* ../../../../../common.blocks/input/_side/input_side_right.css end */
+/* ../../../../../common.blocks/input/_side/input_side_both.css begin */
+.input_side_both .input__box
+{
+    border-radius: 0 !important;
+}
+/* ../../../../../common.blocks/input/_side/input_side_both.css end */

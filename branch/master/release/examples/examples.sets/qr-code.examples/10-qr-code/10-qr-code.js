@@ -1,0 +1,1 @@
+/var/lib/jenkins/workspace/components/release/examples/examples.sets/qr-code.examples/10-qr-code/10-qr-code.en.js

@@ -1,0 +1,28 @@
+{
+  "name": "paranja",
+  "mods": [
+    {
+      "name": "visibility",
+      "vals": [
+        {
+          "name": "hidden",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "css"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+@import url(../../libs/bem-gen-doc/site.blocks/page/page.css);
+@import url(../../libs/bem-gen-doc/site.blocks/block/block.css);
+@import url(../../libs/bem-gen-doc/site.blocks/static-text/static-text.css);
+@import url(../../libs/bem-gen-doc/site.blocks/headline/headline.css);
+@import url(../../libs/bem-gen-doc/site.blocks/link/link.css);
+@import url(../../libs/bem-gen-doc/site.blocks/catalogue/__navigation/catalogue__navigation.css);
+@import url(../../libs/bem-gen-doc/site.blocks/block/__note/block__note.css);
+@import url(../../libs/bem-gen-doc/site.blocks/example/example.css);
+@import url(../../libs/bem-gen-doc/site.blocks/example/__title/example__title.css);
+@import url(../../libs/bem-gen-doc/site.blocks/example/__live/example__live.css);
+@import url(../../libs/bem-gen-doc/site.blocks/example/__source/example__source.css);
+@import url(../../libs/bem-gen-doc/site.blocks/block/__mod/block__mod.css);
+@import url(../../libs/bem-gen-doc/site.blocks/block/__elem/block__elem.css);
+@import url(../../libs/bem-gen-doc/site.blocks/catalogue/catalogue.css);
+@import url(../../libs/bem-gen-doc/site.blocks/catalogue/_type/catalogue_type_showcase.css);
+@import url(../../libs/bem-gen-doc/site.blocks/catalogue/__item/catalogue__item.css);

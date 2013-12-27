@@ -1,0 +1,43 @@
+/* ../../../../../common.blocks/tab-switcher/tab-switcher.examples/10-tab-switcher.blocks/tab-switcher/__item/tab-switcher__item.css begin */
+.tab-switcher__item
+{
+    display: inline;
+    margin: 0 0 5px;
+    padding: 5px 5px 0;
+    border-bottom: 1px dashed #000;
+    cursor: pointer;
+}
+
+.tab-switcher__item + .tab-switcher__item
+{
+    margin-left: 20px;
+}
+
+.tab-switcher__item_active_yes
+{
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom-color: transparent;
+    background: rgba(0, 0, 0, .1);
+    font-weight: bold;
+    cursor: default;
+}
+
+.tab-switcher__item_disabled_yes
+{
+    border-bottom-color: #ddd;
+    color: #ddd;
+    cursor: default;
+}
+/* ../../../../../common.blocks/tab-switcher/tab-switcher.examples/10-tab-switcher.blocks/tab-switcher/__item/tab-switcher__item.css end */
+/* ../../../../../common.blocks/tab-switcher/tab-switcher.examples/10-tab-switcher.blocks/tab-switcher/__tab/tab-switcher__tab.css begin */
+.tab-switcher__tab
+{
+    display: none;
+}
+
+.tab-switcher__tab_active_yes
+{
+    display: block;
+}
+/* ../../../../../common.blocks/tab-switcher/tab-switcher.examples/10-tab-switcher.blocks/tab-switcher/__tab/tab-switcher__tab.css end */

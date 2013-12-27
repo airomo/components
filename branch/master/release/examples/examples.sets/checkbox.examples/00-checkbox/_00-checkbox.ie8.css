@@ -1,0 +1,341 @@
+/* 00-checkbox.ie.css begin */
+/* 00-checkbox.css begin */
+/* ../../../../../common.blocks/checkbox/checkbox.examples/00-checkbox.blocks/example-table/example-table.css begin */
+.example-table__table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: 14px/1.4 Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+.example-table__col,
+.example-table__row:first-child + .example-table__row .example-table__col
+{
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.example-table__col[rowspan] ~ .example-table__col
+{
+    padding-top: 30px;
+}
+
+.example-table__row:first-child .example-table__col,
+.example-table__col:first-child[rowspan]
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.example-table__col:first-child[rowspan] + .example-table__col,
+.example-table__col:first-child
+{
+    font-style: italic;
+}
+
+.example-table__row:first-child .example-table__col:first-child
+{
+    background: #fff6a8;
+    font-weight: normal;
+    font-style: italic;
+}
+/* ../../../../../common.blocks/checkbox/checkbox.examples/00-checkbox.blocks/example-table/example-table.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__box/checkbox__box.css begin */
+.checkbox__box
+{
+    position: relative;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__box/checkbox__box.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/__box/checkbox__box.css begin */
+@media all and (min-width:0px) {
+
+    .checkbox__box
+    {
+        cursor: pointer;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/__box/checkbox__box.css end */
+/* ../../../../../common.blocks/checkbox/__box/checkbox__box.css begin */
+.checkbox__box
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox__box:before,
+.checkbox__box:after
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: 100% !important;
+    border-width: 2px;
+}
+/* ../../../../../common.blocks/checkbox/__box/checkbox__box.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__control/checkbox__control.css begin */
+@media all and (min-width:0px) {
+    .i-ua_js_yes .checkbox__control
+    {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        width: 101%;
+        height: 101%;
+        margin: 0;
+        padding: 0;
+
+        opacity: 0;
+        outline: 0;
+
+        border: 0;
+        background: none;
+    }
+}
+
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__control/checkbox__control.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__tick/checkbox__tick.css begin */
+.checkbox__tick
+{
+    position: relative;
+    z-index: 3;
+    top: -3px;
+    left: 0.1em;
+
+    display: inline-block;
+    visibility: hidden;
+
+    width: 16px;
+    height: 14px;
+    margin: 0 0 -2px;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    opacity: .8;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi4wMzciIGhlaWdodD0iMTQuOTczIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNi4xODctMTkuODQ1YzQuNDE4IDAgOCAzLjU4MiA4IDggMCA0LjQxOS0zLjU4MiA4LTggOHMtOC0zLjU4MS04LThjMC00LjQxOCAzLjU4Mi04IDgtOHoiLz48cGF0aCBkPSJNNi4xODctMTguODQ1Yy0zLjg2NiAwLTcgMy4xMzQtNyA3czMuMTM0IDcgNyA3IDctMy4xMzQgNy03LTMuMTM0LTctNy03ek0xMC4xNzctOS4yOGwtMS40MjYgMS40MjYtMi41NjQtMi41NjQtMi41NjUgMi41NjQtMS40MjYtMS40MjYgMi41NjQtMi41NjQtMi41NjQtMi41NjQgMS40MjYtMS40MjYgMi41NjQgMi41NjQgMi41NjQtMi41NjQgMS40MjYgMS40MjYtMi41NjQgMi41NjQgMi41NjUgMi41NjR6Ii8+PHBhdGggZD0iTTUuMjg3IDE0Ljk3MmwxMC43NS0xMi44MTYtMi4xNzctMi4xNTYtOC41NzMgMTAuNjYxLTMuMTQ0LTQuMTQ4LTIuMTQzIDIuMTIzIDUuMjg3IDYuMzM2eiIvPjwvc3ZnPg==) 0 100% no-repeat;
+    /*background: url(checkbox__tick.svg) 0 100% no-repeat;*/
+}
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__tick/checkbox__tick.css end */
+/* ../../../../../common.blocks/checkbox/__tick/checkbox__tick.css begin */
+.checkbox__tick
+{
+    top:0;
+    left:0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: none;
+    vertical-align: top;
+    text-align: center;
+    font-style: normal;
+    opacity: 1;
+}
+
+.checkbox__tick:before
+{
+    content: '✖';
+}
+/* ../../../../../common.blocks/checkbox/__tick/checkbox__tick.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_checked/checkbox_checked_yes.css begin */
+.checkbox_checked_yes .checkbox__tick
+{
+    visibility: visible;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_checked/checkbox_checked_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_disabled/checkbox_disabled_yes.css begin */
+.checkbox_disabled_yes
+{
+    opacity: .6;
+}
+
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_disabled/checkbox_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/_disabled/checkbox_disabled_yes.css begin */
+@media all and (min-width:0px) {
+
+    .checkbox_disabled_yes .checkbox__box
+    {
+        cursor: default;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/_disabled/checkbox_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__label/checkbox__label.css begin */
+.checkbox__label
+{
+    margin-left: 0.4em;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/__label/checkbox__label.css end */
+/* ../../../../../common.blocks/checkbox/__label/checkbox__label.css begin */
+.checkbox__label
+{
+    margin-left: 1.4em;
+}
+/* ../../../../../common.blocks/checkbox/__label/checkbox__label.css end */
+/* ../../../../../common.blocks/checkbox/_color/checkbox_color_blue.css begin */
+.checkbox_color_blue .checkbox__box:before
+{
+    border-style: solid;
+    border-color: #c0c1c2;
+}
+
+.checkbox_color_blue.checkbox_focused_yes .checkbox__box:before
+{
+    -webkit-box-shadow: 0px 0px 6px rgb(192, 193, 194);
+    box-shadow: 0px 0px 6px rgb(192, 193, 194);
+}
+
+.checkbox_color_blue.checkbox_disabled_yes .checkbox__box:before
+{
+    background: rgba(0, 0, 0, .03);
+}
+
+.checkbox_color_blue.checkbox_checked_yes .checkbox__tick
+{
+    color: #27A8C9;
+}
+
+.checkbox_color_blue.checkbox_checked_yes .checkbox__box:before
+{
+    border-color: #27A8C9;
+}
+
+.checkbox_color_blue.checkbox_checked_yes.checkbox_focused_yes .checkbox__box:before
+{
+    -webkit-box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
+    box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
+}
+
+@media all and (min-width:0px) {
+    .checkbox_color_blue .checkbox__box:before,
+    .checkbox_color_blue .checkbox__box:after
+    {
+        position: absolute;
+        content: '';
+    }
+
+    .i-ua_js_no .checkbox__box:before,
+    .i-ua_js_no .checkbox__box:after,
+    .i-ua_js_no .checkbox__tick
+    {
+        display: none;
+    }
+}
+
+/* ../../../../../common.blocks/checkbox/_color/checkbox_color_blue.css end */
+/* ../../../../../common.blocks/checkbox/_size/checkbox_size_l.css begin */
+.checkbox_size_l .checkbox__box
+{
+    width: 42px;
+    height: 42px;
+}
+
+.checkbox_size_l .checkbox__tick
+{
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.checkbox_size_l .checkbox__label
+{
+    font-size: 15px;
+}
+/* ../../../../../common.blocks/checkbox/_size/checkbox_size_l.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_size/checkbox_size_m.css begin */
+.checkbox_size_m
+{
+    font-size: 15px;
+}
+
+.checkbox_size_m .checkbox__box:after,
+.checkbox_size_m .checkbox__box:before
+{
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_size/checkbox_size_m.css end */
+/* ../../../../../common.blocks/checkbox/_size/checkbox_size_m.css begin */
+.checkbox_size_m .checkbox__box
+{
+    width: 32px;
+    height: 32px;
+}
+
+.checkbox_size_m .checkbox__tick
+{
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.checkbox_size_m .checkbox__label
+{
+    font-size: 13px;
+}
+/* ../../../../../common.blocks/checkbox/_size/checkbox_size_m.css end */
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_size/checkbox_size_s.css begin */
+.checkbox_size_s
+{
+    font-size: 13px;
+}
+
+.checkbox_size_s .checkbox__box:after,
+.checkbox_size_s .checkbox__box:before
+{
+    width: 12px;
+    height: 12px;
+}
+
+.checkbox_size_s .checkbox__tick
+{
+    background-size: contain;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/checkbox/_size/checkbox_size_s.css end */
+/* ../../../../../common.blocks/checkbox/_size/checkbox_size_s.css begin */
+.checkbox_size_s .checkbox__box
+{
+    width: 28px;
+    height: 28px;
+}
+
+.checkbox_size_s .checkbox__tick
+{
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.checkbox_size_s .checkbox__label
+{
+    font-size: 13px;
+}
+/* ../../../../../common.blocks/checkbox/_size/checkbox_size_s.css end */
+
+/* 00-checkbox.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/__tick/checkbox__tick.ie.css begin */
+.checkbox__tick
+{
+    display: none;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/__tick/checkbox__tick.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/_disabled/checkbox_disabled_yes.ie.css begin */
+.checkbox_disabled_yes .checkbox__label
+{
+    color: #c6c6c6;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/checkbox/_disabled/checkbox_disabled_yes.ie.css end */
+
+/* 00-checkbox.ie.css end */

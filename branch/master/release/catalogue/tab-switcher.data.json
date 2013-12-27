@@ -1,0 +1,50 @@
+{
+  "name": "tab-switcher",
+  "mods": [
+    {
+      "name": "type",
+      "vals": [
+        {
+          "name": "radio",
+          "techs": [
+            {
+              "name": "js"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "examples"
+    },
+    {
+      "name": "js"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "tab-switcher.examples/10-tab-switcher/10-tab-switcher"
+        },
+        {
+          "url": "tab-switcher.examples/20-tab-switcher/20-tab-switcher"
+        },
+        {
+          "url": "tab-switcher.examples/30-tab-switcher/30-tab-switcher"
+        },
+        {
+          "url": "tab-switcher.examples/40-tab-switcher/40-tab-switcher"
+        }
+      ]
+    }
+  ]
+}

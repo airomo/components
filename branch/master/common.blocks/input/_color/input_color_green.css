@@ -1,0 +1,17 @@
+.input_color_green .input__box
+{
+    background: #35d14b;
+    background: -webkit-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.input_color_green .input__control,
+.input_color_green .input__hint
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-family: Helvetica, Tahoma, sans-serif;
+}

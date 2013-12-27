@@ -1,0 +1,7 @@
+.dialog-window__header
+{
+    position: relative;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+}

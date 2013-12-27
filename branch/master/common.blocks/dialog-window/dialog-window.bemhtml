@@ -1,0 +1,59 @@
+block dialog-window {
+
+    content: [
+        {
+            elem: 'inner',
+            content: [
+                {
+                    elem: 'body',
+                    content: [
+                        {
+                            elem: 'header',
+                            elemMods: {
+                                type: this.ctx.mods.type
+                            },
+                            content: [
+                                {
+                                    elem: 'close',
+                                    mix: [
+                                        { block: 'dialog-window', elem: 'control', elemMods: { type: 'close' } }
+                                    ],
+                                    content: '&#10006;'
+                                },
+
+                                {
+                                    elem: 'icon',
+                                    elemMods: {
+                                        type: this.ctx.mods.type
+                                    }
+                                },
+
+                                {
+                                    elem: 'title',
+                                    content: this.ctx.title
+                                }
+                            ]
+                        },
+
+                        {
+                            elem: 'content',
+                            content: applyNext()
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            block: 'paranja',
+            js: true,
+            mods: {
+                visibility: 'hidden'
+            },
+            mix: [
+                { block: 'dialog-window', elem: 'paranja' }
+            ]
+        }
+    ]
+
+}

@@ -1,0 +1,1 @@
+/var/lib/jenkins/workspace/components/release/examples/examples.sets/tab-switcher.examples/30-tab-switcher/30-tab-switcher.en.js

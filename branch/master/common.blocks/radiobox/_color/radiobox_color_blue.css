@@ -1,0 +1,37 @@
+@media all and (min-width:0px) {
+    .radiobox_color_blue .radiobox__box:before
+    {
+        border-color: #c0c1c2;
+    }
+
+    .radiobox_color_blue .radiobox__radio_focused_yes .radiobox__box:before
+    {
+        -webkit-box-shadow: 0px 0px 6px rgb(192, 193, 194);
+                box-shadow: 0px 0px 6px rgb(192, 193, 194);
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes.radiobox__radio_focused_yes .radiobox__box:before
+    {
+        -webkit-box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
+                box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
+    }
+    .radiobox_color_blue .radiobox__radio_disabled_yes .radiobox__box:before
+    {
+        background: rgba(0, 0, 0, .03);
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box:before
+    {
+        border-color: #27A8C9;
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box:after
+    {
+        background: #27A8C9;
+    }
+
+    .i-ua_js_no .radiobox__box:before
+    {
+        display: none;
+    }
+}

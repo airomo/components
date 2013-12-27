@@ -1,0 +1,1 @@
+Block ##dialog-window## —  it's a pop-up window on top of content blocking it, to notify the user or confirmation of his actions

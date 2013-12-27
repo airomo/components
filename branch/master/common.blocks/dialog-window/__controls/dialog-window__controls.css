@@ -1,0 +1,9 @@
+.dialog-window__controls
+{
+    margin: 20px 0 0;
+}
+
+.dialog-window__control + .dialog-window__control
+{
+    margin-left: 20px;
+}

@@ -1,0 +1,307 @@
+{
+  "name": "dropdown-new",
+  "elems": [
+    {
+      "name": "content",
+      "mods": [
+        {
+          "name": "visibility",
+          "techs": [
+            {
+              "name": "title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "hidden",
+              "techs": [
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "common.blocks",
+                  "content": "hidden"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "visibility"
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": "dropdown-new content"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": "content item"
+        }
+      ]
+    },
+    {
+      "name": "switcher",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": "trigger dropdown-new__content_visibility modifier"
+        }
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "align",
+      "techs": [
+        {
+          "name": "title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "center",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            },
+            {
+              "name": "js"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "from center"
+            }
+          ]
+        },
+        {
+          "name": "end",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "from end(right or bottom)"
+            }
+          ]
+        },
+        {
+          "name": "start",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "from start(left or top)"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": "Position of content relative to direction"
+        }
+      ]
+    },
+    {
+      "name": "direction",
+      "techs": [
+        {
+          "name": "title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "bottom",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "under"
+            }
+          ]
+        },
+        {
+          "name": "left",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "from left"
+            }
+          ]
+        },
+        {
+          "name": "right",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "from right"
+            }
+          ]
+        },
+        {
+          "name": "top",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": "above"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": "Position of content relative to switcher"
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "desc.wiki"
+    },
+    {
+      "name": "title.txt"
+    },
+    {
+      "name": "examples"
+    },
+    {
+      "name": "js"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "dropdown-new.examples/10-dropdown-new/10-dropdown-new"
+        }
+      ]
+    }
+  ],
+  "description": [
+    {
+      "level": "common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "dropdown-new"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "title": [
+    {
+      "level": "common.blocks",
+      "content": "dropdown-new"
+    }
+  ]
+}

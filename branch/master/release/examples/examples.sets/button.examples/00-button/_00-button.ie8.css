@@ -1,0 +1,1523 @@
+/* 00-button.ie.css begin */
+/* 00-button.css begin */
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/b-page/b-page.css begin */
+.b-page
+{
+    font: 18px/1.4 Georgia, "Century Schoolbook L", Serif;
+}
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/b-page/b-page.css end */
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/row-layout/row-layout.css begin */
+.row-layout
+{
+    display: table;
+
+    width: 100%;
+}
+
+.row-layout__col
+{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.row-layout__col_visibility_hidden
+{
+    visibility: hidden;
+}
+
+.row-layout__col_gap_20
+{
+    width: 20px;
+}
+
+.row-layout__col_gap_40
+{
+    width: 40px;
+}
+
+.row-layout__col_width_min
+{
+    width: 0.01%;
+}
+
+.row-layout__col_align_left
+{
+    text-align: left;
+}
+
+.row-layout__col_align_center
+{
+    text-align: center;
+}
+
+.row-layout__col_align_right
+{
+    text-align: right;
+}
+
+.row-layout__col-inner
+{
+    display: inline-block;
+
+    text-align: left;
+    vertical-align: top;
+}
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/row-layout/row-layout.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/button.css begin */
+/* button — рисует бордер кнопки */ /**/
+.button
+{
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    outline: 0;
+
+    text-align: center;
+    white-space: nowrap;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.button::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+/* Прячем стили от IE < 9 */ /**/
+@media all and (min-width:0px) {
+    .button
+    {
+        border: 0;
+    }
+
+    a.button:link,
+    a.button:visited
+    {
+        /* hidden for Opera 12 to remove native focusing  *//**/
+        outline: hidden;
+
+        text-decoration: none;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/button.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.css begin */
+@media all and (min-width:0px) {
+
+    .button
+    {
+        cursor: pointer;
+    }
+
+}
+
+a.button:hover
+{
+    cursor: default;
+
+    /* hidden for Opera 12 to remove native focusing  */
+    outline: hidden;
+
+    text-decoration: none;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.css end */
+/* ../../../../../common.blocks/button/button.css begin */
+.button
+{
+    cursor: pointer;
+}
+
+a.button
+{
+    cursor: pointer;
+}
+
+.button_visibility_hidden
+{
+    display: none !important;
+}
+/* ../../../../../common.blocks/button/button.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/__text/button__text.css begin */
+.button__text
+{
+    position: relative;
+
+    padding: 0 1em;
+
+    pointer-events: none;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/__text/button__text.css end */
+/* ../../../../../common.blocks/button/__text/button__text.css begin */
+.button__text
+{
+    display: inline-block;
+}
+/* ../../../../../common.blocks/button/__text/button__text.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes
+{
+    opacity: .6;
+}
+/* ../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes,
+a.button_disabled_yes,
+a.button_disabled_yes .button__text
+{
+    cursor: default;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../common.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes
+{
+    cursor: default !important;
+}
+/* ../../../../../common.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css begin */
+@media all and (min-width:0px) {
+    .button_pressed_yes .button__text
+    {
+        top: 1px;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css end */
+/* ../../../../../common.blocks/button/_pressed/button_pressed_yes.css begin */
+.button_pressed_yes .button__text
+{
+    top: .05em;
+}
+/* ../../../../../common.blocks/button/_pressed/button_pressed_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/__icon/button__icon.css begin */
+.button__icon
+{
+    width: 16px;
+    height: 16px;
+}
+
+.button__icon
+{
+    position: relative;
+    top: 3px;
+
+    margin-right: 7px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/__icon/button__icon.css end */
+/* ../../../../../common.blocks/button/__icon/button__icon.css begin */
+.button__icon
+{
+    top: 0;
+    margin: 0 .25em;
+    vertical-align: top;
+}
+
+.button__icon_visibility_hidden
+{
+    display: none;
+}
+
+.button__icon:first-child
+{
+    margin-left: 0;
+}
+
+.button__icon:last-child
+{
+    margin-right: 0;
+}
+/* ../../../../../common.blocks/button/__icon/button__icon.css end */
+/* ../../../../../common.blocks/button/_color/button_color_grey.css begin */
+.button_color_grey
+{
+    background: #A3A6A9;
+    background: -webkit-linear-gradient(top, rgba(163, 166, 169, 1) 0%, rgba(130, 134, 139, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(163, 166, 169, 1) 0%, rgba(130, 134, 139, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(163, 166, 169, 1) 0%, rgba(130, 134, 139, 1) 100%);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .2), 0 0 1px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .2), 0 0 1px rgba(0, 0, 0, .4);
+}
+
+.button_color_grey.button_hovered_yes
+{
+    background: #B5B8BA;
+    background: -webkit-linear-gradient(top, rgba(181, 184, 186, 1) 0%, rgba(155, 158, 162, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(181, 184, 186, 1) 0%, rgba(155, 158, 162, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(181, 184, 186, 1) 0%, rgba(155, 158, 162, 1) 100%);
+}
+
+.button_color_grey.button_pressed_yes
+{
+    background: #929598;
+    background: -webkit-linear-gradient(top, rgba(146, 149, 152, 1) 0%, rgba(117, 120, 125, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(146, 149, 152, 1) 0%, rgba(117, 120, 125, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(146, 149, 152, 1) 0%, rgba(117, 120, 125, 1) 100%);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 2px 1px rgba(0, 0, 0, .2) inset, 0 0 1px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 2px 1px rgba(0, 0, 0, .2) inset, 0 0 1px rgba(0, 0, 0, .4);
+}
+
+.button_color_grey .button__text
+{
+    color: #48494b;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_grey.css end */
+/* ../../../../../common.blocks/button/_color/button_color_transparent.css begin */
+.button_color_transparent
+{
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.07) 100%);
+    background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.07) 100%);
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.07) 100%);
+    -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1), inset 0 0 0 1px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1), inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.button_color_transparent.button_hovered_yes
+{
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.18) 0%, rgba(244, 244, 244, 0.12) 100%);
+    background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.18) 0%, rgba(244, 244, 244, 0.12) 100%);
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%, rgba(244, 244, 244, 0.12) 100%);
+    -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .4), 0 1px 0 rgba(255, 255, 255, .1), inset 0 0 0 1px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .4), 0 1px 0 rgba(255, 255, 255, .1), inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.button_color_transparent.button_pressed_yes
+{
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background:         linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, .1), inset 0 1px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, .1), inset 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.button_color_transparent .button__text
+{
+    color: rgba(0, 0, 0, .75);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_transparent.css end */
+/* ../../../../../common.blocks/button/_size/button_size_xxl.css begin */
+.button_size_xxl
+{
+    min-width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.button_size_xxl .button__text
+{
+    padding-right: 23px;
+    padding-left: 23px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_xxl.css end */
+/* ../../../../../common.blocks/button/_size/button_size_l.css begin */
+.button_size_l
+{
+    min-width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 42px;
+}
+
+.button_size_l .button__text
+{
+    padding-right: 14px;
+    padding-left: 14px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_l.css end */
+/* ../../../../../common.blocks/button/_side/button_side_right.css begin */
+.button_side_right
+{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+/* ../../../../../common.blocks/button/_side/button_side_right.css end */
+/* ../../../../../common.blocks/button/_side/button_side_left.css begin */
+.button_side_left
+{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+/* ../../../../../common.blocks/button/_side/button_side_left.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_only-icon/button_only-icon_yes.css begin */
+.button_only-icon_yes .button__text
+{
+    display: inline-block;
+
+    width: 4px;
+}
+
+.button_only-icon_yes .button__icon
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -8px 0 0 -8px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_only-icon/button_only-icon_yes.css end */
+/* ../../../../../common.blocks/button/_only-icon/button_only-icon_yes.css begin */
+.button_only-icon_yes
+{
+    position: relative;
+}
+
+.button_only-icon_yes .button__text
+{
+    position: static;
+    padding: 0;
+    font: 0/0 arial;
+}
+
+.button_only-icon_yes .button__icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.button_only-icon_yes .button__counter
+{
+    display: none;
+}
+/* ../../../../../common.blocks/button/_only-icon/button_only-icon_yes.css end */
+/* ../../../../../common.blocks/icon/icon.css begin */
+.icon
+{
+    display: inline-block;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.icon_visibility_hidden
+{
+    display: none;
+}
+/* ../../../../../common.blocks/icon/icon.css end */
+/* ../../../../../common.blocks/icon/_size/icon_size_xl.css begin */
+.icon_size_xl
+{
+    width: 26px;
+    height: 26px;
+}
+/* ../../../../../common.blocks/icon/_size/icon_size_xl.css end */
+/* ../../../../../common.blocks/icon/_size/icon_size_xxl.css begin */
+.icon_size_xxl
+{
+    width: 30px;
+    height: 30px;
+}
+/* ../../../../../common.blocks/icon/_size/icon_size_xxl.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_thin-arrow-left.css begin */
+.icon_type_thin-arrow-left
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_thin-arrow-left.png");
+    background-position: 50% 0;
+    background-size: auto 200%;
+}
+
+.icon_pressed_yes.icon_type_thin-arrow-left,
+.button_pressed_yes .icon_type_thin-arrow-left
+{
+    background-position: 50% 100%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_thin-arrow-left.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_thin-arrow-right.css begin */
+.icon_type_thin-arrow-right
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_thin-arrow-right.png");
+    background-position: 50% 0;
+    background-size: auto 200%;
+}
+
+.icon_pressed_yes.icon_type_thin-arrow-right,
+.button_pressed_yes .icon_type_thin-arrow-right
+{
+    background-position: 50% 100%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_thin-arrow-right.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_info.css begin */
+.icon_type_info
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_info.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_info,
+.button_pressed_yes .icon_type_info
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_info.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_refresh.css begin */
+.icon_type_refresh
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_refresh.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_refresh,
+.button_pressed_yes .icon_type_refresh
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_refresh.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_dashboard.css begin */
+.icon_type_dashboard
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_dashboard.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_dashboard,
+.button_pressed_yes .icon_type_dashboard
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_dashboard.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_timeline.css begin */
+.icon_type_timeline
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_timeline.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_timeline,
+.button_pressed_yes .icon_type_timeline
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_timeline.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_description.css begin */
+.icon_type_description
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_description.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_description,
+.button_pressed_yes .icon_type_description
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_description.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_arrow-up.css begin */
+.icon_type_arrow-up
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_arrow-up.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_arrow-up,
+.button_pressed_yes .icon_type_arrow-up
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_arrow-up.css end */
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/header/header.css begin */
+.header
+{
+    background: #2dc6dd;
+    background: -webkit-linear-gradient(top, rgba(45, 198, 221, 1) 0%, rgba(20, 155, 196, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(45, 198, 221, 1) 0%, rgba(20, 155, 196, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(45, 198, 221, 1) 0%, rgba(20, 155, 196, 1) 100%);
+    height: 70px;
+    margin: 15px 0;
+}
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/header/header.css end */
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/footer/footer.css begin */
+.footer
+{
+    background: #949494;
+    background: -webkit-linear-gradient(top, #949494 0%, #585858 100%);
+    background:    -moz-linear-gradient(top, #949494 0%, #585858 100%);
+    background:         linear-gradient(to bottom, #949494 0%, #585858 100%);
+    height: 70px;
+    margin: 15px 0;
+}
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/footer/footer.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/radiobox.css begin */
+.radiobox
+{
+    display: inline-block;
+}
+/* ../../../../../libs/bem-components/common.blocks/radiobox/radiobox.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/radiobox.css begin */
+@media all and (min-width:0px) {
+
+    .radiobox__box,
+    .radiobox__control
+    {
+        cursor: pointer;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/radiobox.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/radiobox__radio.css begin */
+.radiobox__radio
+{
+    position: relative;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/radiobox__radio.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_checked/radiobox__radio_checked_yes.css begin */
+@media all and (min-width:0px) {
+    /* Маркер */
+    .radiobox__radio_checked_yes .radiobox__box:after
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        content: '';
+
+        width: 6px;
+        height: 6px;
+
+        margin: -3px 0 0 -3px;
+        padding: 0;
+
+        /* Цвет (background) маркера задается в _theme */
+
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+}
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_checked/radiobox__radio_checked_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css begin */
+.radiobox__radio_disabled_yes
+{
+    opacity: .6;
+
+    /* убираем выделение при клике в webkit-touch */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css begin */
+@media all and (min-width:0px) {
+
+    .radiobox__radio_disabled_yes .radiobox__box,
+    .radiobox__radio_disabled_yes .radiobox__control
+    {
+        cursor: default;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__box/radiobox__box.css begin */
+.radiobox__box
+{
+    position: relative;
+    top: 1px;
+
+    display: inline-block;
+
+    /* Размеры (width, height) обертки задаются в _size */
+    margin-right: 0.5em;
+
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__box/radiobox__box.css end */
+/* ../../../../../common.blocks/radiobox/__box/radiobox__box.css begin */
+.radiobox__box
+{
+    top: 0;
+    vertical-align: middle;
+}
+
+.radiobox__box:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    content: '';
+}
+
+.radiobox .radiobox__box:after
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+/* ../../../../../common.blocks/radiobox/__box/radiobox__box.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__control/radiobox__control.css begin */
+@media all and (min-width:0px) {
+    .i-ua_js_yes .radiobox__control
+    {
+        position: absolute;
+
+        opacity: 0;
+    }
+}
+
+
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__control/radiobox__control.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/radio-button__radio.css begin */
+.radio-button__radio
+{
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+
+    margin: 0 -1px 0 0;
+
+    outline: 0;
+
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* :before — бордер
+   :after — фон */
+.radio-button__radio:after,
+.radio-button__radio:before
+{
+    position: absolute;
+    right: 1px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+
+    content: '';
+}
+
+.radio-button__radio:after
+{
+    bottom: 1px;
+    left: 1px;
+    top: 1px;
+}
+
+.radio-button__radio_side_left,
+.radio-button__radio_side_left:before
+{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.radio-button__radio_side_right,
+.radio-button__radio_side_right:before
+{
+    right: 0;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.radio-button__radio_side_left:after
+{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.radio-button__radio_side_right:after
+{
+    right: 1px;
+
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.i-ua_js_no .radio-button__radio:after,
+.i-ua_js_no .radio-button__radio:before
+{
+    display: none;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/radio-button__radio.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/radio-button__radio.css begin */
+@media all and (min-width:0px) {
+
+    .radio-button__radio
+    {
+        cursor: pointer;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/radio-button__radio.css end */
+/* ../../../../../common.blocks/radio-button/__radio/radio-button__radio.css begin */
+.radio-button__radio:first-child:before
+{
+    display: none !important;
+}
+/* ../../../../../common.blocks/radio-button/__radio/radio-button__radio.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_pressed/radio-button__radio_pressed_yes.css begin */
+@media all and (min-width:0px) {
+    .radio-button__radio_pressed_yes .radio-button__text
+    {
+        top: 1px;
+    }
+}
+
+.radio-button__radio_pressed_yes:before
+{
+    right: 0;
+}
+
+.radio-button__radio_next-for-pressed_yes:before
+{
+    left: 1px;
+}
+
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_pressed/radio-button__radio_pressed_yes.css end */
+/* ../../../../../common.blocks/radio-button/__radio/_pressed/radio-button__radio_pressed_yes.css begin */
+.radio-button__radio_pressed_yes:before,
+.radio-button__radio_pressed_yes + .radio-button__radio:before
+{
+    display: none;
+}
+
+.radio-button__radio_pressed_yes .radio-button__text
+{
+    top: 0;
+}
+/* ../../../../../common.blocks/radio-button/__radio/_pressed/radio-button__radio_pressed_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_focused/radio-button__radio_focused_yes.css begin */
+.i-ua_js_yes .radio-button__radio_focused_yes
+{
+    z-index: 1;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_focused/radio-button__radio_focused_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.css begin */
+.radio-button__radio_disabled_yes
+{
+    opacity: .6;
+
+    /* убираем выделение при клике в webkit-touch */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.css begin */
+@media all and (min-width:0px) {
+
+    .radio-button__radio_disabled_yes
+    {
+        cursor: default;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_side/radio-button__radio_side_both.css begin */
+.radio-button__radio_side_both
+{
+    border-radius: 3px;
+}
+
+.radio-button__radio_side_both:before
+{
+    right: 0;
+
+    border-radius: 3px;
+}
+
+.radio-button__radio_side_both:after
+{
+    border-radius: 2px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__radio/_side/radio-button__radio_side_both.css end */
+/* ../../../../../common.blocks/radio-button/__radio/_side/radio-button__radio_side_both.css begin */
+.radio-button__radio_side_both
+{
+    border-radius: 0 !important;
+}
+/* ../../../../../common.blocks/radio-button/__radio/_side/radio-button__radio_side_both.css end */
+/* ../../../../../common.blocks/radio-button/__radio/_side/radio-button__radio_side_left.css begin */
+.radio-button__radio_side_left
+{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+/* ../../../../../common.blocks/radio-button/__radio/_side/radio-button__radio_side_left.css end */
+/* ../../../../../common.blocks/radio-button/__radio/_side/radio-button__radio_side_right.css begin */
+.radio-button__radio_side_right
+{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+/* ../../../../../common.blocks/radio-button/__radio/_side/radio-button__radio_side_right.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__control/radio-button__control.css begin */
+@media all and (min-width:0px) {
+    .i-ua_js_yes .radio-button__control
+    {
+        position: absolute;
+        /*left: -1000px;*/
+
+        opacity: 0;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__control/radio-button__control.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__text/radio-button__text.css begin */
+.radio-button__text
+{
+    position: relative;
+    z-index: 1;
+
+    padding: 0 1em;
+}
+
+.i-ua_js_no .radio-button__text
+{
+    padding: 0 1em 0 0.3em;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/__text/radio-button__text.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/radio-button.css begin */
+.radio-button
+{
+    display: inline-block;
+
+    white-space: nowrap;
+
+    border-radius: 3px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/radio-button.css end */
+/* ../../../../../common.blocks/radio-button/_color/radio-button_color_transparent.css begin */
+.radio-button_color_transparent
+{
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.07) 100%);
+    background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.07) 100%);
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.07) 100%);
+    -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1), inset 0 0 0 1px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .2), inset 0 1px 1px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1), inset 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.radio-button_color_transparent .radio-button__radio:before
+{
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 100%);
+    background:    -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.3) 100%);
+    background:         linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 100%);
+}
+
+.radio-button_color_transparent .radio-button__radio_hovered_yes
+{
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.18) 0%, rgba(244, 244, 244, 0.12) 100%);
+    background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0.18) 0%, rgba(244, 244, 244, 0.12) 100%);
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, 0.18) 0%, rgba(244, 244, 244, 0.12) 100%);
+}
+
+.radio-button_color_transparent .radio-button__radio_pressed_yes
+{
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background:    -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background:         linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, .1), inset 0 1px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, .1), inset 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.radio-button_color_transparent .radio-button__text
+{
+    color: rgba(0, 0, 0, .75);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/radio-button/_color/radio-button_color_transparent.css end */
+/* ../../../../../libs/bem-components/common.blocks/radio-button/_size/radio-button_size_s.css begin */
+.radio-button_size_s
+{
+    line-height: 28px;
+
+    font-size: 13px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radio-button/_size/radio-button_size_s.css end */
+/* ../../../../../common.blocks/radio-button/_size/radio-button_size_s.css begin */
+.radio-button_size_s,
+.radio-button_size_s .radio-button__radio_side_left,
+.radio-button_size_s .radio-button__radio_side_right
+{
+    border-radius: 4px;
+}
+
+.radio-button_size_s .radio-button__radio
+{
+    min-width: 28px;
+    height: 28px;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.radio-button_size_s .radio-button__text
+{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+/* ../../../../../common.blocks/radio-button/_size/radio-button_size_s.css end */
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/example-table/example-table.css begin */
+.example-table__table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+    font: 14px/1.4 Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+.example-table__col,
+.example-table__row:first-child + .example-table__row .example-table__col
+{
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.example-table__col[rowspan] ~ .example-table__col
+{
+    padding-top: 30px;
+}
+
+.example-table__row:first-child .example-table__col,
+.example-table__col:first-child[rowspan]
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.example-table__col:first-child[rowspan] + .example-table__col,
+.example-table__col:first-child
+{
+    font-style: italic;
+}
+
+.example-table__row:first-child .example-table__col:first-child
+{
+    background: #fff6a8;
+    font-weight: normal;
+    font-style: italic;
+}
+/* ../../../../../common.blocks/button/button.examples/00-button.blocks/example-table/example-table.css end */
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_s.css begin */
+.button__icon_size_s
+{
+    margin-top: 6px;
+}
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_s.css end */
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_m.css begin */
+.button__icon_size_m
+{
+    margin-top: 8px;
+}
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_m.css end */
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_l.css begin */
+.button__icon_size_l
+{
+    margin-top: 10px;
+}
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_l.css end */
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_xl.css begin */
+.button__icon_size_xl
+{
+    margin-top: 12px;
+}
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_xl.css end */
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_xxl.css begin */
+.button__icon_size_xxl
+{
+    margin-top: 20px;
+}
+/* ../../../../../common.blocks/button/__icon/_size/button__icon_size_xxl.css end */
+/* ../../../../../common.blocks/button/__counter/button__counter.css begin */
+.button__counter
+{
+    margin: 0 0.7em;
+    padding: 0 0.7em;
+}
+
+.button_only-icon_yes .button__counter,
+.button__counter_visibility_hidden
+{
+    display: none;
+}
+
+.button__counter:first-child
+{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.button__counter:last-child
+{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.button__counter:first-child:before,
+.button__counter:last-child:after
+{
+    display: none;
+}
+
+.button__counter:before,
+.button__counter:after
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background:    -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    content: '';
+}
+
+.button__counter:before
+{
+    margin: 0 0 0 -0.7em;
+}
+
+.button__counter:after
+{
+    margin: 0 0 0 0.67em;
+}
+/* ../../../../../common.blocks/button/__counter/button__counter.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_s.css begin */
+.button_size_s
+{
+    line-height: 28px;
+
+    font-size: 13px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_s.css end */
+/* ../../../../../common.blocks/button/_size/button_size_s.css begin */
+.button_size_s
+{
+    min-width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.button_size_s .button__text
+{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_s.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_m.css begin */
+.button_size_m
+{
+    line-height: 32px;
+
+    font-size: 15px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_m.css end */
+/* ../../../../../common.blocks/button/_size/button_size_m.css begin */
+.button_size_m
+{
+    min-width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.button_size_m .button__text
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_m.css end */
+/* ../../../../../common.blocks/button/_size/button_size_xl.css begin */
+.button_size_xl
+{
+    min-width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.button_size_xl .button__text
+{
+    padding-right: 17px;
+    padding-left: 17px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_xl.css end */
+/* ../../../../../common.blocks/button/_color/button_color_blue.css begin */
+.button_color_blue
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_color_blue.button_hovered_yes
+{
+    background: #3DBAD5;
+    background: -webkit-linear-gradient(top, rgba(61, 186, 213, 1) 0%, rgba(52, 162, 198, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(61, 186, 213, 1) 0%, rgba(52, 162, 198, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(61, 186, 213, 1) 0%, rgba(52, 162, 198, 1) 100%);
+}
+
+.button_color_blue.button_pressed_yes
+{
+    background: #24afc7;
+    background: -webkit-linear-gradient(top, #24afc7 0%, #189abb 100%);
+    background:    -moz-linear-gradient(top, #24afc7 0%, #189abb 100%);
+    background:         linear-gradient(to bottom, #24afc7 0%, #189abb 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+}
+
+.button_color_blue .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_blue.css end */
+/* ../../../../../common.blocks/button/_color/button_color_light-grey.css begin */
+.button_color_light-grey
+{
+    background: #ebedef;
+    background: -webkit-linear-gradient(top, #fafbfb 0%,#e4e7ea 100%);
+    background:    -moz-linear-gradient(top, #fafbfb 0%, #e4e7ea 100%);
+    background:         linear-gradient(to bottom, #fafbfb 0%,#e4e7ea 100%);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 0 rgba(255, 255, 255, .2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 0 rgba(255, 255, 255, .2);
+}
+
+.button_color_light-grey.button_hovered_yes
+{
+    background: #fbfcfc;
+    background: -webkit-linear-gradient(top, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+}
+
+.button_color_light-grey.button_pressed_yes
+{
+    background: #f9fafa;
+    background: -webkit-linear-gradient(top, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.button_color_light-grey .button__text
+{
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+
+.button_color_light-grey .button__counter
+{
+    color: #1a8db9;
+    text-shadow: none;
+}
+/* ../../../../../common.blocks/button/_color/button_color_light-grey.css end */
+/* ../../../../../common.blocks/button/_color/button_color_green.css begin */
+.button_color_green
+{
+    background: #35d14b;
+    background: -webkit-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_color_green.button_hovered_yes
+{
+    background: #5dda6f;
+    background: -webkit-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+}
+
+.button_color_green.button_pressed_yes
+{
+    background: #32c647;
+    background: -webkit-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.button_color_green .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_green.css end */
+/* ../../../../../common.blocks/button/_color/button_color_red.css begin */
+.button_color_red
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_color_red.button_hovered_yes
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(189, 54, 47, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(189, 54, 47, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(189, 54, 47, 1) 0%, rgba(189, 54, 47, 1) 100%);
+}
+
+.button_color_red.button_pressed_yes
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+}
+
+.button_color_red .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_red.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_apps-info.css begin */
+.icon_type_apps-info
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_apps-info.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+/*.icon_pressed_yes.icon_type_apps-info,*/
+/*.button_pressed_yes .icon_type_apps-info*/
+/*{*/
+    /*background-position: 100% 50%;*/
+/*}*/
+/* ../../../../../common.blocks/icon/_type/icon_type_apps-info.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_dislike.css begin */
+.icon_type_dislike
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_dislike.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_dislike,
+.button_pressed_yes .icon_type_dislike
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_dislike.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_like.css begin */
+.icon_type_like
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_like.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_like,
+.button_pressed_yes .icon_type_like
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_like.css end */
+/* ../../../../../common.blocks/icon/_type/icon_type_monkey.css begin */
+.icon_type_monkey
+{
+    background-image: url("../../../../../common.blocks/icon/_type/icon_type_monkey.png");
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_monkey,
+.button_pressed_yes .icon_type_monkey
+{
+    background-position: 100% 50%;
+}
+/* ../../../../../common.blocks/icon/_type/icon_type_monkey.css end */
+/* ../../../../../common.blocks/icon/_size/icon_size_s.css begin */
+.icon_size_s
+{
+    width: 16px;
+    height: 16px;
+}
+/* ../../../../../common.blocks/icon/_size/icon_size_s.css end */
+/* ../../../../../common.blocks/icon/_size/icon_size_m.css begin */
+.icon_size_m
+{
+    width: 16px;
+    height: 16px;
+}
+/* ../../../../../common.blocks/icon/_size/icon_size_m.css end */
+/* ../../../../../common.blocks/icon/_size/icon_size_l.css begin */
+.icon_size_l
+{
+    width: 22px;
+    height: 22px;
+}
+/* ../../../../../common.blocks/icon/_size/icon_size_l.css end */
+
+/* 00-button.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.ie.css begin */
+button.button
+{
+    /* Позволяет управлять внутренними отступами кнопки */ /**/
+    overflow: visible;
+
+    vertical-align: middle;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css begin */
+.button__text
+{
+    padding: 0 0.85em;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css begin */
+.button_disabled_yes,
+a.button_disabled_yes
+{
+    color: #c6c6c6 !important;
+
+    text-decoration: none!important;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_only-icon/button_only-icon_yes.ie.css begin */
+a.button_only-icon_yes
+{
+    text-decoration: none;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/_only-icon/button_only-icon_yes.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.ie.css begin */
+.radiobox__radio_disabled_yes
+{
+    color: #9d9d9d;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__box/radiobox__box.ie.css begin */
+.radiobox__box
+{
+    margin-right: 0.1em;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__box/radiobox__box.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/radio-button__radio.ie.css begin */
+.radio-button__radio
+{
+    margin: 0;
+    padding: 0 0.8em 0 0;
+
+    cursor: default;
+    text-align: left;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/radio-button__radio.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.ie.css begin */
+.radio-button__radio_disabled_yes
+{
+    color: #9d9d9d;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__control/radio-button__control.ie.css begin */
+.radio-button__control
+{
+    margin: 0 0.1em 0 -0.3em;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__control/radio-button__control.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__text/radio-button__text.ie.css begin */
+.radio-button__text
+{
+    padding: 0;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/radio-button/__text/radio-button__text.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_size/button_size_s.ie.css begin */
+button.button_size_s
+{
+    height: 30px;
+
+    line-height: 24px;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/_size/button_size_s.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_size/button_size_m.ie.css begin */
+button.button_size_m
+{
+    height: 34px;
+
+    line-height: 27px;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/_size/button_size_m.ie.css end */
+
+/* 00-button.ie.css end */

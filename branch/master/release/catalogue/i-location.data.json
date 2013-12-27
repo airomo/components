@@ -1,0 +1,13 @@
+{
+  "name": "i-location",
+  "techs": [
+    {
+      "name": "js"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ]
+}

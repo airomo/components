@@ -1,0 +1,72 @@
+[
+  {
+    "name": "attach",
+    "url": "/catalogue/attach.html",
+    "title": ""
+  },
+  {
+    "name": "button",
+    "url": "/catalogue/button.html",
+    "title": ""
+  },
+  {
+    "name": "check-button",
+    "url": "/catalogue/check-button.html",
+    "title": ""
+  },
+  {
+    "name": "checkbox",
+    "url": "/catalogue/checkbox.html",
+    "title": ""
+  },
+  {
+    "name": "input",
+    "url": "/catalogue/input.html",
+    "title": ""
+  },
+  {
+    "name": "radio-button",
+    "url": "/catalogue/radio-button.html",
+    "title": ""
+  },
+  {
+    "name": "radiobox",
+    "url": "/catalogue/radiobox.html",
+    "title": ""
+  },
+  {
+    "name": "dialog-window",
+    "url": "/catalogue/dialog-window.html",
+    "title": ""
+  },
+  {
+    "name": "dropdown-new",
+    "url": "/catalogue/dropdown-new.html",
+    "title": ""
+  },
+  {
+    "name": "i-location",
+    "url": "/catalogue/i-location.html",
+    "title": ""
+  },
+  {
+    "name": "icon",
+    "url": "/catalogue/icon.html",
+    "title": ""
+  },
+  {
+    "name": "paranja",
+    "url": "/catalogue/paranja.html",
+    "title": ""
+  },
+  {
+    "name": "qr-code",
+    "url": "/catalogue/qr-code.html",
+    "title": ""
+  },
+  {
+    "name": "tab-switcher",
+    "url": "/catalogue/tab-switcher.html",
+    "title": ""
+  }
+]

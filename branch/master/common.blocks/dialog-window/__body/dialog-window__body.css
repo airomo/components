@@ -1,0 +1,10 @@
+.dialog-window__body
+{
+    display: inline-block;
+    padding: 5%;
+    min-width: 600px;
+    max-width: 90%;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+}

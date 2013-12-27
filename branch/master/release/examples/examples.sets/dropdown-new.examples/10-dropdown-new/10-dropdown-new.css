@@ -1,0 +1,12 @@
+@import url(../../../../../common.blocks/dropdown-new/dropdown-new.css);
+@import url(../../../../../common.blocks/dropdown-new/__switcher/dropdown-new__switcher.css);
+@import url(../../../../../common.blocks/dropdown-new/__content/dropdown-new__content.css);
+@import url(../../../../../common.blocks/dropdown-new/__content/_visibility/dropdown-new__content_visibility_hidden.css);
+@import url(../../../../../common.blocks/dropdown-new/__item/dropdown-new__item.css);
+@import url(../../../../../common.blocks/dropdown-new/_align/dropdown-new_align_start.css);
+@import url(../../../../../common.blocks/dropdown-new/_align/dropdown-new_align_center.css);
+@import url(../../../../../common.blocks/dropdown-new/_align/dropdown-new_align_end.css);
+@import url(../../../../../common.blocks/dropdown-new/_direction/dropdown-new_direction_top.css);
+@import url(../../../../../common.blocks/dropdown-new/_direction/dropdown-new_direction_right.css);
+@import url(../../../../../common.blocks/dropdown-new/_direction/dropdown-new_direction_bottom.css);
+@import url(../../../../../common.blocks/dropdown-new/_direction/dropdown-new_direction_left.css);

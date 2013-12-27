@@ -1,0 +1,849 @@
+/* 10-dialog-window.css begin */
+/* ../../../../../common.blocks/dialog-window/dialog-window.css begin */
+.dialog-window
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/dialog-window/dialog-window.css end */
+/* ../../../../../common.blocks/dialog-window/__inner/dialog-window__inner.css begin */
+.dialog-window__inner
+{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.dialog-window__inner:before
+{
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    content: '';
+    vertical-align: middle;
+}
+/* ../../../../../common.blocks/dialog-window/__inner/dialog-window__inner.css end */
+/* ../../../../../common.blocks/dialog-window/__body/dialog-window__body.css begin */
+.dialog-window__body
+{
+    display: inline-block;
+    padding: 5%;
+    min-width: 600px;
+    max-width: 90%;
+    vertical-align: middle;
+    text-align: left;
+    white-space: normal;
+}
+/* ../../../../../common.blocks/dialog-window/__body/dialog-window__body.css end */
+/* ../../../../../common.blocks/dialog-window/__close/dialog-window__close.css begin */
+.dialog-window__close
+{
+    display: inline-block;
+    float: right;
+    margin: 15px 0 15px 20px;
+    position: relative;
+    width: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+/* ../../../../../common.blocks/dialog-window/__close/dialog-window__close.css end */
+/* ../../../../../common.blocks/dialog-window/__icon/dialog-window__icon.css begin */
+.dialog-window__icon
+{
+    position: relative;
+    top: -4px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+/* ../../../../../common.blocks/dialog-window/__icon/dialog-window__icon.css end */
+/* ../../../../../common.blocks/dialog-window/__title/dialog-window__title.css begin */
+.dialog-window__title
+{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    left: 60px;
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+}
+/* ../../../../../common.blocks/dialog-window/__title/dialog-window__title.css end */
+/* ../../../../../common.blocks/dialog-window/__content/dialog-window__content.css begin */
+.dialog-window__content
+{
+    padding: 15px 20px;
+    background: #f5f5f5;
+    color: #2f3032;
+    font-size: 18px;
+}
+/* ../../../../../common.blocks/dialog-window/__content/dialog-window__content.css end */
+/* ../../../../../common.blocks/dialog-window/__controls/dialog-window__controls.css begin */
+.dialog-window__controls
+{
+    margin: 20px 0 0;
+}
+
+.dialog-window__control + .dialog-window__control
+{
+    margin-left: 20px;
+}
+/* ../../../../../common.blocks/dialog-window/__controls/dialog-window__controls.css end */
+/* ../../../../../common.blocks/dialog-window/__paranja/dialog-window__paranja.css begin */
+.dialog-window__paranja
+{
+    z-index: 0 !important;
+}
+/* ../../../../../common.blocks/dialog-window/__paranja/dialog-window__paranja.css end */
+/* ../../../../../common.blocks/paranja/paranja.css begin */
+.paranja
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .3);
+}
+/* ../../../../../common.blocks/paranja/paranja.css end */
+/* ../../../../../common.blocks/paranja/_visibility/paranja_visibility_hidden.css begin */
+.paranja_visibility_hidden
+{
+    display: none;
+}
+/* ../../../../../common.blocks/paranja/_visibility/paranja_visibility_hidden.css end */
+/* ../../../../../common.blocks/dialog-window/_visibility/dialog-window_visibility_hidden.css begin */
+.dialog-window_visibility_hidden
+{
+    display: none;
+}
+/* ../../../../../common.blocks/dialog-window/_visibility/dialog-window_visibility_hidden.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/button.css begin */
+/* button — рисует бордер кнопки */ /**/
+.button
+{
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    outline: 0;
+
+    text-align: center;
+    white-space: nowrap;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.button::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+/* Прячем стили от IE < 9 */ /**/
+@media all and (min-width:0px) {
+    .button
+    {
+        border: 0;
+    }
+
+    a.button:link,
+    a.button:visited
+    {
+        /* hidden for Opera 12 to remove native focusing  *//**/
+        outline: hidden;
+
+        text-decoration: none;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/button.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.css begin */
+@media all and (min-width:0px) {
+
+    .button
+    {
+        cursor: pointer;
+    }
+
+}
+
+a.button:hover
+{
+    cursor: default;
+
+    /* hidden for Opera 12 to remove native focusing  */
+    outline: hidden;
+
+    text-decoration: none;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.css end */
+/* ../../../../../common.blocks/button/button.css begin */
+.button
+{
+    cursor: pointer;
+}
+
+a.button
+{
+    cursor: pointer;
+}
+
+.button_visibility_hidden
+{
+    display: none !important;
+}
+/* ../../../../../common.blocks/button/button.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/__text/button__text.css begin */
+.button__text
+{
+    position: relative;
+
+    padding: 0 1em;
+
+    pointer-events: none;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/__text/button__text.css end */
+/* ../../../../../common.blocks/button/__text/button__text.css begin */
+.button__text
+{
+    display: inline-block;
+}
+/* ../../../../../common.blocks/button/__text/button__text.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes
+{
+    opacity: .6;
+}
+/* ../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes,
+a.button_disabled_yes,
+a.button_disabled_yes .button__text
+{
+    cursor: default;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../common.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes
+{
+    cursor: default !important;
+}
+/* ../../../../../common.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css begin */
+@media all and (min-width:0px) {
+    .button_pressed_yes .button__text
+    {
+        top: 1px;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css end */
+/* ../../../../../common.blocks/button/_pressed/button_pressed_yes.css begin */
+.button_pressed_yes .button__text
+{
+    top: .05em;
+}
+/* ../../../../../common.blocks/button/_pressed/button_pressed_yes.css end */
+/* ../../../../../common.blocks/button/_color/button_color_green.css begin */
+.button_color_green
+{
+    background: #35d14b;
+    background: -webkit-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(53, 209, 75, 1) 0%, rgba(39, 193, 55, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #169e25 inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_color_green.button_hovered_yes
+{
+    background: #5dda6f;
+    background: -webkit-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(93, 218, 111, 1) 0%, rgba(82, 205, 95, 1) 100%);
+}
+
+.button_color_green.button_pressed_yes
+{
+    background: #32c647;
+    background: -webkit-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(50, 198, 71, 1) 0%, rgba(37, 183, 52, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px #169e25, inset 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.button_color_green .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_green.css end */
+/* ../../../../../common.blocks/button/_color/button_color_red.css begin */
+.button_color_red
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_color_red.button_hovered_yes
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(189, 54, 47, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(189, 54, 47, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(189, 54, 47, 1) 0%, rgba(189, 54, 47, 1) 100%);
+}
+
+.button_color_red.button_pressed_yes
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(238, 95, 91, 1) 0%, rgba(189, 54, 47, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+}
+
+.button_color_red .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/button/_color/button_color_red.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_m.css begin */
+.button_size_m
+{
+    line-height: 32px;
+
+    font-size: 15px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_m.css end */
+/* ../../../../../common.blocks/button/_size/button_size_m.css begin */
+.button_size_m
+{
+    min-width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.button_size_m .button__text
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_m.css end */
+/* ../../../../../common.blocks/dialog-window/__header/dialog-window__header.css begin */
+.dialog-window__header
+{
+    position: relative;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+}
+/* ../../../../../common.blocks/dialog-window/__header/dialog-window__header.css end */
+/* ../../../../../common.blocks/dialog-window/__header/_type/dialog-window__header_type_info.css begin */
+.dialog-window__header_type_info
+{
+    background: #00afd1;
+}
+/* ../../../../../common.blocks/dialog-window/__header/_type/dialog-window__header_type_info.css end */
+/* ../../../../../common.blocks/dialog-window/__icon/_type/dialog-window__icon_type_info.css begin */
+.dialog-window__icon_type_info
+{
+    background-image: url("../../../../../common.blocks/dialog-window/__icon/_type/dialog-window__icon_type_info.png");
+}
+/* ../../../../../common.blocks/dialog-window/__icon/_type/dialog-window__icon_type_info.css end */
+/* ../../../../../common.blocks/dialog-window/__header/_type/dialog-window__header_type_success.css begin */
+.dialog-window__header_type_success
+{
+    background: #73ba5d;
+}
+/* ../../../../../common.blocks/dialog-window/__header/_type/dialog-window__header_type_success.css end */
+/* ../../../../../common.blocks/dialog-window/__icon/_type/dialog-window__icon_type_success.css begin */
+.dialog-window__icon_type_success
+{
+    background-image: url("../../../../../common.blocks/dialog-window/__icon/_type/dialog-window__icon_type_success.png");
+}
+/* ../../../../../common.blocks/dialog-window/__icon/_type/dialog-window__icon_type_success.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/input.css begin */
+.input
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 100%;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/input.css end */
+/* ../../../../../common.blocks/input/input.css begin */
+.input_visibility_hidden
+{
+	display: none !important;
+}
+/* ../../../../../common.blocks/input/input.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_disabled/input_disabled_yes.css begin */
+.input_disabled_yes
+{
+    opacity: .6;
+}
+
+.input_disabled_yes .input__control
+{
+    resize: none;
+}
+
+.input_disabled_yes .input__clear
+{
+    display: none;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/_disabled/input_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/_disabled/input_disabled_yes.css begin */
+.input_disabled_yes .input__box,
+.input_disabled_yes .input__control
+{
+    cursor: default;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/input/_disabled/input_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/_focused/input_focused_yes.css begin */
+/* ::after = fade */
+.input_focused_yes .input__box::after
+{
+    /* Здесь раньше был display: none, но
+      с ним для FF не пробрасывается click после установки фокуса (LEGO-9448)
+      visibility: hidden решает эту проблему и не  и не влияет на визуальное представление компонента
+    */
+    visibility: hidden;
+}
+/* ../../../../../libs/bem-components/common.blocks/input/_focused/input_focused_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__box/input__box.css begin */
+/* elem box — a border input */
+.input__box
+{
+    position: relative;
+
+    display: block;
+}
+
+@media all and (min-width:0px) {
+    .input__box
+    {
+        /* padding-right for elem clear */
+        padding-right: 29px;
+
+        -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+        cursor: text;
+    }
+}
+
+/* ::after = fade */
+.input__box::after
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 1px;
+    right: 1px;
+    top: 2px;
+
+    content: '';
+
+    width: 36px;
+
+    background: -webkit-gradient(linear, left top, right top, color-stop(0,rgba(255,255,255,0)), color-stop(20%, #fff));
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0, #fff 20%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0, #fff 20%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0, #fff 20%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0, #fff 20%);
+}
+/* ../../../../../libs/bem-components/common.blocks/input/__box/input__box.css end */
+/* ../../../../../common.blocks/input/__box/input__box.css begin */
+.input__box
+{
+    height: 100%;
+}
+
+.input__box:after
+{
+    display: none;
+}
+/* ../../../../../common.blocks/input/__box/input__box.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__control/input__control.css begin */
+.input__control
+{
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    margin: 0;
+
+    color: #000;
+
+    font-size: 100%;
+}
+
+@media all and (min-width:0px) {
+    .input__control
+    {
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+
+        outline: 0;
+
+        border: 0;
+        background: none;
+
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+/* Сбрасываем желтый бг у интутов при автозаполнении */
+.input__control:-webkit-autofill
+{
+    top: 1px;
+    left: 1px;
+
+    height: 1.9em;
+
+    -webkit-box-shadow: inset 0 0 0 50px #fff;
+    -webkit-text-fill-color: #000;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__control/input__control.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/__control/input__control.css begin */
+/* Hide native cross in IE10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .input__control::-ms-clear
+    {
+        display: none;
+    }
+
+}
+
+
+/* ../../../../../libs/bem-components/desktop.blocks/input/__control/input__control.css end */
+/* ../../../../../common.blocks/input/__control/input__control.css begin */
+.input__control
+{
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 100%;
+}
+/* ../../../../../common.blocks/input/__control/input__control.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/input__clear.css begin */
+.input__clear
+{
+    position: absolute;
+    z-index: 5;
+    right: 1px;
+    bottom: 0;
+    top: 0;
+
+    visibility: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6TTExLjk5IDEwLjU2NGwtMS40MjYgMS40MjYtMi41NjQtMi41NjQtMi41NjQgMi41NjQtMS40MjYtMS40MjYgMi41NjQtMi41NjQtMi41NjQtMi41NjQgMS40MjYtMS40MjYgMi41NjQgMi41NjQgMi41NjQtMi41NjQgMS40MjYgMS40MjYtMi41NjQgMi41NjQgMi41NjQgMi41NjR6Ii8+PC9zdmc+) 50% 50% no-repeat;
+    /*background: url(input__clear.svg) 50% 50% no-repeat;*/
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/input__clear.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/_visibility/input__clear_visibility_visible.css begin */
+.input__clear_visibility_visible
+{
+	visibility: visible;
+
+	opacity: 0.2;
+
+	cursor: pointer;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__clear/_visibility/input__clear_visibility_visible.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/__clear/_visibility/input__clear_visibility_visible.css begin */
+.input__clear_visibility_visible:hover
+{
+	opacity: 0.8;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/input/__clear/_visibility/input__clear_visibility_visible.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/input__hint.css begin */
+.input__hint
+{
+    position: absolute;
+    z-index: 5;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    max-width: 100%;
+    height: 2em;
+    padding: 0 1em 0 8px;
+
+    cursor: text;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+    color: #ccc;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.i-ua_js_no .input__hint
+{
+    position: static;
+
+    visibility: visible;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/input__hint.css end */
+/* ../../../../../common.blocks/input/__hint/input__hint.css begin */
+.input__hint
+{
+    left: 0;
+    height: auto;
+    opacity: .5;
+}
+/* ../../../../../common.blocks/input/__hint/input__hint.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/_visibility/input__hint_visibility_visible.css begin */
+.input__hint_visibility_visible
+{
+    visibility: visible;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__hint/_visibility/input__hint_visibility_visible.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__message/input__message.css begin */
+.input__message
+{
+    display: none;
+
+    margin: 0.25em 0;
+    
+    line-height: normal;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__message/input__message.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__message/_type/input__message_type_error.css begin */
+.input__message_type_error
+{
+    color: #f00;
+}
+/* ../../../../../libs/bem-components/common.blocks/input/__message/_type/input__message_type_error.css end */
+/* ../../../../../libs/bem-components/common.blocks/input/__message/_visibility/input__message_visibility_visible.css begin */
+.input__message_visibility_visible
+{
+    display: block;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/input/__message/_visibility/input__message_visibility_visible.css end */
+/* ../../../../../common.blocks/input/_message-error/input_message-error_yes.css begin */
+.input.input_message-error_yes .input__box
+{
+    -webkit-box-shadow: 0 0 7px red;
+    box-shadow: 0 0 7px red;
+    -webkit-transition: all .3s 0 linear;
+    -moz-transition: all .3s 0 linear;
+    -o-transition: all .3s 0 linear;
+    transition: all .3s 0 linear;
+}
+/* ../../../../../common.blocks/input/_message-error/input_message-error_yes.css end */
+/* ../../../../../common.blocks/input/_color/input_color_light-grey.css begin */
+.input_color_light-grey .input__box
+{
+    background: #f5f5f5;
+    background: -webkit-linear-gradient(top, rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%);
+    background:    -moz-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+    background:         linear-gradient(to bottom, rgba(245,245,245,1) 0%,rgba(255,255,255,1) 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .25), inset 0 1px 3px rgba(0, 0, 0, .1), inset 0 0 0 1px #bec6cb;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .25), inset 0 1px 3px rgba(0, 0, 0, .1), inset 0 0 0 1px #bec6cb;
+}
+
+.input_color_light-grey .input__control,
+.input_color_light-grey .input__hint
+{
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+/* ../../../../../common.blocks/input/_color/input_color_light-grey.css end */
+/* ../../../../../common.blocks/input/_size/input_size_l.css begin */
+.input.input_size_l
+{
+    font-size: 15px;
+    line-height: 42px;
+}
+
+.input.input_size_l .input__box,
+.input.input_size_l .input__hint
+{
+    padding-right: 28px;
+    padding-left: 14px;
+    border-radius: 4px;
+}
+
+.input_size_l.input_type_textarea .input__box,
+.input_size_l.input_type_textarea .input__hint
+{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.input_size_l.input_clear_no .input__box,
+.input_size_l.input_clear_no .input__hint,
+.input_size_l.input_type_textarea .input__box
+{
+    padding-right: 14px;
+}
+
+.input.input_size_l .input__clear
+{
+    width: 28px;
+}
+
+.input_size_l.input_type_textarea .input__control
+{
+    min-height: 100px;
+}
+/* ../../../../../common.blocks/input/_size/input_size_l.css end */
+/* ../../../../../common.blocks/button/_color/button_color_light-grey.css begin */
+.button_color_light-grey
+{
+    background: #ebedef;
+    background: -webkit-linear-gradient(top, #fafbfb 0%,#e4e7ea 100%);
+    background:    -moz-linear-gradient(top, #fafbfb 0%, #e4e7ea 100%);
+    background:         linear-gradient(to bottom, #fafbfb 0%,#e4e7ea 100%);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 0 rgba(255, 255, 255, .2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 0 rgba(255, 255, 255, .2);
+}
+
+.button_color_light-grey.button_hovered_yes
+{
+    background: #fbfcfc;
+    background: -webkit-linear-gradient(top, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+}
+
+.button_color_light-grey.button_pressed_yes
+{
+    background: #f9fafa;
+    background: -webkit-linear-gradient(top, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.button_color_light-grey .button__text
+{
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+
+.button_color_light-grey .button__counter
+{
+    color: #1a8db9;
+    text-shadow: none;
+}
+/* ../../../../../common.blocks/button/_color/button_color_light-grey.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_s.css begin */
+.button_size_s
+{
+    line-height: 28px;
+
+    font-size: 13px;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_size/button_size_s.css end */
+/* ../../../../../common.blocks/button/_size/button_size_s.css begin */
+.button_size_s
+{
+    min-width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.button_size_s .button__text
+{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_s.css end */
+
+/* 10-dialog-window.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.ie9.css begin */
+.button
+{
+    /* Not displayed box-shadow block in the table with the border-collapse: collapse */
+    border-collapse: separate;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.ie9.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/input/__box/input__box.ie9.css begin */
+.input__box
+{
+    /* Not displayed box-shadow block in the table with the border-collapse: collapse */
+    border-collapse: separate;
+}
+
+/* ::after = fade */
+.input__box::after
+{
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/input/__box/input__box.ie9.css end */

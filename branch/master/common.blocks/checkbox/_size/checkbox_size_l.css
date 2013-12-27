@@ -1,0 +1,16 @@
+.checkbox_size_l .checkbox__box
+{
+    width: 42px;
+    height: 42px;
+}
+
+.checkbox_size_l .checkbox__tick
+{
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.checkbox_size_l .checkbox__label
+{
+    font-size: 15px;
+}

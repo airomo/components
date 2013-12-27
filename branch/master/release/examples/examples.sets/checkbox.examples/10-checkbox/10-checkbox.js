@@ -1,0 +1,1 @@
+/var/lib/jenkins/workspace/components/release/examples/examples.sets/checkbox.examples/10-checkbox/10-checkbox.en.js

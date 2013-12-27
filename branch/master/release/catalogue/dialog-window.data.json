@@ -1,0 +1,242 @@
+{
+  "name": "dialog-window",
+  "elems": [
+    {
+      "name": "body",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "content",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "controls",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "mods": [
+        {
+          "name": "type",
+          "vals": [
+            {
+              "name": "error",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "info",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "success",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "warning",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "mods": [
+        {
+          "name": "type",
+          "vals": [
+            {
+              "name": "error",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "info",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "success",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "warning",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "inner",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "paranja",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "title",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "top-bar",
+      "techs": [
+        {
+          "name": "css"
+        }
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "visibility",
+      "vals": [
+        {
+          "name": "hidden",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "desc.wiki"
+    },
+    {
+      "name": "title.txt"
+    },
+    {
+      "name": "examples"
+    },
+    {
+      "name": "js"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "dialog-window.examples/10-dialog-window/10-dialog-window"
+        }
+      ]
+    }
+  ],
+  "description": [
+    {
+      "level": "common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Block ",
+              {
+                "tag": "tt",
+                "content": [
+                  "dialog-window"
+                ]
+              },
+              " —  it&apos;s a pop-up window on top of content blocking it, to notify the user or confirmation of his actions"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "title": [
+    {
+      "level": "common.blocks",
+      "content": "Dialog window"
+    }
+  ]
+}

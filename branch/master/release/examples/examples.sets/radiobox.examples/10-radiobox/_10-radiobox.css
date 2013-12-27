@@ -1,0 +1,187 @@
+/* ../../../../../libs/bem-components/common.blocks/radiobox/radiobox.css begin */
+.radiobox
+{
+    display: inline-block;
+}
+/* ../../../../../libs/bem-components/common.blocks/radiobox/radiobox.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/radiobox.css begin */
+@media all and (min-width:0px) {
+
+    .radiobox__box,
+    .radiobox__control
+    {
+        cursor: pointer;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/radiobox.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/radiobox__radio.css begin */
+.radiobox__radio
+{
+    position: relative;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/radiobox__radio.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_checked/radiobox__radio_checked_yes.css begin */
+@media all and (min-width:0px) {
+    /* Маркер */
+    .radiobox__radio_checked_yes .radiobox__box:after
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        content: '';
+
+        width: 6px;
+        height: 6px;
+
+        margin: -3px 0 0 -3px;
+        padding: 0;
+
+        /* Цвет (background) маркера задается в _theme */
+
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+}
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_checked/radiobox__radio_checked_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css begin */
+.radiobox__radio_disabled_yes
+{
+    opacity: .6;
+
+    /* убираем выделение при клике в webkit-touch */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css begin */
+@media all and (min-width:0px) {
+
+    .radiobox__radio_disabled_yes .radiobox__box,
+    .radiobox__radio_disabled_yes .radiobox__control
+    {
+        cursor: default;
+    }
+
+}
+/* ../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__box/radiobox__box.css begin */
+.radiobox__box
+{
+    position: relative;
+    top: 1px;
+
+    display: inline-block;
+
+    /* Размеры (width, height) обертки задаются в _size */
+    margin-right: 0.5em;
+
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__box/radiobox__box.css end */
+/* ../../../../../common.blocks/radiobox/__box/radiobox__box.css begin */
+.radiobox__box
+{
+    top: 0;
+    vertical-align: middle;
+}
+
+.radiobox__box:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    content: '';
+}
+
+.radiobox .radiobox__box:after
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+/* ../../../../../common.blocks/radiobox/__box/radiobox__box.css end */
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__control/radiobox__control.css begin */
+@media all and (min-width:0px) {
+    .i-ua_js_yes .radiobox__control
+    {
+        position: absolute;
+
+        opacity: 0;
+    }
+}
+
+
+/* ../../../../../libs/bem-components/common.blocks/radiobox/__control/radiobox__control.css end */
+/* ../../../../../common.blocks/radiobox/_color/radiobox_color_blue.css begin */
+@media all and (min-width:0px) {
+    .radiobox_color_blue .radiobox__box:before
+    {
+        border-color: #c0c1c2;
+    }
+
+    .radiobox_color_blue .radiobox__radio_focused_yes .radiobox__box:before
+    {
+        -webkit-box-shadow: 0px 0px 6px rgb(192, 193, 194);
+                box-shadow: 0px 0px 6px rgb(192, 193, 194);
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes.radiobox__radio_focused_yes .radiobox__box:before
+    {
+        -webkit-box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
+                box-shadow: 0px 0px 6px rgba(39, 168, 201, .45);
+    }
+    .radiobox_color_blue .radiobox__radio_disabled_yes .radiobox__box:before
+    {
+        background: rgba(0, 0, 0, .03);
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box:before
+    {
+        border-color: #27A8C9;
+    }
+
+    .radiobox_color_blue .radiobox__radio_checked_yes .radiobox__box:after
+    {
+        background: #27A8C9;
+    }
+
+    .i-ua_js_no .radiobox__box:before
+    {
+        display: none;
+    }
+}
+
+/* ../../../../../common.blocks/radiobox/_color/radiobox_color_blue.css end */
+/* ../../../../../common.blocks/radiobox/_size/radiobox_size_l.css begin */
+.radiobox_size_l
+{
+
+    font-size: 15px;
+    line-height: 28px;
+}
+
+@media all and (min-width:0px) {
+    .radiobox_size_l .radiobox__box
+    {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* ../../../../../common.blocks/radiobox/_size/radiobox_size_l.css end */

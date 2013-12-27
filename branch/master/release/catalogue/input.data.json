@@ -1,0 +1,1185 @@
+{
+  "name": "input",
+  "elems": [
+    {
+      "name": "box",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        },
+        {
+          "name": "ie9.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Элемент рисующий поля ввода (нативный инпут скрыт)"
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "mods": [
+        {
+          "name": "visibility",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "visible",
+              "techs": [
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "i18n.title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "common.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+                  "content": "включено"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Видимость крестика очистки поля ввода\n"
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "js"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Кнопка - очистить"
+        }
+      ]
+    },
+    {
+      "name": "control",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie7.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Нативный инпут"
+        }
+      ]
+    },
+    {
+      "name": "hint",
+      "mods": [
+        {
+          "name": "visibility",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "visible",
+              "techs": [
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "i18n.title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "common.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+                  "content": "включена"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Видимость подсказки"
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "deps.js"
+        },
+        {
+          "name": "js"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Подсказка в поле ввода, исчезает при наборе текста"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Метка над полем ввода"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "mods": [
+        {
+          "name": "type",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "error",
+              "techs": [
+                {
+                  "name": "bemhtml"
+                },
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "js"
+                },
+                {
+                  "name": "i18n.title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "common.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+                  "content": "сообщение об ошибке"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Тип сообщения"
+            }
+          ]
+        },
+        {
+          "name": "visibility",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "vals": [
+            {
+              "name": "visible",
+              "techs": [
+                {
+                  "name": "css"
+                },
+                {
+                  "name": "js"
+                },
+                {
+                  "name": "i18n.title.txt"
+                }
+              ],
+              "title": [
+                {
+                  "level": "common.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+                  "content": ""
+                },
+                {
+                  "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+                  "content": "видимо"
+                }
+              ]
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Видимость сообщения"
+            }
+          ]
+        }
+      ],
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "js"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Сообщения для показа ошибок, информации и т.д."
+        }
+      ]
+    },
+    {
+      "name": "sample",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "deps.js"
+        },
+        {
+          "name": "js"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Пример к полю ввода"
+        }
+      ]
+    },
+    {
+      "name": "samples",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Обертка для примеров к полю ввода"
+        }
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "autofocus",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "js"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Получение фокуса при вводе текста на странице"
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "vals": [
+        {
+          "name": "no",
+          "techs": [
+            {
+              "name": "bemhtml"
+            },
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Инпут без крестика очистки содержимого\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "disabled",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Неактивное поле"
+        }
+      ]
+    },
+    {
+      "name": "focused",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Фокус есть"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "В фокусе"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "m",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта 15px"
+            }
+          ]
+        },
+        {
+          "name": "s",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта 13px"
+            }
+          ]
+        },
+        {
+          "name": "l",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "xl",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "xxl",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Размер инпута"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Темы оформления\n"
+        }
+      ]
+    },
+    {
+      "name": "type",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "password",
+          "techs": [
+            {
+              "name": "bemhtml"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "пароль"
+            }
+          ]
+        },
+        {
+          "name": "textarea",
+          "techs": [
+            {
+              "name": "bemhtml"
+            },
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie9.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "с текстовой областью"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Тип"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "vals": [
+        {
+          "name": "blue",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "dark-grey",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "green",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "grey",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "light-grey",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "transparent",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "message-error",
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "side",
+      "vals": [
+        {
+          "name": "both",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "left",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "right",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "deps.js"
+    },
+    {
+      "name": "js"
+    },
+    {
+      "name": "i18n.desc.wiki"
+    },
+    {
+      "name": "i18n.title.txt"
+    },
+    {
+      "name": "examples"
+    },
+    {
+      "name": "ie8.css"
+    }
+  ],
+  "levels": [
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks"
+    },
+    {
+      "path": "common.blocks"
+    },
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "input.examples/00-input/00-input"
+        }
+      ]
+    }
+  ],
+  "title": [
+    {
+      "level": "common.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": "Поле ввода с шириной 100%"
+    }
+  ],
+  "description": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Для того, чтобы Яндекс выглядел аккуратнее и развивался в одном стиле, были разработаны декоративные (нестандартные для операционной системы) элементы форм."
+            ]
+          },
+          "<p style=\"font-size: 120%; color: #AD2626; background:#FAF3EE; margin: 0.8em 0 0.8em -10px; padding: 8px 10px;\">Контролы реализованы на CSS3, в MSIE8 и ниже контролы деградируют до нативных. Только bemhtml реализация.</p>",
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "Raznovidnostipolejvvoda"
+            },
+            "content": [
+              "Разновидности полей ввода:"
+            ]
+          },
+          {
+            "elem": "ul",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.05-input_bem",
+                    "content": [
+                      "простое"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.10-label_bem",
+                    "content": [
+                      "с меткой"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.15-label-hint_bem",
+                    "content": [
+                      "с подсказкой"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.20-message-error_bem",
+                    "content": [
+                      "с сообщением об ошибке"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.25-samples_bem",
+                    "content": [
+                      "с примерами"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.30-clear_bem",
+                    "content": [
+                      "с кнопкой очистки"
+                    ]
+                  },
+                  ";"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.40-textarea_bem",
+                    "content": [
+                      "поле ввода текстовой областью"
+                    ]
+                  },
+                  " — форма для набора текста;"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#input.60-autocomplete_bem",
+                    "content": [
+                      "c автокомплитом"
+                    ]
+                  },
+                  "."
+                ]
+              }
+            ]
+          },
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "APIkontrola"
+            },
+            "content": [
+              "API контрола"
+            ]
+          },
+          {
+            "elem": "ul",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "http://wiki.yandex-team.ru/Lego/controls/api-forms/#form-input",
+                    "content": [
+                      "Общее API контролов"
+                    ]
+                  },
+                  ".\n",
+                  {
+                    "tag": "br"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

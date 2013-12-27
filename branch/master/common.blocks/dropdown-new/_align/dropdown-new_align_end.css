@@ -1,0 +1,56 @@
+.dropdown-new_direction_top.dropdown-new_align_end .dropdown-new__content-wrapper,
+.dropdown-new_direction_bottom.dropdown-new_align_end .dropdown-new__content-wrapper,
+.dropdown-new_direction_top.dropdown-new_align_end .dropdown-new__content,
+.dropdown-new_direction_bottom.dropdown-new_align_end .dropdown-new__content
+{
+    right: 0;
+}
+
+.dropdown-new_direction_top.dropdown-new_align_end .dropdown-new__content:before,
+.dropdown-new_direction_top.dropdown-new_align_end .dropdown-new__content:after,
+.dropdown-new_direction_bottom.dropdown-new_align_end .dropdown-new__content:before,
+.dropdown-new_direction_bottom.dropdown-new_align_end .dropdown-new__content:after
+{
+    right: 26px;
+}
+
+.dropdown-new_direction_top.dropdown-new_align_end .dropdown-new__content:before,
+.dropdown-new_direction_bottom.dropdown-new_align_end .dropdown-new__content:before
+{
+    margin-right: -8px;
+}
+
+.dropdown-new_direction_top.dropdown-new_align_end .dropdown-new__content:after,
+.dropdown-new_direction_bottom.dropdown-new_align_end .dropdown-new__content:after
+{
+    margin-right: -7px;
+}
+
+
+.dropdown-new_direction_right.dropdown-new_align_end .dropdown-new__content-wrapper,
+.dropdown-new_direction_left.dropdown-new_align_end .dropdown-new__content-wrapper,
+.dropdown-new_direction_right.dropdown-new_align_end .dropdown-new__content,
+.dropdown-new_direction_left.dropdown-new_align_end .dropdown-new__content
+{
+    bottom: 0;
+}
+
+.dropdown-new_direction_right.dropdown-new_align_end .dropdown-new__content:before,
+.dropdown-new_direction_right.dropdown-new_align_end .dropdown-new__content:after,
+.dropdown-new_direction_left.dropdown-new_align_end .dropdown-new__content:before,
+.dropdown-new_direction_left.dropdown-new_align_end .dropdown-new__content:after
+{
+    bottom: 26px;
+}
+
+.dropdown-new_direction_right.dropdown-new_align_end .dropdown-new__content:before,
+.dropdown-new_direction_left.dropdown-new_align_end .dropdown-new__content:before
+{
+    margin-bottom: -8px;
+}
+
+.dropdown-new_direction_right.dropdown-new_align_end .dropdown-new__content:after,
+.dropdown-new_direction_left.dropdown-new_align_end .dropdown-new__content:after
+{
+    margin-bottom: -7px;
+}

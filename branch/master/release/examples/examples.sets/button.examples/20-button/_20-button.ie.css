@@ -1,0 +1,223 @@
+/* 20-button.css begin */
+/* ../../../../../libs/bem-components/common.blocks/button/button.css begin */
+/* button — рисует бордер кнопки */ /**/
+.button
+{
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    outline: 0;
+
+    text-align: center;
+    white-space: nowrap;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.button::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+/* Прячем стили от IE < 9 */ /**/
+@media all and (min-width:0px) {
+    .button
+    {
+        border: 0;
+    }
+
+    a.button:link,
+    a.button:visited
+    {
+        /* hidden for Opera 12 to remove native focusing  *//**/
+        outline: hidden;
+
+        text-decoration: none;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/button.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.css begin */
+@media all and (min-width:0px) {
+
+    .button
+    {
+        cursor: pointer;
+    }
+
+}
+
+a.button:hover
+{
+    cursor: default;
+
+    /* hidden for Opera 12 to remove native focusing  */
+    outline: hidden;
+
+    text-decoration: none;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.css end */
+/* ../../../../../common.blocks/button/button.css begin */
+.button
+{
+    cursor: pointer;
+}
+
+a.button
+{
+    cursor: pointer;
+}
+
+.button_visibility_hidden
+{
+    display: none !important;
+}
+/* ../../../../../common.blocks/button/button.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/__text/button__text.css begin */
+.button__text
+{
+    position: relative;
+
+    padding: 0 1em;
+
+    pointer-events: none;
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/__text/button__text.css end */
+/* ../../../../../common.blocks/button/__text/button__text.css begin */
+.button__text
+{
+    display: inline-block;
+}
+/* ../../../../../common.blocks/button/__text/button__text.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes
+{
+    opacity: .6;
+}
+/* ../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes,
+a.button_disabled_yes,
+a.button_disabled_yes .button__text
+{
+    cursor: default;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../common.blocks/button/_disabled/button_disabled_yes.css begin */
+.button_disabled_yes
+{
+    cursor: default !important;
+}
+/* ../../../../../common.blocks/button/_disabled/button_disabled_yes.css end */
+/* ../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css begin */
+@media all and (min-width:0px) {
+    .button_pressed_yes .button__text
+    {
+        top: 1px;
+    }
+}
+
+/* ../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css end */
+/* ../../../../../common.blocks/button/_pressed/button_pressed_yes.css begin */
+.button_pressed_yes .button__text
+{
+    top: .05em;
+}
+/* ../../../../../common.blocks/button/_pressed/button_pressed_yes.css end */
+/* ../../../../../common.blocks/button/_color/button_color_light-grey.css begin */
+.button_color_light-grey
+{
+    background: #ebedef;
+    background: -webkit-linear-gradient(top, #fafbfb 0%,#e4e7ea 100%);
+    background:    -moz-linear-gradient(top, #fafbfb 0%, #e4e7ea 100%);
+    background:         linear-gradient(to bottom, #fafbfb 0%,#e4e7ea 100%);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 0 rgba(255, 255, 255, .2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 0 rgba(255, 255, 255, .2);
+}
+
+.button_color_light-grey.button_hovered_yes
+{
+    background: #fbfcfc;
+    background: -webkit-linear-gradient(top, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(251, 252, 252, 1) 0%, rgba(235, 237, 239, 1) 100%);
+}
+
+.button_color_light-grey.button_pressed_yes
+{
+    background: #f9fafa;
+    background: -webkit-linear-gradient(top, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(249, 250, 250, 1) 0%, rgba(221, 225, 228, 1) 100%);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.button_color_light-grey .button__text
+{
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+
+.button_color_light-grey .button__counter
+{
+    color: #1a8db9;
+    text-shadow: none;
+}
+/* ../../../../../common.blocks/button/_color/button_color_light-grey.css end */
+/* ../../../../../common.blocks/button/_size/button_size_l.css begin */
+.button_size_l
+{
+    min-width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 42px;
+}
+
+.button_size_l .button__text
+{
+    padding-right: 14px;
+    padding-left: 14px;
+}
+/* ../../../../../common.blocks/button/_size/button_size_l.css end */
+
+/* 20-button.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.ie.css begin */
+button.button
+{
+    /* Позволяет управлять внутренними отступами кнопки */ /**/
+    overflow: visible;
+
+    vertical-align: middle;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/button.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css begin */
+.button__text
+{
+    padding: 0 0.85em;
+}
+
+/* ../../../../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css end */
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css begin */
+.button_disabled_yes,
+a.button_disabled_yes
+{
+    color: #c6c6c6 !important;
+
+    text-decoration: none!important;
+}
+/* ../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css end */

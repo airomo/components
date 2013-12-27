@@ -1,0 +1,11 @@
+Block ##qr-code## — is an image, which encodes link (qr-code)
+Default image type is svg, if browser not supports this format, image type will png.
+
+For simple view we need this ##BEMJSON##:
+
+%%hl js
+    {
+        block: 'qr-code',
+        url: 'url'
+    }
+%%

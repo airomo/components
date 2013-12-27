@@ -1,0 +1,4 @@
+@import url(20-button.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/button.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css);

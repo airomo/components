@@ -1,0 +1,455 @@
+{
+  "name": "check-button",
+  "elems": [
+    {
+      "name": "control",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Нативный чекбокс"
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Используется для отображения иконки в чекбоксе, рядом с текстом или самостоятельно (требует указания модификатора _only-icon)"
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Обрамляет текст чекбокса-кнопкой, используется в нажатом состоянии для сдвига текста без смещения рядом стоящего текста"
+        }
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "checked",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Состояние чекбокса — активное, чекбокс вырбан (кнопка вжата)"
+        }
+      ]
+    },
+    {
+      "name": "disabled",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Неактивное состояние. Нажать на чекбокс-кнопку нельзя."
+        }
+      ]
+    },
+    {
+      "name": "focused",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Cостояние в фокусе"
+        }
+      ]
+    },
+    {
+      "name": "only-icon",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "bemhtml"
+            },
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Чекбокс-кнопкой только с иконкой"
+        }
+      ]
+    },
+    {
+      "name": "pressed",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Визуальное нажатие кнопки — чекбокс не вырбан\n"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "m",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта 15px"
+            }
+          ]
+        },
+        {
+          "name": "s",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта 13px"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Размер"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Темы оформления\n"
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "deps.js"
+    },
+    {
+      "name": "js"
+    },
+    {
+      "name": "i18n.desc.wiki"
+    },
+    {
+      "name": "i18n.title.txt"
+    },
+    {
+      "name": "ie9.css"
+    }
+  ],
+  "levels": [
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks"
+    },
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks"
+    }
+  ],
+  "title": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": "Чекбокс в виде кнопки"
+    }
+  ],
+  "description": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Для того, чтобы Яндекс выглядел аккуратнее и развивался в одном стиле, были разработаны декоративные (нестандартные для операционной системы) элементы форм."
+            ]
+          },
+          "<p style=\"font-size: 120%; color: #AD2626; background:#FAF3EE; margin: 0.8em 0 0.8em -10px; padding: 8px 10px;\">Контролы реализованы на CSS3, в MSIE8 и ниже контролы деградируют до нативных. Только bemhtml реализация.</p>",
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "APIkontrola"
+            },
+            "content": [
+              "API контрола"
+            ]
+          },
+          {
+            "elem": "ul",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "http://wiki.yandex-team.ru/Lego/controls/api-forms/#form-check-button",
+                    "content": [
+                      "Общее API контролов"
+                    ]
+                  },
+                  ".\n",
+                  {
+                    "tag": "br"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

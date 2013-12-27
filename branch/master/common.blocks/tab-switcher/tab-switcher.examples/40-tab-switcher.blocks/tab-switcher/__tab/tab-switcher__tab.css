@@ -1,0 +1,9 @@
+.tab-switcher__tab
+{
+    display: none;
+}
+
+.tab-switcher__tab_active_yes
+{
+    display: block;
+}

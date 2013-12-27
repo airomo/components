@@ -1,0 +1,229 @@
+{
+  "name": "icon",
+  "mods": [
+    {
+      "name": "size",
+      "vals": [
+        {
+          "name": "l",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "m",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "s",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "xl",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "xxl",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "type",
+      "vals": [
+        {
+          "name": "apps-info",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "arrow-down",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "arrow-up",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "dashboard",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "description",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "dislike",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "info",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "like",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "monkey",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "refresh",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "settings",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "shout",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "thin-arrow-left",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "thin-arrow-right",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "timeline",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "desc.wiki"
+    },
+    {
+      "name": "title.txt"
+    },
+    {
+      "name": "examples"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "icon.examples/00-icon/00-icon"
+        }
+      ]
+    }
+  ],
+  "description": [
+    {
+      "level": "common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Icon"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "title": [
+    {
+      "level": "common.blocks",
+      "content": "Icon"
+    }
+  ]
+}

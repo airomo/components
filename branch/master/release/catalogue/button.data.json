@@ -1,0 +1,1095 @@
+{
+  "name": "button",
+  "elems": [
+    {
+      "name": "icon",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "ie7.css"
+        }
+      ],
+      "mods": [
+        {
+          "name": "size",
+          "vals": [
+            {
+              "name": "l",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "m",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "s",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "xl",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            },
+            {
+              "name": "xxl",
+              "techs": [
+                {
+                  "name": "css"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Используется для отображения иконки в кнопке, рядом с текстом или самостоятельно (требует указания модификатора _only-icon)"
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "techs": [
+        {
+          "name": "css"
+        },
+        {
+          "name": "i18n.title.txt"
+        },
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "ie.css"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Обрамляет текст кнопки, используется в нажатом состоянии для сдвига текста без смещения рядом стоящего текста"
+        }
+      ]
+    },
+    {
+      "name": "counter",
+      "techs": [
+        {
+          "name": "bemhtml"
+        },
+        {
+          "name": "css"
+        }
+      ]
+    },
+    {
+      "name": "text-content",
+      "techs": [
+        {
+          "name": "bemhtml"
+        }
+      ]
+    }
+  ],
+  "mods": [
+    {
+      "name": "disabled",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Неактивное состояние"
+        }
+      ]
+    },
+    {
+      "name": "focused",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Фокус есть"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "В фокусе"
+        }
+      ]
+    },
+    {
+      "name": "hovered",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Наведение есть"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Наведенное состояние"
+        }
+      ]
+    },
+    {
+      "name": "only-icon",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "bemhtml"
+            },
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Включено"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Кнопки только с иконкой"
+        }
+      ]
+    },
+    {
+      "name": "pressed",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "yes",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Нажатие есть"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Нажатое состояние"
+        }
+      ]
+    },
+    {
+      "name": "size",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "m",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта в кнопке 15px"
+            },
+            {
+              "level": "common.blocks",
+              "content": "font-size: 13px, height: 32px"
+            }
+          ]
+        },
+        {
+          "name": "s",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "i18n.title.txt"
+            },
+            {
+              "name": "title.txt"
+            },
+            {
+              "name": "ie.css"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": "Размер шрифта в кнопке 13px"
+            },
+            {
+              "level": "common.blocks",
+              "content": "font-size: 13px, height: 28px"
+            }
+          ]
+        },
+        {
+          "name": "l",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "font-size: 15px, height: 42px"
+            }
+          ]
+        },
+        {
+          "name": "xl",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "font-size: 17px, height: 50px"
+            }
+          ]
+        },
+        {
+          "name": "xxl",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "font-size: 24px, height: 70px"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Размер"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "techs": [
+        {
+          "name": "i18n.title.txt"
+        }
+      ],
+      "title": [
+        {
+          "level": "common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": "Темы"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "techs": [
+        {
+          "name": "title.txt"
+        }
+      ],
+      "vals": [
+        {
+          "name": "blue",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "blue opaque"
+            }
+          ]
+        },
+        {
+          "name": "green",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "green opaque"
+            }
+          ]
+        },
+        {
+          "name": "grey",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "grey opaque"
+            }
+          ]
+        },
+        {
+          "name": "light-grey",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "light-grey opaque"
+            }
+          ]
+        },
+        {
+          "name": "red",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "red opaque"
+            }
+          ]
+        },
+        {
+          "name": "transparent",
+          "techs": [
+            {
+              "name": "css"
+            },
+            {
+              "name": "title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": "transparent"
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+          "content": ""
+        },
+        {
+          "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+          "content": ""
+        },
+        {
+          "level": "common.blocks",
+          "content": "Color"
+        }
+      ]
+    },
+    {
+      "name": "side",
+      "vals": [
+        {
+          "name": "both",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "left",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        },
+        {
+          "name": "right",
+          "techs": [
+            {
+              "name": "css"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "type",
+      "vals": [
+        {
+          "name": "scroll-top",
+          "techs": [
+            {
+              "name": "js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "focus",
+      "vals": [
+        {
+          "name": "no",
+          "techs": [
+            {
+              "name": "js"
+            },
+            {
+              "name": "i18n.title.txt"
+            }
+          ],
+          "title": [
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+              "content": ""
+            },
+            {
+              "level": "common.blocks",
+              "content": ""
+            },
+            {
+              "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+              "content": "Кнопка без визуального фокуса"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "deps.js"
+    },
+    {
+      "name": "js"
+    },
+    {
+      "name": "i18n.desc.wiki"
+    },
+    {
+      "name": "i18n.title.txt"
+    },
+    {
+      "name": "desc.wiki"
+    },
+    {
+      "name": "title.txt"
+    },
+    {
+      "name": "examples"
+    },
+    {
+      "name": "ie.css"
+    },
+    {
+      "name": "ie9.css"
+    }
+  ],
+  "levels": [
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks"
+    },
+    {
+      "path": "common.blocks"
+    },
+    {
+      "path": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "button.examples/00-button/00-button"
+        },
+        {
+          "url": "button.examples/20-button/20-button"
+        }
+      ]
+    }
+  ],
+  "title": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": ""
+    },
+    {
+      "level": "common.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/desktop.blocks",
+      "content": ""
+    },
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": "Кнопка\n"
+    },
+    {
+      "level": "common.blocks",
+      "content": "Кнопка\n"
+    }
+  ],
+  "description": [
+    {
+      "level": "/var/lib/jenkins/workspace/components/libs/bem-components/common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Для того, чтобы Яндекс выглядел аккуратнее и развивался в одном стиле, были разработаны декоративные (нестандартные для операционной системы) элементы форм. Одним из таких элементов является кнопка."
+            ]
+          },
+          "<p style=\"font-size: 120%; color: #AD2626; background:#FAF3EE; margin: 0.8em 0 0.8em -10px; padding: 8px 10px;\">Контролы реализованы на CSS3, в MSIE8 и ниже контролы деградируют до нативных. Только bemhtml реализация.</p>",
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "Raznovidnostiknopok"
+            },
+            "content": [
+              "Разновидности кнопок"
+            ]
+          },
+          {
+            "elem": "ul",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#button.10button_bem",
+                    "content": [
+                      "Обычная"
+                    ]
+                  },
+                  " — все кнопки, используемые в формах;"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#button.20submit-attrs_bem",
+                    "content": [
+                      "Кнопка действий"
+                    ]
+                  },
+                  " — кнопка, отправляющая форму на сервер;"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#button.30link_bem",
+                    "content": [
+                      "Ссылкой"
+                    ]
+                  },
+                  " — может быть только обычной;"
+                ]
+              },
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "#button.50shadow_bem",
+                    "content": [
+                      "С тенью"
+                    ]
+                  },
+                  " — летающие кнопки, с большой тенью, используются, например, над картой;"
+                ]
+              }
+            ]
+          },
+          {
+            "elem": "h2",
+            "attrs": {
+              "id": "Knopkisikonkami"
+            },
+            "content": [
+              "Кнопки с иконками"
+            ]
+          },
+          {
+            "elem": "p",
+            "content": [
+              {
+                "block": "b-link",
+                "url": "#button.45ico_bem",
+                "content": [
+                  "Вот эти кнопки"
+                ]
+              }
+            ]
+          },
+          "<p style=\"font-size: 110%; background:#FAF3EE; margin: 0.8em 0 0.8em -10px; padding: 8px 10px;\"><span style=\"color: #AD2626;\">Иконки, можно использовать только в кнопках-ссылках.</span> Это связано с тем, что в обычных кнопках content из входных данных копируется в value нативного контрола.</p>",
+          {
+            "elem": "h1",
+            "attrs": {
+              "id": "APIkontrola"
+            },
+            "content": [
+              "API контрола"
+            ]
+          },
+          {
+            "elem": "ul",
+            "content": [
+              {
+                "elem": "li",
+                "content": [
+                  {
+                    "block": "b-link",
+                    "url": "http://wiki.yandex-team.ru/Lego/controls/api-forms/#form-button",
+                    "content": [
+                      "Общее API контролов"
+                    ]
+                  },
+                  ".\n",
+                  {
+                    "tag": "br"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "level": "common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Блок ",
+              {
+                "tag": "tt",
+                "content": [
+                  "button"
+                ]
+              },
+              " — является кнопкой. Используется в других блоках."
+            ]
+          },
+          {
+            "elem": "p",
+            "content": [
+              "В простом случае для отображения блока необходимо задать следующий ",
+              {
+                "tag": "tt",
+                "content": [
+                  "BEMJSON"
+                ]
+              },
+              ":"
+            ]
+          },
+          {
+            "tag": "pre",
+            "content": {
+              "tag": "code",
+              "cls": "js",
+              "content": "{\n   block: &apos;button&apos;,\n   content: &apos;Текст кнопки&apos;\n}"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+@import url(../../../../../libs/bem-components/common.blocks/button/button.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/button.css);
+@import url(../../../../../common.blocks/button/button.css);
+@import url(../../../../../libs/bem-components/common.blocks/button/__text/button__text.css);
+@import url(../../../../../common.blocks/button/__text/button__text.css);
+@import url(../../../../../libs/bem-components/common.blocks/button/_disabled/button_disabled_yes.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.css);
+@import url(../../../../../common.blocks/button/_disabled/button_disabled_yes.css);
+@import url(../../../../../libs/bem-components/common.blocks/button/_pressed/button_pressed_yes.css);
+@import url(../../../../../common.blocks/button/_pressed/button_pressed_yes.css);
+@import url(../../../../../common.blocks/button/_color/button_color_light-grey.css);
+@import url(../../../../../common.blocks/button/_size/button_size_l.css);

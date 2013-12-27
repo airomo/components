@@ -1,0 +1,37 @@
+.icon_type_arrow-down
+{
+    background-image: url(icon_type_arrow-down.png);
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+.icon_pressed_yes.icon_type_arrow-down,
+.button_pressed_yes .icon_type_arrow-down
+{
+    background-position: 100% 50%;
+}
+
+.icon_size_s.icon_type_arrow-down
+{
+    width: 7px;
+}
+
+.icon_size_m.icon_type_arrow-down
+{
+    width: 7px;
+}
+
+.icon_size_l.icon_type_arrow-down
+{
+    width: 10px;
+}
+
+.icon_size_s.icon_type_arrow-down
+{
+    width: 12px;
+}
+
+.icon_size_s.icon_type_arrow-down
+{
+    width: 14px;
+}

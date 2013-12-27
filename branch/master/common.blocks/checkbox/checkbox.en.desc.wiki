@@ -1,0 +1,24 @@
+Styled form control
+
+Example's ##BEMJSON##
+
+%%hl js
+{
+    block: 'checkbox',
+    mods: {
+        color: '',
+        size: '',
+        checked: '',
+        disabled: ''
+    },
+    checkboxAttrs: {
+        value: '',
+        name: '',
+        accesskey: ''
+    },
+    content: {
+        elem: 'label',
+        content: ''
+    }
+}
+%%

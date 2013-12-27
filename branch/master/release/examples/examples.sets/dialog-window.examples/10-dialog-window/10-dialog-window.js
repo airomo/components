@@ -1,0 +1,1 @@
+/var/lib/jenkins/workspace/components/release/examples/examples.sets/dialog-window.examples/10-dialog-window/10-dialog-window.en.js

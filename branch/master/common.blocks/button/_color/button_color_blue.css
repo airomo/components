@@ -1,0 +1,35 @@
+.button_color_blue
+{
+    background: #FF051A;
+    background: -webkit-linear-gradient(top, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(39, 178, 208, 1) 0%, rgba(29, 151, 191, 1) 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 1px #105b7d inset, 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+.button_color_blue.button_hovered_yes
+{
+    background: #3DBAD5;
+    background: -webkit-linear-gradient(top, rgba(61, 186, 213, 1) 0%, rgba(52, 162, 198, 1) 100%);
+    background:    -moz-linear-gradient(top, rgba(61, 186, 213, 1) 0%, rgba(52, 162, 198, 1) 100%);
+    background:         linear-gradient(to bottom, rgba(61, 186, 213, 1) 0%, rgba(52, 162, 198, 1) 100%);
+}
+
+.button_color_blue.button_pressed_yes
+{
+    background: #24afc7;
+    background: -webkit-linear-gradient(top, #24afc7 0%, #189abb 100%);
+    background:    -moz-linear-gradient(top, #24afc7 0%, #189abb 100%);
+    background:         linear-gradient(to bottom, #24afc7 0%, #189abb 100%);
+    -webkit-box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1px #105b7d, inset 0 2px 1px rgba(0, 0, 0, .2);
+}
+
+.button_color_blue .button__text
+{
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, sans-serif;
+}

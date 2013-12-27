@@ -1,0 +1,12 @@
+.icon_type_apps-info
+{
+    background-image: url(icon_type_apps-info.png);
+    background-position: 0 50%;
+    background-size: 200% auto;
+}
+
+/*.icon_pressed_yes.icon_type_apps-info,*/
+/*.button_pressed_yes .icon_type_apps-info*/
+/*{*/
+    /*background-position: 100% 50%;*/
+/*}*/

@@ -1,0 +1,10 @@
+@import url(20-tab-switcher.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/button.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/radiobox/__radio/_disabled/radiobox__radio_disabled_yes.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/radiobox/__box/radiobox__box.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/radio-button__radio.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/radio-button/__radio/_disabled/radio-button__radio_disabled_yes.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/radio-button/__control/radio-button__control.ie.css);
+@import url(../../../../../libs/bem-components/desktop.blocks/radio-button/__text/radio-button__text.ie.css);

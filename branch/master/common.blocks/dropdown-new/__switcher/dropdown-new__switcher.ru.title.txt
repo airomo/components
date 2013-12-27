@@ -1,0 +1,1 @@
+переключает значения модификатора dropdown-new__content_visibility

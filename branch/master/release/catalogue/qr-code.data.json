@@ -1,0 +1,88 @@
+{
+  "name": "qr-code",
+  "techs": [
+    {
+      "name": "bemhtml"
+    },
+    {
+      "name": "css"
+    },
+    {
+      "name": "desc.wiki"
+    },
+    {
+      "name": "title.txt"
+    },
+    {
+      "name": "examples"
+    },
+    {
+      "name": "js"
+    }
+  ],
+  "levels": [
+    {
+      "path": "common.blocks"
+    }
+  ],
+  "examples": [
+    {
+      "level": "common.blocks",
+      "content": [
+        {
+          "url": "qr-code.examples/10-qr-code/10-qr-code"
+        }
+      ]
+    }
+  ],
+  "description": [
+    {
+      "level": "common.blocks",
+      "content": {
+        "block": "b-text",
+        "content": [
+          {
+            "elem": "p",
+            "content": [
+              "Block ",
+              {
+                "tag": "tt",
+                "content": [
+                  "qr-code"
+                ]
+              },
+              " — is an image, which encodes link (qr-code) Default image type is svg, if browser not supports this format, image type will png."
+            ]
+          },
+          {
+            "elem": "p",
+            "content": [
+              "For simple view we need this ",
+              {
+                "tag": "tt",
+                "content": [
+                  "BEMJSON"
+                ]
+              },
+              ":"
+            ]
+          },
+          {
+            "tag": "pre",
+            "content": {
+              "tag": "code",
+              "cls": "js",
+              "content": "    {\n        block: &apos;qr-code&apos;,\n        url: &apos;url&apos;\n    }"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "title": [
+    {
+      "level": "common.blocks",
+      "content": "Qr-code"
+    }
+  ]
+}
